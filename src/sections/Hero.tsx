@@ -60,7 +60,7 @@ const Hero = () => {
             >
               <span className="w-8 h-[2px] bg-accent-gold" />
               <span className="text-accent-gold text-sm font-medium tracking-wider uppercase">
-                FP&A & Analytics Consulting
+                Finance, Analytics and AI Consulting
               </span>
             </motion.div>
 
@@ -68,7 +68,8 @@ const Hero = () => {
               variants={itemVariants}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
             >
-              Smarter Finance. Faster Close. Real ROI.
+              Smarter Finance. Sharper Analytics.<br />
+              Real ROI & ROAI.
             </motion.h1>
 
             <motion.p

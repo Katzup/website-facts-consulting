@@ -69,9 +69,9 @@ const Services = () => {
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: 'Digital Transformation',
-      description: 'Modernize your operations for the digital age with cutting-edge solutions.',
-      features: ['ERP Implementation', 'Automation & RPA', 'Change Management', 'Technology Strategy'],
+      title: 'Technology',
+      description: 'Implement and optimize the technology stack that powers your finance function—from planning tools to AI-powered analytics.',
+      features: ['Adaptive Planning & Anaplan', 'AI/ML Implementation', 'Workflow Automation', 'Systems Integration'],
     },
     {
       icon: <Brain className="w-6 h-6" />,
