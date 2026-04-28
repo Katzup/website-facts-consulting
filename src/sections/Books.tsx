@@ -100,9 +100,20 @@ const BookCard = ({ book, index }: BookCardProps) => {
           {book.title}
         </h3>
 
-        <p className="text-text-secondary text-sm mb-4 line-clamp-3">
-          {book.description}
-        </p>
+        {book.topics ? (
+          <ul className="mb-4 space-y-1">
+            {book.topics.map(topic => (
+              <li key={topic} className="flex items-center gap-2 text-xs text-text-secondary">
+                <span className="w-1 h-1 rounded-full bg-accent-gold/60 flex-shrink-0" />
+                {topic}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-text-secondary text-sm mb-4 line-clamp-3">
+            {book.description}
+          </p>
+        )}
 
         <div className="flex items-center justify-between">
           <span className="text-xs text-text-secondary/60">
