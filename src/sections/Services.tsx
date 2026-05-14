@@ -70,7 +70,7 @@ const Services = () => {
     {
       icon: <Zap className="w-6 h-6" />,
       title: 'FP&A Technology',
-      description: 'Workday Adaptive Planning specialist with 50+ implementations from greenfield builds to brownfield repairs — across startups, mid-market, and public companies.',
+      description: 'Workday Adaptive Planning specialist with 50+ implementations from greenfield to brownfield — across startups, mid-market, and public companies.',
       features: ['Workday Adaptive Planning', 'NetSuite & Snowflake Integration', 'ERP Migration & Reporting', 'Model Repair & Enhancement'],
     },
     {

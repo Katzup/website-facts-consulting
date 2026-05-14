@@ -246,8 +246,8 @@ export const smbBooks: Book[] = [
 export const dataDrivenBooks: Book[] = [
   {
     id: 'fpa-practitioner-playbook',
-    title: "The Data-Driven FP&A Playbook",
-    subtitle: 'Finance, Planning & Analysis in the Post-AI Era',
+    title: "FP&A Practitioner's Playbook",
+    subtitle: 'Planning & Execution in a Post-AI Environment',
     role: 'FP&A Practitioner',
     abbreviation: 'FP&A',
     description: '100 questions every data-driven FP&A practitioner must be able to answer — from statistical forecasting and machine learning to Workday Adaptive Planning and AI-augmented workflows.',
@@ -262,7 +262,7 @@ export const dataDrivenBooks: Book[] = [
     category: 'nonfiction',
     series: 'Data-Driven Playbook Series',
     seriesOrder: 1,
-    tagline: 'Better Data. Better Models. Better Decisions.',
+    tagline: 'Plan Better. Execute Faster. Decide with Data.',
     bottomTagline: 'THE FUTURE OF FP&A IS ANALYTICAL.',
     buyLinks: {},
     status: 'coming-soon',
