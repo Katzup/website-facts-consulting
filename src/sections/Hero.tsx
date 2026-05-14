@@ -136,8 +136,8 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 1 }}
               className="absolute -bottom-6 -left-6 bg-card-bg border border-accent-gold/20 rounded-xl p-6 shadow-card"
             >
-              <div className="text-3xl font-bold text-accent-gold">150+</div>
-              <div className="text-text-secondary text-sm">Finance Teams Served</div>
+              <div className="text-3xl font-bold text-accent-gold">100+</div>
+              <div className="text-text-secondary text-sm">Clients Served</div>
             </motion.div>
           </motion.div>
         </div>

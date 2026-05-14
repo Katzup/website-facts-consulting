@@ -69,9 +69,9 @@ const Services = () => {
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      title: 'Technology',
-      description: 'Implement and optimize the technology stack that powers your finance function—from planning tools to AI-powered analytics.',
-      features: ['Adaptive Planning & Anaplan', 'AI/ML Implementation', 'Workflow Automation', 'Systems Integration'],
+      title: 'FP&A Technology',
+      description: 'Workday Adaptive Planning specialist with 50+ implementations from greenfield builds to brownfield repairs — across startups, mid-market, and public companies.',
+      features: ['Workday Adaptive Planning', 'NetSuite & Snowflake Integration', 'ERP Migration & Reporting', 'Model Repair & Enhancement'],
     },
     {
       icon: <Brain className="w-6 h-6" />,

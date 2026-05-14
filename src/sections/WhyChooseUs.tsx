@@ -1,6 +1,69 @@
 import { motion } from 'framer-motion';
-import { Award, Users, Target, TrendingUp } from 'lucide-react';
+import { Award, Users, Target, TrendingUp, Play, Pause } from 'lucide-react';
 import StatCounter from '@/components/StatCounter';
+import { useState, useRef } from 'react';
+
+const AudioPlayer = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const toggle = () => {
+    if (!audioRef.current) return;
+    if (isPlaying) {
+      audioRef.current.pause();
+    } else {
+      audioRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
+
+  const onTimeUpdate = () => {
+    if (!audioRef.current) return;
+    setProgress((audioRef.current.currentTime / audioRef.current.duration) * 100);
+  };
+
+  const onEnded = () => setIsPlaying(false);
+
+  const seek = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!audioRef.current) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    const pct = (e.clientX - rect.left) / rect.width;
+    audioRef.current.currentTime = pct * audioRef.current.duration;
+  };
+
+  return (
+    <div className="bg-card-bg rounded-xl p-4 border border-accent-gold/20 mb-8 flex items-center gap-4">
+      <audio
+        ref={audioRef}
+        src="/audio/BobKatzIntro.mp3"
+        onTimeUpdate={onTimeUpdate}
+        onEnded={onEnded}
+      />
+      <button
+        onClick={toggle}
+        className="w-10 h-10 bg-accent-gold rounded-full flex items-center justify-center flex-shrink-0 hover:bg-accent-gold-hover transition-colors"
+      >
+        {isPlaying
+          ? <Pause className="w-4 h-4 text-dark-blue" fill="currentColor" />
+          : <Play className="w-4 h-4 text-dark-blue ml-0.5" fill="currentColor" />
+        }
+      </button>
+      <div className="flex-1 min-w-0">
+        <p className="text-white text-sm font-medium mb-1">Meet Bob Katz</p>
+        <div
+          className="h-1.5 bg-white/10 rounded-full cursor-pointer"
+          onClick={seek}
+        >
+          <div
+            className="h-full bg-accent-gold rounded-full transition-all duration-100"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const WhyChooseUs = () => {
   const benefits = [
@@ -23,10 +86,10 @@ const WhyChooseUs = () => {
   ];
 
   const stats = [
-    { value: 150, suffix: '+', label: 'Clients Served' },
-    { value: 500, suffix: '+', label: 'Projects Completed' },
+    { value: 100, suffix: '+', label: 'Clients Served' },
     { value: 25, suffix: '+', label: 'Years Experience' },
-    { value: 98, suffix: '%', label: 'Client Satisfaction' },
+    { value: 50, suffix: '+', label: 'Adaptive Planning Implementations' },
+    { value: 25, suffix: '+', label: 'Industries Served' },
   ];
 
   return (
@@ -108,6 +171,9 @@ const WhyChooseUs = () => {
               measurable results. Our team of seasoned professionals brings decades of
               experience across finance, analytics, and transformation.
             </p>
+
+            {/* Audio intro */}
+            <AudioPlayer />
 
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
