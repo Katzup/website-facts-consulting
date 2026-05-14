@@ -20,7 +20,7 @@ const TestimonialCard = ({ quote, author, role, index }: TestimonialCardProps) =
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
       whileHover={{ y: -4 }}
-      className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 will-change-transform"
+      className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 will-change-transform max-w-xl w-full"
     >
       <div className="w-12 h-12 bg-accent-gold/10 rounded-xl flex items-center justify-center mb-6">
         <Quote className="w-6 h-6 text-accent-gold" />
@@ -49,21 +49,9 @@ const Testimonials = () => {
   const testimonials = [
     {
       quote:
-        'FACTS transformed our financial operations, reducing month-end close time by 60% and improving reporting accuracy dramatically.',
-      author: 'Sarah Mitchell',
-      role: 'CFO, TechVentures Inc.',
-    },
-    {
-      quote:
-        'Their analytics expertise helped us uncover insights that drove a 25% increase in operational efficiency.',
-      author: 'Michael Chen',
-      role: 'COO, Global Manufacturing Co.',
-    },
-    {
-      quote:
-        'The team\'s strategic guidance was instrumental in our successful acquisition and integration process.',
-      author: 'Jennifer Rodriguez',
-      role: 'CEO, Healthcare Solutions Group',
+        'Bob is the best person I have seen in my career to do financial modeling and business plan development.',
+      author: 'Ellen Richstone',
+      role: 'Public Company CFO & Board Member',
     },
   ];
 
@@ -96,7 +84,7 @@ const Testimonials = () => {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex justify-center">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={testimonial.author}

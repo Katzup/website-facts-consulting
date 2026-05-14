@@ -35,7 +35,7 @@ export const smbBooks: Book[] = [
     tagline: 'Lead with Vision. Execute with Discipline. Deliver Results.',
     bottomTagline: 'THE FUTURE BELONGS TO LEADERS WHO SEE AROUND CORNERS.',
     buyLinks: {},
-    status: 'coming-soon',
+    status: 'preorder',
   },
   {
     id: 'cfo-playbook',
@@ -52,7 +52,7 @@ export const smbBooks: Book[] = [
     tagline: 'Command the Numbers. Protect the Margin. Fund the Growth.',
     bottomTagline: "NUMBERS DON'T LIE. STRATEGY DECIDES.",
     buyLinks: {},
-    status: 'coming-soon',
+    status: 'preorder',
   },
   {
     id: 'cto-playbook',
@@ -86,7 +86,7 @@ export const smbBooks: Book[] = [
     tagline: 'Run the Stack. Secure the Edge. Empower the Business.',
     bottomTagline: 'INFORMATION IS THE LEVERAGE. SYSTEMS ARE THE SCALE.',
     buyLinks: {},
-    status: 'coming-soon',
+    status: 'preorder',
   },
   {
     id: 'cro-playbook',
@@ -103,7 +103,7 @@ export const smbBooks: Book[] = [
     tagline: 'Align the Go-to-Market. Drive the Pipeline. Grow Revenue.',
     bottomTagline: 'REVENUE ISN\'T LUCK. IT\'S A STRATEGY.',
     buyLinks: {},
-    status: 'coming-soon',
+    status: 'preorder',
   },
   {
     id: 'cmo-playbook',
@@ -188,7 +188,7 @@ export const smbBooks: Book[] = [
     tagline: 'Better Questions. Better Insights. Better Decisions.',
     bottomTagline: 'DATA HAS POTENTIAL. ANALYTICS CREATES VALUE.',
     buyLinks: {},
-    status: 'coming-soon',
+    status: 'preorder',
   },
   {
     id: 'gc-playbook',
@@ -205,7 +205,7 @@ export const smbBooks: Book[] = [
     tagline: 'Read the Risk. Negotiate the Terms. Protect the Business.',
     bottomTagline: 'LAW IS THE FLOOR. JUDGMENT IS THE CEILING.',
     buyLinks: {},
-    status: 'coming-soon',
+    status: 'preorder',
   },
   {
     id: 'cso-playbook',
@@ -238,6 +238,32 @@ export const smbBooks: Book[] = [
     seriesOrder: 12,
     tagline: 'Adopt with Discipline. Govern with Rigor. Win with AI.',
     bottomTagline: 'AI IS THE LEVER. JUDGMENT IS THE FULCRUM.',
+    buyLinks: {},
+    status: 'preorder',
+  },
+];
+
+export const dataDrivenBooks: Book[] = [
+  {
+    id: 'fpa-practitioner-playbook',
+    title: "The Data-Driven FP&A Playbook",
+    subtitle: 'Finance, Planning & Analysis in the Post-AI Era',
+    role: 'FP&A Practitioner',
+    abbreviation: 'FP&A',
+    description: '100 questions every data-driven FP&A practitioner must be able to answer — from statistical forecasting and machine learning to Workday Adaptive Planning and AI-augmented workflows.',
+    topics: [
+      'Statistical & ML Forecasting',
+      'Workday Adaptive Planning',
+      'AI & LLMs in FP&A',
+      'Data Pipeline Architecture',
+      'Probabilistic Scenario Planning',
+    ],
+    coverImage: '/images/fpa_playbook_cover.png',
+    category: 'nonfiction',
+    series: 'Data-Driven Playbook Series',
+    seriesOrder: 1,
+    tagline: 'Better Data. Better Models. Better Decisions.',
+    bottomTagline: 'THE FUTURE OF FP&A IS ANALYTICAL.',
     buyLinks: {},
     status: 'coming-soon',
   },

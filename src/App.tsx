@@ -3,6 +3,7 @@ import Navigation from './sections/Navigation';
 import Hero from './sections/Hero';
 import FactsPillars from './sections/FactsPillars';
 import Services from './sections/Services';
+import Clients from './sections/Clients';
 import Books from './sections/Books';
 import VideoSection from './sections/VideoSection';
 import WhyChooseUs from './sections/WhyChooseUs';
@@ -10,6 +11,7 @@ import Testimonials from './sections/Testimonials';
 import Blog from './sections/Blog';
 import CTA from './sections/CTA';
 import Footer from './sections/Footer';
+import Research from './sections/Research';
 import BlogArticle from './pages/BlogArticle';
 import './App.css';
 
@@ -21,11 +23,13 @@ function HomePage() {
         <Hero />
         <FactsPillars />
         <Services />
+        <Clients />
         <Books />
         <VideoSection />
         <WhyChooseUs />
         <Testimonials />
         <Blog />
+        <Research />
         <CTA />
       </main>
       <Footer />

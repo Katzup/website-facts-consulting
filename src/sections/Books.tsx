@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { BookOpen, ShoppingCart, ChevronRight, Lock } from 'lucide-react';
-import { smbBooks, fictionBooks, type Book } from '@/data/books';
+import { smbBooks, fictionBooks, dataDrivenBooks, type Book } from '@/data/books';
 
-type TabId = 'nonfiction' | 'sf' | 'thrillers' | 'mysteries';
+type TabId = 'nonfiction' | 'sf' | 'thrillers' | 'mysteries' | 'datadriven';
 
 interface BookCardProps {
   book: Book;
@@ -127,20 +127,22 @@ const BookCard = ({ book, index }: BookCardProps) => {
 };
 
 const TABS: { id: TabId; label: string; count: number }[] = [
-  { id: 'nonfiction', label: 'SMB CxO Playbooks', count: smbBooks.length },
-  { id: 'sf',        label: 'Analytics SF Series', count: fictionBooks.filter(b => b.series === 'Analytics SF Series').length },
-  { id: 'thrillers', label: 'Analytics Thrillers', count: fictionBooks.filter(b => b.series === 'Analytics Thrillers Series').length },
-  { id: 'mysteries', label: 'Data Science Mysteries', count: fictionBooks.filter(b => b.series === 'Data Science Mysteries Series').length },
+  { id: 'nonfiction',  label: 'SMB CxO Playbooks',       count: smbBooks.length },
+  { id: 'datadriven', label: 'Data-Driven Playbooks',    count: dataDrivenBooks.length },
+  { id: 'sf',         label: 'Analytics SF Series',      count: fictionBooks.filter(b => b.series === 'Analytics SF Series').length },
+  { id: 'thrillers',  label: 'Analytics Thrillers',      count: fictionBooks.filter(b => b.series === 'Analytics Thrillers Series').length },
+  { id: 'mysteries',  label: 'Data Science Mysteries',   count: fictionBooks.filter(b => b.series === 'Data Science Mysteries Series').length },
 ];
 
 const Books = () => {
   const [activeTab, setActiveTab] = useState<TabId>('nonfiction');
 
   const books: Book[] =
-    activeTab === 'nonfiction' ? smbBooks :
-    activeTab === 'sf'         ? fictionBooks.filter(b => b.series === 'Analytics SF Series') :
-    activeTab === 'thrillers'  ? fictionBooks.filter(b => b.series === 'Analytics Thrillers Series') :
-                                 fictionBooks.filter(b => b.series === 'Data Science Mysteries Series');
+    activeTab === 'nonfiction'  ? smbBooks :
+    activeTab === 'datadriven'  ? dataDrivenBooks :
+    activeTab === 'sf'          ? fictionBooks.filter(b => b.series === 'Analytics SF Series') :
+    activeTab === 'thrillers'   ? fictionBooks.filter(b => b.series === 'Analytics Thrillers Series') :
+                                  fictionBooks.filter(b => b.series === 'Data Science Mysteries Series');
 
   return (
     <section id="books" className="py-24 bg-dark-blue">
@@ -166,7 +168,7 @@ const Books = () => {
           </h2>
 
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Comprehensive playbooks for SMB leaders and data science fiction across three series.
+            Practitioner playbooks, data-driven guides, and data science fiction across four series.
           </p>
         </motion.div>
 
