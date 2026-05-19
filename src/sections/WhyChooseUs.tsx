@@ -166,11 +166,38 @@ const WhyChooseUs = () => {
               Why Choose FACTS?
             </h2>
 
-            <p className="text-text-secondary text-lg leading-relaxed mb-8">
+            <p className="text-text-secondary text-lg leading-relaxed mb-4">
               We combine deep industry expertise with innovative approaches to deliver
-              measurable results. Our team of seasoned professionals brings decades of
-              experience across finance, analytics, and transformation.
+              measurable results. Founder Bob Katz brings decades of hands-on experience
+              across finance, analytics, and transformation — from Fortune 500 to fast-growth startups.
             </p>
+
+            <div className="mb-8">
+              <p className="text-accent-gold text-xs font-medium tracking-wider uppercase mb-3">
+                Prior Corporate Experience
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'United Nations',
+                  'Martin Marietta',
+                  'W.R. Grace',
+                  'AMAX Inc.',
+                  'Schlumberger Ltd.',
+                  'Digital Equipment Corp.',
+                  'Compaq Computer',
+                  'Brooks Automation',
+                  'Azenta',
+                  'Thomas H. Lee Partners',
+                ].map((company) => (
+                  <span
+                    key={company}
+                    className="px-3 py-1 bg-accent-gold/10 text-accent-gold/80 rounded-full text-xs font-medium border border-accent-gold/20"
+                  >
+                    {company}
+                  </span>
+                ))}
+              </div>
+            </div>
 
             {/* Audio intro */}
             <AudioPlayer />
