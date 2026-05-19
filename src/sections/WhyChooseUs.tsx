@@ -181,7 +181,7 @@ const WhyChooseUs = () => {
                   'United Nations',
                   'Martin Marietta',
                   'W.R. Grace',
-                  'AMAX Inc. (now Freeport-McMoRan)',
+                  'Climax Molybdenum / AMAX Inc. (now Freeport-McMoRan)',
                   'Schlumberger Ltd.',
                   'Digital Equipment Corp.',
                   'Compaq Computer',
