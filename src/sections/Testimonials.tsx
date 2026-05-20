@@ -20,7 +20,7 @@ const TestimonialCard = ({ quote, author, role, index }: TestimonialCardProps) =
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
       whileHover={{ y: -4 }}
-      className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 will-change-transform max-w-xl w-full"
+      className="bg-white rounded-2xl p-8 shadow-card hover:shadow-card-hover transition-all duration-300 will-change-transform"
     >
       <div className="w-12 h-12 bg-accent-gold/10 rounded-xl flex items-center justify-center mb-6">
         <Quote className="w-6 h-6 text-accent-gold" />
@@ -53,6 +53,12 @@ const Testimonials = () => {
       author: 'Ellen Richstone',
       role: 'Public Company CFO & Board Member',
     },
+    {
+      quote:
+        'Bob quickly understood our business needs and played an instrumental role in converting our Excel-based consolidation and planning process to Workday Adaptive Planning. As a public mining company with Brazilian operations and Canadian public accountants, the move to Adaptive significantly streamlined our close process and made our annual forecasting and budgeting cycles far more efficient. The SaaS-based platform eliminated the need to email, reconcile, and synchronize complex spreadsheets, giving us a more reliable and scalable planning solution.',
+      author: 'Jim Roller',
+      role: 'CFO, Jaguar Mining Inc.',
+    },
   ];
 
   return (
@@ -84,7 +90,7 @@ const Testimonials = () => {
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="flex justify-center">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <TestimonialCard
               key={testimonial.author}
