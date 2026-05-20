@@ -168,7 +168,7 @@ const Books = () => {
           </h2>
 
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
-            Practitioner playbooks, data-driven guides, and data science fiction across four series.
+            Practitioner playbooks and data science fiction across five series — including thrillers, mysteries, and science fiction.
           </p>
         </motion.div>
 
