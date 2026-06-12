@@ -111,7 +111,7 @@ const Clients = () => {
               viewport={{ once: true, margin: '-30px' }}
               transition={{
                 duration: 0.4,
-                delay: index * 0.06,
+                delay: Math.min(index, 8) * 0.05,
                 ease: [0.25, 0.46, 0.45, 0.94],
               }}
               whileHover={{ y: -3 }}
@@ -126,7 +126,7 @@ const Clients = () => {
                 {client.name}
               </span>
               {client.detail && (
-                <span className="text-gray-400 text-xs">{client.detail}</span>
+                <span className="text-gray-500 text-xs">{client.detail}</span>
               )}
             </motion.div>
           ))}
