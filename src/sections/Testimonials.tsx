@@ -16,7 +16,7 @@ const TestimonialCard = ({ quote, author, role, index }: TestimonialCardProps) =
       viewport={{ once: true, margin: '-50px' }}
       transition={{
         duration: 0.6,
-        delay: index * 0.15,
+        delay: index * 0.08,
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
       whileHover={{ y: -4 }}
