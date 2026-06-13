@@ -44,6 +44,7 @@ module.exports = {
         'card-bg': '#2a3142',
         'accent-gold': '#c9a962',
         'accent-gold-hover': '#d4b978',
+        'accent-gold-bright': '#e8c874',
         'text-primary': '#ffffff',
         'text-secondary': '#b8c0d0',
         'light-bg': '#f5f7fa',

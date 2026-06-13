@@ -19,7 +19,41 @@ const ORBIT_DURATION = 32_000; // ms for one full revolution
 const RADIUS_X = 175;          // horizontal radius (px)
 const RADIUS_Y = 70;           // vertical radius — smaller => stronger tilt/perspective
 
-const ServicesOrbit = () => {
+// 'image'  → drop the real square logo (facts-icon.png) into the hub
+// 'styled' → recreate the nav-logo look (dark tile + white FACTS + gold arrow)
+type HubStyle = 'image' | 'styled';
+
+interface ServicesOrbitProps {
+  hubStyle?: HubStyle;
+}
+
+const Hub = ({ style }: { style: HubStyle }) => {
+  if (style === 'image') {
+    return (
+      <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-2xl border border-accent-gold/30 bg-white shadow-2xl">
+        <img
+          src="/images/facts-icon.png"
+          alt="FACTS Consulting"
+          className="h-full w-full object-contain p-2"
+        />
+      </div>
+    );
+  }
+  // 'styled' — matches the nav logo treatment, lightweight.
+  // "FACT" white, "S" gold — mirrors the gold S in the FACTS logo.
+  return (
+    <div className="flex h-24 w-24 flex-col items-center justify-center rounded-2xl border border-accent-gold/30 bg-dark-blue shadow-2xl">
+      <span className="text-2xl font-bold tracking-tight text-white">
+        FACT<span className="text-accent-gold-bright">S</span>
+      </span>
+      <span className="-mt-0.5 text-[8px] font-medium uppercase tracking-[0.2em] text-accent-gold-bright">
+        Consulting
+      </span>
+    </div>
+  );
+};
+
+const ServicesOrbit = ({ hubStyle = 'styled' }: ServicesOrbitProps) => {
   const prefersReduced = useReducedMotion();
   const count = services.length;
   const [t, setT] = useState(0); // 0..1 progress through one revolution
@@ -60,11 +94,10 @@ const ServicesOrbit = () => {
       {/* Central FACTS hub — sits at depth midpoint */}
       <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
         <motion.div
-          className="flex h-24 w-24 items-center justify-center rounded-2xl border border-accent-gold/30 bg-dark-blue shadow-2xl"
           animate={prefersReduced ? undefined : { scale: [1, 1.04, 1] }}
           transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
         >
-          <span className="text-2xl font-bold tracking-tight text-accent-gold">FACTS</span>
+          <Hub style={hubStyle} />
         </motion.div>
       </div>
 
@@ -99,11 +132,11 @@ const ServicesOrbit = () => {
                 style={{
                   boxShadow:
                     norm > 0.75
-                      ? `0 0 ${12 + norm * 16}px rgba(201,169,98,${0.25 + norm * 0.25})`
+                      ? `0 0 ${12 + norm * 16}px rgba(232,200,116,${0.25 + norm * 0.25})`
                       : '0 4px 20px rgba(0,0,0,0.15)',
                 }}
               >
-                <Icon className="h-6 w-6 text-accent-gold" />
+                <Icon className="h-6 w-6 text-accent-gold-bright" />
               </div>
               {/* Label only legible on front-most nodes — hidden when far back */}
               <span
