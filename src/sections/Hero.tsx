@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronDown } from 'lucide-react';
+import ServicesOrbit from '@/components/ServicesOrbit';
 
 const Hero = () => {
   const containerVariants = {
@@ -113,28 +114,21 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Hero Image */}
+          {/* Hero Visual — animated services orbit */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="relative hidden lg:block"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="/images/hero-visual.jpg"
-                alt="Business Transformation"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-blue/30 to-transparent" />
-            </div>
-            
+            <ServicesOrbit />
+
             {/* Floating stat card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1 }}
-              className="absolute -bottom-6 -left-6 bg-card-bg border border-accent-gold/20 rounded-xl p-6 shadow-card"
+              className="absolute -bottom-2 -left-2 bg-card-bg border border-accent-gold/20 rounded-xl p-6 shadow-card"
             >
               <div className="text-3xl font-bold text-accent-gold">100+</div>
               <div className="text-text-secondary text-sm">Clients Served</div>
