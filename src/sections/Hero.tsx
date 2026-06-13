@@ -114,12 +114,12 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Hero Visual — animated services orbit */}
+          {/* Hero Visual — animated services orbit (nudged up ~0.5in) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
-            className="relative hidden lg:block"
+            className="relative hidden lg:block -mt-12"
           >
             <ServicesOrbit />
 
