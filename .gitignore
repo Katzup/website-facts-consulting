@@ -5,3 +5,17 @@ dist.tar.gz
 *.local
 .env
 .env.*
+
+# Local AI-agent tooling state
+.letta/
+.claude/skills/
+.claude/settings.local.json
+__pycache__/
+
+# Standalone redesign mockup (reference only, not part of the build)
+factservices_redesign.html
+
+# Stale build/source archives — keep out of the repo
+*.tar.gz
+*.zip
+dist_old/
