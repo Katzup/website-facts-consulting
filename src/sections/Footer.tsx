@@ -35,12 +35,13 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
             className="lg:col-span-1"
           >
-            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('#home'); }} className="flex items-center gap-4 mb-4">
-              <img 
-                src="/images/facts-logo-inverted.png" 
-                alt="FACTS" 
-                className="h-48 w-auto"
-              />
+            <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection('#home'); }} className="flex flex-col items-start leading-none mb-4">
+              <span className="text-4xl font-bold tracking-tight text-white">
+                FACT<span className="text-accent-gold-bright">S</span>
+              </span>
+              <span className="-mt-1 text-sm font-medium uppercase tracking-[0.45em] text-accent-gold-bright pl-[0.45em]">
+                Consulting
+              </span>
             </a>
             <p className="text-text-secondary text-sm mb-2">
               Finance | Analytics | Consulting | Transformation Services
