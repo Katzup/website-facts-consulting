@@ -54,13 +54,14 @@ const Navigation = () => {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className="flex items-center"
+            className="flex flex-col items-center leading-none"
           >
-            <img 
-              src="/images/facts-logo-inverted.png" 
-              alt="FACTS Consulting" 
-              className="h-48 w-auto"
-            />
+            <span className="text-5xl font-bold tracking-tight text-white">
+              FACT<span className="text-accent-gold-bright">S</span>
+            </span>
+            <span className="-mt-1 text-base font-medium uppercase tracking-[0.5em] text-accent-gold-bright pl-[0.5em]">
+              Consulting
+            </span>
           </a>
 
           {/* Desktop Navigation */}
