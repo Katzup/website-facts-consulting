@@ -255,6 +255,25 @@ export const smbBooks: Book[] = [
     },
     status: 'available',
   },
+  {
+    id: 'coo-playbook',
+    title: "The SMB Chief Operating Officer's Playbook",
+    subtitle: 'Make the Work Flow. Hold the Dates. Control the Cost.',
+    role: 'Chief Operating Officer',
+    abbreviation: 'COO',
+    description: '100 questions every SMB COO must be able to answer.',
+    topics: ['Throughput & Cycle Time', 'Inventory & Supply Chain', 'Workforce Productivity', 'Quality & Exception Management', 'Fulfilment & Delivery Reliability'],
+    coverImage: '/images/13_COO_v5 (web).png',
+    category: 'nonfiction',
+    series: 'SMB CxO Playbook Series',
+    seriesOrder: 13,
+    tagline: 'Make the Work Flow. Hold the Dates. Control the Cost.',
+    bottomTagline: 'WHAT BREAKS IN THE DATA BREAKS FOR THE CUSTOMER NEXT.',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/cooplaybook',
+    },
+    status: 'available',
+  },
 ];
 
 export const dataDrivenBooks: Book[] = [
