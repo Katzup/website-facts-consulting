@@ -34,8 +34,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 0,
     tagline: 'Lead with Vision. Execute with Discipline. Deliver Results.',
     bottomTagline: 'THE FUTURE BELONGS TO LEADERS WHO SEE AROUND CORNERS.',
-    buyLinks: {},
-    status: 'preorder',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/ceoplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cfo-playbook',
@@ -51,8 +53,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 1,
     tagline: 'Command the Numbers. Protect the Margin. Fund the Growth.',
     bottomTagline: "NUMBERS DON'T LIE. STRATEGY DECIDES.",
-    buyLinks: {},
-    status: 'preorder',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/cfoplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cto-playbook',
@@ -68,8 +72,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 2,
     tagline: 'Architect the Future. Build What Scales. Deliver Real Impact.',
     bottomTagline: "TECHNOLOGY ISN'T JUST WHAT WE BUILD. IT'S THE ADVANTAGE WE CREATE.",
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/ctoplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cio-playbook',
@@ -102,8 +108,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 4,
     tagline: 'Align the Go-to-Market. Drive the Pipeline. Grow Revenue.',
     bottomTagline: 'REVENUE ISN\'T LUCK. IT\'S A STRATEGY.',
-    buyLinks: {},
-    status: 'preorder',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/croplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cmo-playbook',
@@ -119,8 +127,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 5,
     tagline: 'Capture Attention. Earn Trust. Generate Demand.',
     bottomTagline: 'THE BRAND IS THE MOAT. THE PIPELINE IS THE PROOF.',
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/cmoplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cpo-people-playbook',
@@ -170,8 +180,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 8,
     tagline: 'Close the Books. Tell the Truth. Earn the Trust.',
     bottomTagline: 'RIGOR IS THE FOUNDATION. INTEGRITY IS THE OUTCOME.',
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/accountingplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cao-analytics-playbook',
@@ -238,8 +250,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 12,
     tagline: 'Adopt with Discipline. Govern with Rigor. Win with AI.',
     bottomTagline: 'AI IS THE LEVER. JUDGMENT IS THE FULCRUM.',
-    buyLinks: {},
-    status: 'preorder',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/caioplaybook',
+    },
+    status: 'available',
   },
 ];
 
@@ -264,8 +278,10 @@ export const dataDrivenBooks: Book[] = [
     seriesOrder: 1,
     tagline: 'Plan Better. Execute Faster. Decide with Data.',
     bottomTagline: 'THE FUTURE OF FP&A IS ANALYTICAL.',
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/fpaplaybook',
+    },
+    status: 'available',
   },
 ];
 
@@ -752,8 +768,10 @@ export const fictionBooks: Book[] = [
     seriesOrder: 5,
     tagline: 'Are You the Cause? Or the Effect?',
     bottomTagline: 'THE GRAPH DECIDES WHO YOU ARE.',
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/causalinference',
+    },
+    status: 'available',
   },
   {
     id: 'sf-the-eigenvalue',
