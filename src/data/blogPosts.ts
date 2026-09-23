@@ -1,4 +1,5 @@
 import { wordpressPosts } from './wordpressPosts';
+import { mediumPosts } from './mediumPosts';
 
 export interface BlogPost {
   id: string;
@@ -13,9 +14,11 @@ export interface BlogPost {
   slug: string;
 }
 
-// The blog is Bob Katz's own writing: the original WordPress posts (2009–2018),
-// with LinkedIn and Medium pieces to follow.
-export const blogPosts: BlogPost[] = [...wordpressPosts];
+// The blog is Bob Katz's own writing: Medium articles (2023–2026) and the original
+// WordPress posts (2009–2018), newest first. LinkedIn pieces to follow.
+export const blogPosts: BlogPost[] = [...mediumPosts, ...wordpressPosts].sort(
+  (a, b) => b.date.localeCompare(a.date)
+);
 
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
