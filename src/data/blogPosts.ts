@@ -1,3 +1,5 @@
+import { wordpressPosts } from './wordpressPosts';
+
 export interface BlogPost {
   id: string;
   title: string;
@@ -4641,6 +4643,10 @@ The key is to approach AI not as a technology to be adopted, but as a capability
     slug: 'future-of-ai-trends'
   }
 ];
+
+// Posts imported from the original WordPress blog (2009–2018).
+blogPosts.push(...wordpressPosts);
+
 
 export const getBlogPostBySlug = (slug: string): BlogPost | undefined => {
   return blogPosts.find(post => post.slug === slug);

@@ -1,0 +1,72 @@
+# Redirects from the old WordPress site (factservices.com, retired 2026).
+# Processed before netlify.toml, so these win over the single-page-app fallback.
+
+# --- Blog posts: old /slug/ -> /blog/slug ---
+/apple-cpu-benchmarking                                                 /blog/apple-cpu-benchmarking  301
+/the-future-for-bitcoin-et-al                                           /blog/the-future-for-bitcoin-et-al  301
+/a-real-world-guide-to-artificial-intelligence-tom-davenportraj-ronanki-hbr-jan-feb-2018 /blog/a-real-world-guide-to-artificial-intelligence-tom-davenportraj-ronanki-hbr-jan-feb-2018  301
+/in-case-you-missed-this                                                /blog/in-case-you-missed-this  301
+/seven-strategy-questions-by-robert-simons                              /blog/seven-strategy-questions-by-robert-simons  301
+/decision-thinking-for-entrepreneurs                                    /blog/decision-thinking-for-entrepreneurs  301
+/high-performance-habits-by-brendon-burchard                            /blog/high-performance-habits-by-brendon-burchard  301
+/real-bi-conference-july-2017-mit-campus                                /blog/real-bi-conference-july-2017-mit-campus  301
+/making-advanced-analytics-work-for-you                                 /blog/making-advanced-analytics-work-for-you  301
+/adaptive-planning-road-show-september-16                               /blog/adaptive-planning-road-show-september-16  301
+/batter-up                                                              /blog/batter-up  301
+/best-practices-in-financial-planning                                   /blog/best-practices-in-financial-planning  301
+/project-management                                                     /blog/project-management  301
+/jerry-seinfeld-management-consultant                                   /blog/jerry-seinfeld-management-consultant  301
+/is-punditry-dead-or-the-rise-of-data-driven-political-forecasts        /blog/is-punditry-dead-or-the-rise-of-data-driven-political-forecasts  301
+/take-2-tablets-and-call-me-in-the-morning                              /blog/take-2-tablets-and-call-me-in-the-morning  301
+/environmental-innovators-contest-for-high-schoolers                    /blog/environmental-innovators-contest-for-high-schoolers  301
+/say-what-how-to-fix-the-presidential-debates                           /blog/say-what-how-to-fix-the-presidential-debates  301
+/strategy-or-execution-which-is-more-important                          /blog/strategy-or-execution-which-is-more-important  301
+/the-art-of-prdiction                                                   /blog/the-art-of-prdiction  301
+/why-startups-die                                                       /blog/why-startups-die  301
+/would-milton-friedman-approve-bernankes-qe3-business-insider           /blog/would-milton-friedman-approve-bernankes-qe3-business-insider  301
+/sir-john-templeton-16-rules-for-investment-success-the-big-picture     /blog/sir-john-templeton-16-rules-for-investment-success-the-big-picture  301
+/financial-modelers-manifesto                                           /blog/financial-modelers-manifesto  301
+/the-perfect-watch                                                      /blog/the-perfect-watch  301
+/clean-tech-investing                                                   /blog/clean-tech-investing  301
+/entrepreneurship                                                       /blog/entrepreneurship  301
+/to-forecast-or-not-to-forecast                                         /blog/to-forecast-or-not-to-forecast  301
+
+# --- Pages -> matching section on the new home page ---
+/the-smb-ceos-data-driven-playbook                                      /#books  301
+/our-partners                                                           /#clients  301
+/just-the-f-a-c-t-s                                                     /#pillars  301
+/adaptive-planning                                                      /#services  301
+/get-the-facts-2                                                        /#contact  301
+/investing                                                              /#blog  301
+/test                                                                   /  301
+/white-papers-presentations                                             /#research  301
+/press-releases                                                         /#blog  301
+/success-stories                                                        /#clients  301
+/contact-us                                                             /#contact  301
+/resources                                                              /#research  301
+/clients                                                                /#clients  301
+/contract-management-resources                                          /#services  301
+/business-strategy-and-execution                                        /#services  301
+/business-performance-management                                        /#services  301
+/services                                                               /#services  301
+/ethics                                                                 /#about  301
+/about-facts                                                            /#about  301
+/home                                                                   /  301
+
+# --- WordPress archives, feeds and system paths ---
+/testimonials/*     /#clients   301
+/category/*        /#blog      301
+/tag/*             /#blog      301
+/author/*          /#blog      301
+/page/*            /#blog      301
+/feed/*            /#blog      301
+/feed              /#blog      301
+/comments/feed/*   /#blog      301
+/sitemap.xml        /           301
+/sitemap-1.xml      /           301
+/image-sitemap-1.xml /          301
+/wp-admin/*        /           301
+/wp-login.php      /           301
+/xmlrpc.php        /           301
+/wp-content/*      /           301
+/wp-includes/*     /           301
