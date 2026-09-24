@@ -1,5 +1,11 @@
 import { motion } from 'framer-motion';
-import { Play, X, ExternalLink, BookOpen } from 'lucide-react';
+import { Play, X, ExternalLink, BookOpen, FileText, Presentation } from 'lucide-react';
+import {
+  newsletterIssues,
+  papersAndPresentations,
+  formatPublicationDate,
+  type Publication,
+} from '@/data/publications';
 import { useState } from 'react';
 
 interface Paper {
@@ -16,6 +22,36 @@ const papers: Paper[] = [
     abstract: 'A two-phase study of Bitcoin accumulation strategy. Phase 1 implemented a Gramian Angular Field CNN classifier that failed to outperform DCA (41.43% vs 41.94% RW). Phase 2 pivoted to OLS-based signal engineering — a 252-day rolling z-score achieving 44.95% RW and a persistent +3.01pp edge over neutral DCA across 3,076 rolling windows (2016–2025). Null results from two rejected variants are documented as a secondary scientific contribution.',
   },
 ];
+
+const PublicationCard = ({ item, index }: { item: Publication; index: number }) => {
+  const Icon = item.format === 'PowerPoint' ? Presentation : FileText;
+  return (
+    <motion.a
+      href={item.file}
+      target="_blank"
+      rel="noopener noreferrer"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.06 }}
+      className="block bg-card-bg rounded-xl p-5 border border-accent-gold/10 hover:border-accent-gold/40 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold"
+    >
+      <div className="flex items-start gap-3">
+        <div className="w-8 h-8 bg-accent-gold/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+          <Icon className="w-4 h-4 text-accent-gold" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <p className="text-accent-gold/70 text-xs">
+            {item.label} · {formatPublicationDate(item.date)}
+          </p>
+          <h4 className="text-white font-medium text-sm leading-snug mt-1">{item.title}</h4>
+          <p className="text-text-secondary text-xs mt-2 leading-relaxed">{item.description}</p>
+          <p className="text-accent-gold text-xs font-medium mt-3">Open {item.format} →</p>
+        </div>
+      </div>
+    </motion.a>
+  );
+};
 
 const Research = () => {
   const [videoOpen, setVideoOpen] = useState(false);
@@ -174,6 +210,43 @@ const Research = () => {
               </div>
             )}
           </motion.div>
+        </div>
+
+        {/* Earlier writing: the Just the F.A.C.T.S. newsletter, white papers and presentations */}
+        <div className="mt-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Just the F.A.C.T.S.</h2>
+            <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+              The FACTS Consulting newsletter, plus white papers and presentations from the
+              archive: planning, decision making and finance leadership, usually by way of a
+              story.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <h3 className="text-white font-semibold text-lg mb-3">Newsletter Issues</h3>
+              <div className="space-y-4">
+                {newsletterIssues.map((item, index) => (
+                  <PublicationCard key={item.file} item={item} index={index} />
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-white font-semibold text-lg mb-3">White Papers &amp; Presentations</h3>
+              <div className="space-y-4">
+                {papersAndPresentations.map((item, index) => (
+                  <PublicationCard key={item.file} item={item} index={index} />
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

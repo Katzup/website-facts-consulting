@@ -34,7 +34,7 @@
 # --- Pages -> matching section on the new home page ---
 /the-smb-ceos-data-driven-playbook                                      /#books  301
 /our-partners                                                           /#clients  301
-/just-the-f-a-c-t-s                                                     /#pillars  301
+/just-the-f-a-c-t-s                                                     /#research  301
 /adaptive-planning                                                      /#services  301
 /get-the-facts-2                                                        /#contact  301
 /investing                                                              /#blog  301
@@ -52,6 +52,16 @@
 /ethics                                                                 /#about  301
 /about-facts                                                            /#about  301
 /home                                                                   /  301
+
+# --- Bob's published files: old WordPress upload paths -> /publications ---
+/wp-content/uploads/2016/03/Show-Me-the-Curve-Feb-2016.pdf                                      /publications/just-the-facts-v3n1-show-me-the-curve-2016-02.pdf  301
+/wp-content/uploads/2017/04/Just-the-F.A.C.T.S.-V3-N2-Procrastination.pdf                       /publications/just-the-facts-v3n2-procrastination-2016-03.pdf  301
+/wp-content/uploads/2017/04/Just-the-F.A.C.T.S.-V3-N3-The-Future-Aint-What-It-Used-to-Be.pdf    /publications/just-the-facts-v3n3-the-future-aint-what-it-used-to-be-2016-04.pdf  301
+/wp-content/uploads/2017/04/Just-the-F.A.C.T.S.-V3-N4-When-Boy-Meets-Grail.pdf                  /publications/just-the-facts-v3n4-when-boy-meets-grail-2016-05.pdf  301
+/wp-content/uploads/2013/10/Just-the-F.A.C.T.S.-V4-N1-Hands-On-Hands-Off.pdf                    /publications/just-the-facts-v4n1-hands-on-hands-off-2017-04.pdf  301
+/wp-content/uploads/2013/10/10-Principles-of-Successful-Systems-Implementation.pdf              /publications/10-principles-of-successful-systems-implementation-2013.pdf  301
+/wp-content/uploads/2018/01/What-were-you-thinking.pdf                                          /publications/what-were-you-thinking-2017.pdf  301
+/wp-content/uploads/2013/09/Driving-Operational-Performance-And-Consolidation-9-16-13.pptx      /publications/driving-operational-performance-and-consolidation-2013.pptx  301
 
 # --- WordPress archives, feeds and system paths ---
 /testimonials/*     /#clients   301
