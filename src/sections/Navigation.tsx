@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,6 +33,13 @@ const Navigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  // The mobile sheet locks page scrolling while open, so close it first and
+  // scroll once its 300ms close animation has finished.
+  const handleMobileNav = (href: string) => {
+    setMenuOpen(false);
+    setTimeout(() => scrollToSection(href), 350);
   };
 
   return (
@@ -88,13 +96,17 @@ const Navigation = () => {
           </nav>
 
           {/* Mobile Navigation */}
-          <Sheet>
+          <Sheet open={menuOpen} onOpenChange={setMenuOpen}>
             <SheetTrigger asChild className="md:hidden">
               <Button variant="ghost" size="icon" className="text-white">
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-dark-blue border-card-bg w-[280px]">
+            <SheetContent
+              side="right"
+              className="bg-dark-blue border-card-bg w-[280px]"
+              onCloseAutoFocus={(e) => e.preventDefault()}
+            >
               <div className="flex flex-col gap-8 mt-8">
                 {navLinks.map((link) => (
                   <a
@@ -102,7 +114,7 @@ const Navigation = () => {
                     href={link.href}
                     onClick={(e) => {
                       e.preventDefault();
-                      scrollToSection(link.href);
+                      handleMobileNav(link.href);
                     }}
                     className="text-white hover:text-accent-gold transition-colors duration-200 text-lg font-medium"
                   >
@@ -110,7 +122,10 @@ const Navigation = () => {
                   </a>
                 ))}
                 <Button
-                  onClick={() => window.open('https://calendly.com/bobkatz', '_blank')}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    window.open('https://calendly.com/bobkatz', '_blank');
+                  }}
                   className="bg-accent-gold text-dark-blue hover:bg-accent-gold-hover font-semibold w-full"
                 >
                   Schedule a Free Consultation
