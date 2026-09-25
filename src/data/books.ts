@@ -36,7 +36,7 @@ export const smbBooks: Book[] = [
     bottomTagline: 'THE FUTURE BELONGS TO LEADERS WHO SEE AROUND CORNERS.',
     buyLinks: {
       gumroad: 'https://rjkatz.gumroad.com/l/ceoplaybook',
-      amazon: 'https://www.amazon.com/dp/B0HL1ZM1NT',
+      amazon: 'https://www.amazon.com/dp/B0HL244HTF',
     },
     status: 'available',
   },
@@ -56,6 +56,7 @@ export const smbBooks: Book[] = [
     bottomTagline: "NUMBERS DON'T LIE. STRATEGY DECIDES.",
     buyLinks: {
       gumroad: 'https://rjkatz.gumroad.com/l/cfoplaybook',
+      amazon: 'https://www.amazon.com/dp/B0HL1RKD5X',
     },
     status: 'available',
   },
@@ -75,6 +76,7 @@ export const smbBooks: Book[] = [
     bottomTagline: "TECHNOLOGY ISN'T JUST WHAT WE BUILD. IT'S THE ADVANTAGE WE CREATE.",
     buyLinks: {
       gumroad: 'https://rjkatz.gumroad.com/l/ctoplaybook',
+      amazon: 'https://www.amazon.com/dp/B0HL1ZM1NT',
     },
     status: 'available',
   },
