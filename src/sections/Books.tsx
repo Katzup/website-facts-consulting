@@ -14,7 +14,8 @@ interface BookCardProps {
 
 const BookCard = ({ book, index }: BookCardProps) => {
   const [imageError, setImageError] = useState(false);
-  const buyUrl = book.buyLinks.gumroad ?? book.buyLinks.amazon;
+  const { amazon, gumroad } = book.buyLinks;
+  const buyUrl = gumroad ?? amazon;
 
   return (
     <motion.div
@@ -65,7 +66,28 @@ const BookCard = ({ book, index }: BookCardProps) => {
 
         {/* Hover Overlay */}
         <div className="absolute inset-0 bg-dark-blue/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-          {buyUrl ? (
+          {amazon && gumroad ? (
+            <div className="flex flex-col gap-3">
+              <Button
+                asChild
+                className="bg-accent-gold text-dark-blue hover:bg-accent-gold-hover font-semibold"
+              >
+                <a href={amazon} target="_blank" rel="noopener noreferrer">
+                  <ShoppingCart className="w-4 h-4 mr-2" />
+                  Paperback on Amazon
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-accent-gold text-accent-gold hover:bg-accent-gold hover:text-dark-blue font-semibold"
+              >
+                <a href={gumroad} target="_blank" rel="noopener noreferrer">
+                  PDF on Gumroad
+                </a>
+              </Button>
+            </div>
+          ) : buyUrl ? (
             <Button
               asChild
               variant="outline"

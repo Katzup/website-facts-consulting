@@ -36,6 +36,7 @@ export const smbBooks: Book[] = [
     bottomTagline: 'THE FUTURE BELONGS TO LEADERS WHO SEE AROUND CORNERS.',
     buyLinks: {
       gumroad: 'https://rjkatz.gumroad.com/l/ceoplaybook',
+      amazon: 'https://www.amazon.com/dp/B0HL1ZM1NT',
     },
     status: 'available',
   },
