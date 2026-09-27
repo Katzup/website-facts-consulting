@@ -94,8 +94,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 3,
     tagline: 'Run the Stack. Secure the Edge. Empower the Business.',
     bottomTagline: 'INFORMATION IS THE LEVERAGE. SYSTEMS ARE THE SCALE.',
-    buyLinks: {},
-    status: 'preorder',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/cioplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cro-playbook',
