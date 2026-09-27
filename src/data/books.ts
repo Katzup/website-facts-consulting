@@ -166,8 +166,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 7,
     tagline: 'Discover What Matters. Build What Customers Need. Ship Fast.',
     bottomTagline: 'PRODUCT IS THE PROMISE. DELIVERY IS THE PROOF.',
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/cpoplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cao-accounting-playbook',
