@@ -223,8 +223,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 10,
     tagline: 'Read the Risk. Negotiate the Terms. Protect the Business.',
     bottomTagline: 'LAW IS THE FLOOR. JUDGMENT IS THE CEILING.',
-    buyLinks: {},
-    status: 'preorder',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/gcplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cso-playbook',
