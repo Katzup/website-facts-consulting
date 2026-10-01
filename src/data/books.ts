@@ -231,7 +231,7 @@ export const smbBooks: Book[] = [
   {
     id: 'cso-playbook',
     title: "The SMB Chief Security Officer's Playbook",
-    subtitle: 'See the Threats. Harden the Perimeter. Protect What Matters.',
+    subtitle: 'Practical Frameworks for Cyber Risk and Operational Resilience',
     role: 'Chief Security Officer',
     abbreviation: 'CSO',
     description: '100 questions every SMB CSO must be able to answer.',
@@ -242,8 +242,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 11,
     tagline: 'See the Threats. Harden the Perimeter. Protect What Matters.',
     bottomTagline: 'SECURITY ISN\'T A PRODUCT. IT\'S A PRACTICE.',
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/csoplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'caio-playbook',
