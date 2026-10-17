@@ -151,8 +151,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 6,
     tagline: 'Hire Right. Develop Talent. Build the Culture.',
     bottomTagline: "PEOPLE DON'T QUIT COMPANIES. THEY QUIT EXPERIENCES.",
-    buyLinks: {},
-    status: 'coming-soon',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/peopleplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'cpo-product-playbook',
@@ -206,8 +208,10 @@ export const smbBooks: Book[] = [
     seriesOrder: 9,
     tagline: 'Better Questions. Better Insights. Better Decisions.',
     bottomTagline: 'DATA HAS POTENTIAL. ANALYTICS CREATES VALUE.',
-    buyLinks: {},
-    status: 'preorder',
+    buyLinks: {
+      gumroad: 'https://rjkatz.gumroad.com/l/caoplaybook',
+    },
+    status: 'available',
   },
   {
     id: 'gc-playbook',

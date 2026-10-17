@@ -102,20 +102,20 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:info@factservices.com"
+                  href="mailto:bkatz@factservices.com"
                   className="text-text-secondary hover:text-accent-gold transition-colors duration-200 text-sm flex items-center gap-2"
                 >
                   <Mail className="w-4 h-4" />
-                  info@factservices.com
+                  bkatz@factservices.com
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+15083533571"
                   className="text-text-secondary hover:text-accent-gold transition-colors duration-200 text-sm flex items-center gap-2"
                 >
                   <Phone className="w-4 h-4" />
-                  (555) 123-4567
+                  (508) 353-3571
                 </a>
               </li>
             </ul>

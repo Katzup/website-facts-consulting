@@ -50,7 +50,7 @@ const CTA = () => {
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
-              onClick={() => window.location.href = 'mailto:info@factservices.com'}
+              onClick={() => window.location.href = 'mailto:bkatz@factservices.com'}
               variant="outline"
               className="border-2 border-accent-gold text-accent-gold hover:bg-accent-gold/10 font-semibold px-8 py-6 text-base"
             >

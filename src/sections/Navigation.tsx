@@ -25,6 +25,7 @@ const Navigation = () => {
     { name: 'About', href: '#about' },
     { name: 'Blog', href: '#blog' },
     { name: 'Research', href: '#research' },
+    { name: 'Newsletter', href: 'https://bobkatz2.substack.com' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -78,7 +79,9 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.href}
+                {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 onClick={(e) => {
+                  if (link.href.startsWith('http')) return;
                   e.preventDefault();
                   scrollToSection(link.href);
                 }}
@@ -112,7 +115,9 @@ const Navigation = () => {
                   <a
                     key={link.name}
                     href={link.href}
+                    {...(link.href.startsWith('http') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     onClick={(e) => {
+                      if (link.href.startsWith('http')) { setMenuOpen(false); return; }
                       e.preventDefault();
                       handleMobileNav(link.href);
                     }}
