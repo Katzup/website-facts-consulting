@@ -123,7 +123,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex items-center gap-4 mt-6">
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/in/bob-katz-facts"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-card-bg rounded-lg flex items-center justify-center text-text-secondary hover:text-accent-gold hover:bg-accent-gold/10 transition-all duration-200"
