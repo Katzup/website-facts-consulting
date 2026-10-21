@@ -97,7 +97,7 @@ const WhyChooseUs = () => {
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Section with Images */}
         <div className="grid lg:grid-cols-2 gap-8 mb-16">
-          {/* Team Image */}
+          {/* Founder Image */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -107,16 +107,16 @@ const WhyChooseUs = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-card">
               <img
-                src="/images/team-meeting.jpg"
-                alt="FACTS Consulting Team"
-                className="w-full h-64 object-cover"
+                src="/images/bob-katz-headshot.jpg"
+                alt="Bob Katz, Founder of FACTS Consulting"
+                className="w-full h-80 object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-blue/60 to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="px-3 py-1 bg-accent-gold/20 rounded-full text-accent-gold text-xs font-medium">
-                  Our Team
+                  Founder
                 </span>
-                <p className="text-white text-sm mt-1">Expert consultants at work</p>
+                <p className="text-white text-sm mt-1">Bob Katz</p>
               </div>
             </div>
           </motion.div>
@@ -133,7 +133,7 @@ const WhyChooseUs = () => {
               <img
                 src="/images/partnership.jpg"
                 alt="Business Partnership"
-                className="w-full h-64 object-cover"
+                className="w-full h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-blue/60 to-transparent" />
               <div className="absolute bottom-4 left-4">
