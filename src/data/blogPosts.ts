@@ -1,5 +1,6 @@
 import { wordpressPosts } from './wordpressPosts';
 import { mediumPosts } from './mediumPosts';
+import { linkedinPosts } from './linkedinPosts';
 import { factsPosts } from './factsPosts';
 
 export interface BlogPost {
@@ -15,9 +16,9 @@ export interface BlogPost {
   slug: string;
 }
 
-// The blog is Bob Katz's own writing: Medium articles (2023–2026) and the original
-// WordPress posts (2009–2018), newest first. LinkedIn pieces to follow.
-export const blogPosts: BlogPost[] = [...factsPosts, ...mediumPosts, ...wordpressPosts].sort(
+// The blog is Bob Katz's own writing: articles written for this site, LinkedIn articles
+// (2014–2026), Medium articles (2023–2026) and the original WordPress posts (2009–2018), newest first.
+export const blogPosts: BlogPost[] = [...factsPosts, ...linkedinPosts, ...mediumPosts, ...wordpressPosts].sort(
   (a, b) => b.date.localeCompare(a.date)
 );
 
