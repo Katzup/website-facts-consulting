@@ -166,7 +166,7 @@ That is where the next generation of financial intelligence systems should be he
 
 <ol class="list-decimal list-inside mb-4 text-gray-700 space-y-2"><li>Kumbong, Khare et al., Stanford Hazy Research, <em>Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation</em> (October 2026). <a href="https://hazyresearch.stanford.edu/blog/2026-10-12-ncm" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://hazyresearch.stanford.edu/blog/2026-10-12-ncm</a></li><li>Xia, Lee, Bengio and Bareinboim, <em>The Causal-Neural Connection: Expressiveness, Learnability, and Inference</em> (NeurIPS 2021). <a href="https://papers.nips.cc/paper_files/paper/2021/hash/5989add1703e4b0480f75e2390739f34-Abstract.html" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://papers.nips.cc/paper_files/paper/2021/hash/5989add1703e4b0480f75e2390739f34-Abstract.html</a></li><li>Xia, Pan and Bareinboim, <em>Neural Causal Models for Counterfactual Identification and Estimation</em> (ICLR 2023). <a href="https://arxiv.org/abs/2210.00035" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2210.00035</a></li></ol>`,
     author: 'Bob Katz',
-    date: '2026-10-27',
+    date: '2026-10-24',
     category: 'AI',
     image: '/images/blog/facts/two-ncms-two-ai-futures.jpg',
     readTime: '5 min',
