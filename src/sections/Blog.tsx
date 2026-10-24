@@ -12,7 +12,7 @@ const Blog = () => {
 
   const categories = getAllCategories();
   const years = useMemo(() => {
-    const uniqueYears = new Set(blogPosts.map(post => new Date(post.date).getFullYear()));
+    const uniqueYears = new Set(blogPosts.map(post => Number(post.date.slice(0, 4))));
     return Array.from(uniqueYears).sort((a, b) => b - a);
   }, []);
 
@@ -22,7 +22,7 @@ const Blog = () => {
       posts = posts.filter(post => post.category === selectedCategory);
     }
     if (selectedYear) {
-      posts = posts.filter(post => new Date(post.date).getFullYear() === selectedYear);
+      posts = posts.filter(post => Number(post.date.slice(0, 4)) === selectedYear);
     }
     return posts;
   }, [selectedCategory, selectedYear]);
@@ -31,7 +31,7 @@ const Blog = () => {
   const recentPosts = filteredPosts.slice(1, 4);
 
   const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
+    const date = new Date(`${dateString}T12:00:00`); // noon local: a bare date parses as UTC midnight (previous day in US time)
     return date.toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',

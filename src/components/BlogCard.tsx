@@ -11,7 +11,7 @@ interface BlogCardProps {
 
 const BlogCard = ({ post, index, featured = false }: BlogCardProps) => {
   const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
+    const date = new Date(`${dateString}T12:00:00`); // noon local: a bare date parses as UTC midnight (previous day in US time)
     return date.toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
