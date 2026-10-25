@@ -199,6 +199,29 @@ const WhyChooseUs = () => {
               </div>
             </div>
 
+            <div className="mb-8">
+              <p className="text-accent-gold text-xs font-medium tracking-wider uppercase mb-3">
+                Recent Work
+              </p>
+              <div className="bg-card-bg rounded-xl p-4 border border-accent-gold/10">
+                <p className="text-accent-gold/70 text-xs">ARC Prize 2026 · March 2026</p>
+                <p className="text-text-secondary text-sm leading-relaxed mt-1">
+                  Submitted an entry to ARC-AGI, the benchmark that tests whether a machine can learn
+                  an abstract pattern from one to three examples, as people do. The solution used
+                  program synthesis: a set of primitive operations, and a search that discovers how to
+                  combine them for each puzzle. A weekend project that solved 138 of 240 tasks.
+                </p>
+                <a
+                  href="https://www.linkedin.com/feed/update/urn:li:share:7442993151226707968"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-accent-gold text-xs font-medium mt-2 hover:text-accent-gold-hover"
+                >
+                  Read the post on LinkedIn →
+                </a>
+              </div>
+            </div>
+
             {/* Audio intro */}
             <AudioPlayer />
 
