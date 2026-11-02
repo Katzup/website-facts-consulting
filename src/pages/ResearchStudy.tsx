@@ -5,6 +5,7 @@ import { getResearchStudyBySlug, researchStudies, formatStudyDate } from '@/data
 import Navigation from '@/sections/Navigation';
 import Footer from '@/sections/Footer';
 import ResearchDisclaimer from '@/components/ResearchDisclaimer';
+import { studyCharts } from '@/components/charts/StudyCharts';
 
 const ResearchStudy = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -28,6 +29,7 @@ const ResearchStudy = () => {
   }
 
   const others = researchStudies.filter((s) => s.slug !== study.slug);
+  const Chart = studyCharts[study.slug];
 
   return (
     <div className="min-h-screen bg-light-bg">
@@ -81,6 +83,8 @@ const ResearchStudy = () => {
                   </div>
                 ))}
               </div>
+
+              {Chart && <Chart />}
 
               {study.sections.map((section) => (
                 <section key={section.heading}>

@@ -3,35 +3,22 @@ import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import Navigation from '@/sections/Navigation';
 import Footer from '@/sections/Footer';
+import CxoArcDiagram from '@/components/charts/CxoArcDiagram';
 
 const stages = [
   {
-    step: '1',
     title: 'Frameworks',
     body: 'Executive decision frameworks drawn from my SMB C-suite book series: nineteen books, about a hundred questions each, across the C-suite roles. Each framework is encoded as structured logic: what triggers it, which inputs it needs, and the thresholds the books set.',
   },
   {
-    step: '2',
     title: 'Archetypes',
     body: 'The same question has a different decisive number in a different kind of business. Pricing in a subscription company turns on churn and net revenue retention; in a product company, on landed-cost margin and channel fees; in a professional-services firm, on realized rates; in a manufacturer, on what the constrained capacity is spent on. The engine classifies the business first, and when a business type is not yet covered, it says so rather than borrowing the wrong economics.',
   },
   {
-    step: '3',
     title: 'Decision analysis',
     body: 'Cross-cutting boardroom decisions built on a small set of reusable pieces: the decisive number judged against a benchmark, a resilience test across scenarios instead of one point estimate, option value for staging a commitment, and a rule for declining to answer that tightens as decisions become harder to reverse.',
   },
 ];
-
-const boardroom = [
-  'Break-even',
-  'Pricing power',
-  'Cash reserve',
-  'Customer concentration',
-  'Debt vs. equity',
-  'Firing a customer',
-];
-
-const nextBoardroom = ['Cost reduction', 'Capital allocation', 'Reseller vs. direct', 'Build, buy or partner'];
 
 const reversals = [
   {
@@ -124,37 +111,13 @@ const CxoAdvisor = () => (
 
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-dark-blue mb-6">How the research has built up</h2>
-          <div className="space-y-4">
-            {stages.map((s) => (
-              <div key={s.title} className="bg-white rounded-xl p-5 shadow-card flex gap-4">
-                <div className="w-9 h-9 bg-accent-gold/15 rounded-full flex items-center justify-center flex-shrink-0 text-dark-blue font-bold">
-                  {s.step}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-dark-blue mb-2">{s.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{s.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="mt-6 grid sm:grid-cols-2 gap-4">
-            <div className="bg-white rounded-xl p-5 shadow-card">
-              <h3 className="font-semibold text-dark-blue mb-3">Boardroom decisions, settled</h3>
-              <ul className="list-disc pl-5 text-sm text-gray-600 space-y-1">
-                {boardroom.map((b) => (
-                  <li key={b}>{b}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-white rounded-xl p-5 shadow-card">
-              <h3 className="font-semibold text-dark-blue mb-3">In progress</h3>
-              <ul className="list-disc pl-5 text-sm text-gray-600 space-y-1">
-                {nextBoardroom.map((b) => (
-                  <li key={b}>{b}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <CxoArcDiagram />
+          {stages.map((s) => (
+            <p key={s.title} className="mb-4 text-gray-700 leading-relaxed">
+              <span className="font-semibold text-dark-blue">{s.title}. </span>
+              {s.body}
+            </p>
+          ))}
         </section>
 
         <section className="mb-12">
