@@ -234,6 +234,13 @@ const Research = () => {
             >
               What is SentientEdge? →
             </Link>
+            <span className="text-text-secondary/50 mx-3">·</span>
+            <Link
+              to="/cxo-advisor"
+              className="inline-block mt-4 text-accent-gold text-sm font-medium hover:text-accent-gold-hover"
+            >
+              The same discipline for business decisions: the CxO Advisor →
+            </Link>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">

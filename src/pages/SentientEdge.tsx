@@ -36,7 +36,7 @@ const uses = [
   },
   {
     title: 'A working example for clients',
-    body: 'Most companies now have AI pilots. Few have a way to tell a model that works from one that only looks good. The discipline here is the same one I bring to FACTS clients evaluating their own AI and analytics projects.',
+    body: 'Most companies now have AI pilots. Few have a way to tell a model that works from one that only looks good. The discipline here is the same one behind the FACTS CxO Advisor, which applies it to business decisions.',
   },
 ];
 
