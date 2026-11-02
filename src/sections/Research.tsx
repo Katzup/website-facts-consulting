@@ -7,6 +7,8 @@ import {
   type Publication,
 } from '@/data/publications';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { researchStudies, formatStudyDate } from '@/data/researchStudies';
 
 interface Paper {
   title: string;
@@ -210,6 +212,56 @@ const Research = () => {
               </div>
             )}
           </motion.div>
+        </div>
+
+        {/* SentientEdge research: studies run under rules written down before the data was examined */}
+        <div className="mt-20">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">SentientEdge Research</h2>
+            <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+              Five ideas tested on real market data, each against pass/fail rules written down before the data was
+              examined. One found a small edge. Four did not survive, and those results are here too.
+            </p>
+            <Link
+              to="/sentientedge"
+              className="inline-block mt-4 text-accent-gold text-sm font-medium hover:text-accent-gold-hover"
+            >
+              What is SentientEdge? →
+            </Link>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {researchStudies.map((study, index) => (
+              <motion.div
+                key={study.slug}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.06 }}
+              >
+                <Link
+                  to={`/research/${study.slug}`}
+                  className="block h-full bg-card-bg rounded-xl p-5 border border-accent-gold/10 hover:border-accent-gold/40 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold"
+                >
+                  <p className="text-accent-gold/70 text-xs">
+                    {study.verdict} · {formatStudyDate(study.date)}
+                  </p>
+                  <h4 className="text-white font-medium text-sm leading-snug mt-1">{study.title}</h4>
+                  <p className="text-text-secondary text-xs mt-2 leading-relaxed">{study.answer}</p>
+                  <p className="text-accent-gold text-xs font-medium mt-3">Read the study →</p>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+          <p className="text-text-secondary/70 text-xs text-center mt-6">
+            Research, not investment advice. Past results do not predict future returns.
+          </p>
         </div>
 
         {/* Earlier writing: the Just the F.A.C.T.S. newsletter, white papers and presentations */}

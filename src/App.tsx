@@ -13,6 +13,8 @@ import CTA from './sections/CTA';
 import Footer from './sections/Footer';
 import Research from './sections/Research';
 import BlogArticle from './pages/BlogArticle';
+import ResearchStudy from './pages/ResearchStudy';
+import SentientEdge from './pages/SentientEdge';
 import './App.css';
 
 function HomePage() {
@@ -43,6 +45,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/blog/:slug" element={<BlogArticle />} />
+        <Route path="/research/:slug" element={<ResearchStudy />} />
+        <Route path="/sentientedge" element={<SentientEdge />} />
       </Routes>
     </Router>
   );
