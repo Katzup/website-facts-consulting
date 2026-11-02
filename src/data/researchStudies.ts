@@ -34,8 +34,8 @@ export const researchStudies: ResearchStudy[] = [
       {
         heading: 'The problem',
         paragraphs: [
-          'My Georgia Tech OMSA practicum (CSE 6748, Spring 2026) was a tournament set by the Trilemma Foundation. Each strategy spends a fixed budget on Bitcoin over a 365-day window and is scored on how much Bitcoin each dollar buys, compared with spending the same amount every day.',
-          'The score is a recency-weighted percentile across 3,076 rolling windows from 2016 to 2025. To win, a strategy has to buy more on the cheap days inside each window. Predicting whether Bitcoin will be higher next month is not enough.',
+          'My Georgia Tech OMSA practicum (CSE 6748, Spring 2026) was a tournament set by the Trilemma Foundation. Each strategy spends a fixed budget on Bitcoin over a 365-day window and is scored on how much Bitcoin each dollar buys, placed between the lowest and highest amount possible in that window.',
+          'The score is that position, averaged across 3,076 rolling windows from 2016 to 2025 with recent windows weighted more. Spending the same amount every day scores 41.94%. To win, a strategy has to buy more on the cheap days inside each window. Predicting whether Bitcoin will be higher next month is not enough.',
         ],
       },
       {

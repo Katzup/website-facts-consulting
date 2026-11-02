@@ -97,9 +97,9 @@ export const PracticumScoreChart = () => {
           The simple trend signal scored 3 points above buying daily; the neural network scored below it
         </div>
         <div className="text-sm text-gray-600">
-          Tournament score: recency-weighted percentile of Bitcoin bought per dollar, measured within each of 3,076
-          rolling 365-day windows (2016–2025), with recent windows weighted more. Higher is better. It is not a return
-          and not a win rate.
+          Tournament score: where a strategy's Bitcoin bought per dollar falls between the lowest and highest possible
+          in each rolling 365-day window (0% = lowest, 100% = highest), averaged over 3,076 windows from 2016 to 2025
+          with recent windows weighted more. It is not a return and not a win rate.
         </div>
       </figcaption>
       <svg viewBox="0 0 640 200" role="img" aria-labelledby="practicum-chart-desc" className="w-full h-auto">
