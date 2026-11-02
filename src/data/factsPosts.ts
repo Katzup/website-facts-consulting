@@ -3,6 +3,91 @@ import type { BlogPost } from './blogPosts';
 
 export const factsPosts: BlogPost[] = [
   {
+    id: 'facts-ai-pilots-where-are-the-profits',
+    title: "AI Pilots Are Everywhere. Where Are the Profits?",
+    excerpt: "Most people report being more productive with AI; most companies cannot yet show it in enterprise earnings. Five questions that make an AI investment testable before the money moves.",
+    content: `<a href="/images/blog/facts/ai-pilots-where-are-the-profits.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/ai-pilots-where-are-the-profits.jpg" alt="Cover: a stone bridge with its center span missing, a stopwatch on one bank and an open ledger on the other, under the title AI Pilots Are Everywhere. Where Are the Profits? Analysis to AI to Action, Article 1 of 3, Bob Katz, factservices.com" class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<em>Analysis to AI to Action, Article 1 of 3</em>
+
+Twenty years ago, I implemented corporate performance management (CPM) systems for executives who believed the software was the hard part. It never was. The hard part was that nobody had agreed, before the project started, which decision would change when the new number arrived. Systems approved to "give us visibility" gave visibility, and the visibility sat there. Systems approved to shorten the close from twelve days to five either did or did not, and everyone could see which.
+
+I keep thinking about those projects because the pattern they belong to is now being measured, at scale, with a different technology.
+
+## What the numbers say, and what they measure
+
+Gartner forecast in July 2024 that at least 30 percent of generative AI projects would be abandoned after proof of concept by the end of 2025. Its January 2026 follow-up says the figure was at least 50 percent, for the four reasons it had named in advance: poor data quality, inadequate risk controls, escalating costs, and unclear business value. That is Gartner's own finding. The public article page does not provide its methodology, so the figure should not be treated as an audited industry rate.
+
+McKinsey's August 2026 State of AI survey, with 1,719 respondents in 97 countries, puts the two halves of the problem in one place. Eighty percent of respondents said AI had improved their individual productivity. Thirty-seven percent reported a positive impact on their organization's earnings before interest and taxes (EBIT), roughly the same share as a year earlier. Most respondents report being more productive. Most surveyed organizations cannot yet show the gain in enterprise earnings, although McKinsey notes that some of them do report financial benefits within particular functions.
+
+The named cases are familiar, and they are not all the same kind of case. McDonald's announced in June 2024 that it was ending a drive-through ordering test with IBM at roughly a hundred restaurants, nearly three years in, short of the accuracy it wanted: a project stopped. Starbucks retired a computer-vision inventory counter across North America in May 2026, nine months after rollout; Reuters reported persistent miscounts, and Starbucks described the decision as standardizing how stores count: a deployed system withdrawn. Air Canada's customer-service chatbot misstated a bereavement-fare rule, and in February 2024 a Canadian tribunal found the airline liable for negligent misrepresentation and awarded the passenger about 812 Canadian dollars: an erroneous output with a legal consequence. Each illuminates a different problem. None of them tells you what the company earned or lost, and stacking them into one "AI failure rate" hides more than it shows.
+
+## Abandonment is not the failure
+
+Some cancelled pilots are good decisions. A proof of concept exists to be proved or disproved, and a company that stops half of them may be running honest experiments. McDonald's and Starbucks both had operating objectives: simpler ordering and better product availability, respectively. Both learned something specific about what the technology could and could not yet do in their stores. Difficulty delivering a benefit is not the same as never having defined one.
+
+The failure I am interested in is upstream of the cancellation. It is committing money and people to a technology without first writing down how the technology will turn into money. A stated benefit mechanism does not make a pilot succeed. What it does is make the pilot testable and its result interpretable. When a pilot like that is stopped, the company knows what it learned about its data, its process, or its customers. When a pilot without one is stopped, whatever was learned was never tied to a business hypothesis. When it is continued, it is continued on enthusiasm, and enthusiasm does not show up in the ledger.
+
+That is the CPM story again, with a larger budget and a shorter attention span.
+
+## Three things that are not the same thing
+
+Most AI business cases rest on one of three claims, and the three are routinely used as if they were interchangeable. I suspect this confusion explains a good share of the gap between the 80 percent and the 37 percent above. I cannot prove that from survey data, and I will not pretend to. But every AI business case I have read that counted hours saved at a loaded hourly rate and called the result savings has made the same mistake, and it is a mistake a CFO can catch in ten minutes.
+
+<strong>A productivity gain</strong> is a task taking less time. A drafting tool that saves each of forty analysts three hours a week has released about 120 hours of weekly capacity. Capacity is real, and it has several routes to value: a hire avoided, overtime eliminated, fewer errors, faster throughput, work moved to something a customer pays for, people kept who would have left. The requirement is not a reduction in headcount. The requirement is a credible, written account of what happens to the released capacity. If the account is "people will have more time," the gain is real and a financial return has not been established.
+
+<strong>A cost saving</strong> is a cost that is lower than it would otherwise have been. That needs a counterfactual, not just a falling balance. A company that handles 30 percent more volume with the same staff and skips a planned hire has avoided that hiring cost, although the general ledger alone will not show the avoided expense. A company whose expense line fell because volume fell has not thereby demonstrated an AI saving. Name the expense category, state what it would have been, and say why. The ledger confirms; it does not attribute.
+
+<strong>Incremental revenue</strong> is customers paying more, or more customers paying, because of the system. It is the hardest of the three to attribute and the easiest to promise. It is also only half a test. Extra sales attributable to AI can still lose money, so establish the additional revenue first, using a control group where feasible or an explicit comparison where it is not. Then apply the contribution margin and subtract the system's own incremental costs.
+
+Here is the discipline in numbers, hypothetical and deliberately small. A pilot costs 25,000 dollars to set up. It is projected to produce 35,000 dollars a year of attributable benefit, with the category and the counterfactual named for every dollar, and its projected running cost is 18,000 dollars a year: licenses, maintenance, and human review of outputs. Net annual benefit, 17,000 dollars. Simple payback, about eighteen months, assuming full annual benefits and running costs begin immediately. A slower ramp-up in benefits would extend it. That is a modest, defensible case, worth evaluating against the company's own investment criteria, the risk that the benefit does not arrive, and how long it lasts.
+
+Set beside it the same pilot described as "saves 40 analysts 3 hours a week, 6,000 hours over a 50-week year, at 60 dollars an hour: 360,000 dollars in savings." The arithmetic values released capacity. It does not explain how that capacity becomes financial benefit. That is the kind of number a good demo invites.
+
+## Five questions before the money moves
+
+If I were back in those steering committees, these are the five questions I would want answered on one page before the vote. They are business questions.
+
+<strong>1. Which decision or process will be different, and why AI?</strong> Not "customer service" but "the first response to a billing dispute." Then the harder half: why use AI instead of cleaning up the process, using ordinary automation, or enabling a feature the company already pays for? A surprising number of AI pilots are expensive ways to avoid fixing a form.
+
+<strong>2. What does that process cost now?</strong> In hours, dollars, errors, and days of delay, measured rather than estimated where possible. This baseline has to exist before the pilot does, because afterward everyone remembers the old process as worse than it was.
+
+<strong>3. What result, in which currency, by what date, and what then?</strong> Hours released, a named cost avoided, or revenue added, with the figure written down. Then set the thresholds: what result, by what date, would lead the company to stop, revise, or scale? What quality level is acceptable along the way? A pilot is a purchase of information before it is a purchase of earnings. It needs a plausible economic hypothesis, a spending limit, and a decision it will inform. It does not need to pay for itself; it needs to tell you whether the scaled version would.
+
+<strong>4. What will it cost to pilot, and what would it cost to run at scale?</strong> Two numbers, not one. For a small company buying an existing product, the license may be the largest cash cost; for a larger one, data cleanup, integration, maintenance of prompts and guardrails, and human review may exceed it. Either way, the pilot budget tells you little about the operating cost, and the operating cost is what the benefit has to clear.
+
+<strong>5. Who owns the benefit?</strong> Not who delivers the pilot. A named business owner who controls the operating changes the benefit depends on: the hiring plan, the vendor contract, the schedule, the sales process. If the answer is "the AI team," accountability is incomplete unless that team also controls the relevant operating changes.
+
+Framing the five questions takes an afternoon. Getting reliable answers can take weeks, and that is time well spent compared with the eighteen months a pilot without them can run.
+
+## What this does and does not fix
+
+I do not think the questions make AI projects succeed. The technology is young, the data in most companies is worse than anyone admits, and some share of the abandonment rate above is the honest cost of learning. What the questions do is make the outcome legible. A pilot that was meant to cut reconciliation from twelve days to five, and cut it to nine, has produced an observed result and a set of specific questions about why the remaining four days did not move. A pilot that was meant to "transform finance" and did not has produced nothing but a reason to distrust the next deck.
+
+The harder question, which I do not have a clean answer to, is whether management teams will accept the discipline once the demo has been good. The five questions are not difficult. They are simply not the questions a good demo invites.
+
+This series is about the distance between a promising demo and a measurable business result. Analysis matters when it changes a decision. AI matters when it changes the work. Management's job is to turn that change in the work into value, and this article has been about what value is and what has to be established before funding. The second article is about the analysis: how to find the decision and the intervention worth improving before any technology is chosen. The third is about the operating change itself: ownership, measurement, and how a benefit that exists on a slide becomes one that exists in the accounts.
+
+### Sources
+
+- Gartner, press release, July 29, 2024: at least 30 percent of generative AI projects to be abandoned after proof of concept by end of 2025. <a href="https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://www.gartner.com/en/newsroom/press-releases/2024-07-29-gartner-predicts-30-percent-of-generative-ai-projects-will-be-abandoned-after-proof-of-concept-by-end-of-2025</a>
+- Gartner, "Why Half of GenAI Projects Fail," January 26, 2026: at least 50 percent abandoned after proof of concept by end of 2025, same four causes. <a href="https://www.gartner.com/en/articles/genai-project-failure" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://www.gartner.com/en/articles/genai-project-failure</a>
+- McKinsey, "The State of AI in 2026: On the Road to ROI," August 25, 2026 (1,719 respondents, 97 countries, fieldwork May 4 to June 8, 2026): 80 percent report improved individual productivity; 37 percent report positive enterprise EBIT impact from AI, flat on the prior year; some respondents without enterprise impact report financial benefits within particular functions. <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai</a>
+- McDonald's and IBM: announcement June 2024; shutdown at test locations by late July 2024; about 100 restaurants; partnership from 2021; reported target of 95 percent-plus accuracy. <a href="https://www.nrn.com/quick-service/mcdonald-s-is-ending-its-ai-drive-thru-test-with-ibm" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://www.nrn.com/quick-service/mcdonald-s-is-ending-its-ai-drive-thru-test-with-ibm</a>
+- Air Canada: Moffatt v. Air Canada, British Columbia Civil Resolution Tribunal, February 14, 2024; negligent misrepresentation; award C$812.02 including interest and fees. <a href="https://www.middletemple.org.uk/sites/default/files/civicrm/persist/contribute/files/2024bccrt149.pdf" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://www.middletemple.org.uk/sites/default/files/civicrm/persist/contribute/files/2024bccrt149.pdf</a>
+- Starbucks: Reuters, May 2026 (internal newsletter and employee accounts), as reported by Restaurant Dive, which adds Starbucks' own statement: "Automated Counting" tool built with NomadGo retired after about nine months; miscounting per Reuters' sources; Starbucks framed the decision as standardization. <a href="https://www.restaurantdive.com/news/Starbucks-eliminates-computer-vision-ai-inventory-system/820934/" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://www.restaurantdive.com/news/Starbucks-eliminates-computer-vision-ai-inventory-system/820934/</a>
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-01',
+    category: 'AI',
+    image: '/images/blog/facts/ai-pilots-where-are-the-profits.jpg',
+    readTime: '7 min',
+    slug: 'ai-pilots-where-are-the-profits',
+  },
+  {
     id: 'facts-two-ncms-two-ai-futures',
     title: "Two NCMs, Two AI Futures: From Faster Answers to Better Decisions",
     excerpt: "Why the next competitive advantage in AI may have less to do with generating information and more to do with understanding consequences.",
