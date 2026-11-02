@@ -55,7 +55,7 @@ export const researchStudies: ResearchStudy[] = [
       {
         heading: 'Why it matters for what followed',
         paragraphs: [
-          'The practicum ran alongside early SentientEdge work, and its lessons became the rules for every study after it: write the pass/fail criteria down first, beat a simple baseline before trusting a complex model, and publish the failures.',
+          'The Visual Trading System framework used to test the practicum thesis was built on early SentientEdge work. The habits it forced carried back into SentientEdge: write the pass/fail criteria down first, beat a simple baseline before trusting a complex model, and publish the failures.',
         ],
       },
     ],

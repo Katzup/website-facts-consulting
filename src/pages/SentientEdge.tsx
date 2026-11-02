@@ -123,8 +123,8 @@ const SentientEdge = () => (
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-dark-blue mb-4">The studies so far</h2>
           <p className="mb-6 text-gray-700 leading-relaxed">
-            Five studies so far, starting with the Georgia Tech practicum that set the rules. One found a small
-            edge, with clear limits. Four did not survive.
+            Five studies so far, starting with my Georgia Tech practicum, whose test framework was built on early
+            SentientEdge work. One found a small edge, with clear limits. Four did not survive.
           </p>
           <div className="space-y-3">
             {researchStudies.map((s) => (
