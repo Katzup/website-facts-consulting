@@ -205,7 +205,7 @@ const CxoAdvisor = () => (
           <h2 className="text-2xl font-bold text-dark-blue mb-4">What it is not</h2>
           <ul className="list-disc pl-5 text-gray-700 space-y-2">
             <li>Not a decision-maker to obey. You decide and own the decision; the engine makes it sharper.</li>
-            <li>Not unsupervised. Every memo is reviewed by an experienced advisor before it reaches a client.</li>
+            <li>Not unsupervised. I review every decision analysis before it goes to a client.</li>
             <li>Not a forecast or a valuation, and not a substitute for legal, tax or compliance advice.</li>
           </ul>
         </section>
