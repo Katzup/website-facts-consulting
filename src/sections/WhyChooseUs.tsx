@@ -134,7 +134,7 @@ const WhyChooseUs = () => {
               <img
                 src="/images/irving-burday-headshot.jpg"
                 alt="Irving Burday, Chief Information Officer of FACTS Consulting"
-                className="w-full h-80 object-cover object-top"
+                className="w-full h-80 object-cover object-center"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-blue/60 to-transparent" />
               <div className="absolute bottom-4 left-4">
