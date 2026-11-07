@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Award, Users, Target, TrendingUp, Play, Pause } from 'lucide-react';
 import StatCounter from '@/components/StatCounter';
 import { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -105,7 +106,7 @@ const WhyChooseUs = () => {
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-card">
+            <Link to="/team#bob-katz" className="block relative rounded-2xl overflow-hidden shadow-card">
               <img
                 src="/images/bob-katz-headshot.jpg"
                 alt="Bob Katz, Founder of FACTS Consulting"
@@ -118,10 +119,10 @@ const WhyChooseUs = () => {
                 </span>
                 <p className="text-white text-sm mt-1">Bob Katz</p>
               </div>
-            </div>
+            </Link>
           </motion.div>
 
-          {/* Partnership Image */}
+          {/* CIO Image */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -129,20 +130,20 @@ const WhyChooseUs = () => {
             transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-card">
+            <Link to="/team#irving-burday" className="block relative rounded-2xl overflow-hidden shadow-card">
               <img
-                src="/images/partnership.jpg"
-                alt="Business Partnership"
-                className="w-full h-80 object-cover"
+                src="/images/irving-burday-headshot.jpg"
+                alt="Irving Burday, Chief Information Officer of FACTS Consulting"
+                className="w-full h-80 object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-dark-blue/60 to-transparent" />
               <div className="absolute bottom-4 left-4">
                 <span className="px-3 py-1 bg-accent-gold/20 rounded-full text-accent-gold text-xs font-medium">
-                  Partnership
+                  Chief Information Officer
                 </span>
-                <p className="text-white text-sm mt-1">Building lasting relationships</p>
+                <p className="text-white text-sm mt-1">Irving Burday</p>
               </div>
-            </div>
+            </Link>
           </motion.div>
         </div>
 
@@ -171,6 +172,12 @@ const WhyChooseUs = () => {
               measurable results. Founder Bob Katz brings decades of hands-on experience
               across finance, analytics, and transformation — from Fortune 500 to fast-growth startups.
             </p>
+            <Link
+              to="/team"
+              className="inline-block text-accent-gold text-sm font-medium mb-8 hover:text-accent-gold-hover"
+            >
+              Meet the leadership team →
+            </Link>
 
             <div className="mb-8">
               <p className="text-accent-gold text-xs font-medium tracking-wider uppercase mb-3">

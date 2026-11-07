@@ -16,6 +16,7 @@ import BlogArticle from './pages/BlogArticle';
 import ResearchStudy from './pages/ResearchStudy';
 import SentientEdge from './pages/SentientEdge';
 import CxoAdvisor from './pages/CxoAdvisor';
+import Team from './pages/Team';
 import './App.css';
 
 function HomePage() {
@@ -49,6 +50,7 @@ function App() {
         <Route path="/research/:slug" element={<ResearchStudy />} />
         <Route path="/sentientedge" element={<SentientEdge />} />
         <Route path="/cxo-advisor" element={<CxoAdvisor />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
     </Router>
   );
