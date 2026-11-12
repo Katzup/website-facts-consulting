@@ -3,6 +3,113 @@ import type { BlogPost } from './blogPosts';
 
 export const factsPosts: BlogPost[] = [
   {
+    id: 'facts-your-business-has-the-data',
+    title: "Your Business Has the Data. Why Aren't You Using It to Make Better Decisions?",
+    excerpt: "Most companies know a great deal about what happened and much less about what to do next. Where analysis pays in a mid-sized business, and five questions that start from the decision instead of the dashboard.",
+    content: `<a href="/images/blog/facts/your-business-has-the-data.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/your-business-has-the-data.jpg" alt="Cover: From Analysis to AI to Action. Turning intelligence into decisions. Turning decisions into results. Three panels over a mountain road at sunrise. Analysis: What do we know? Data, models, evidence, insights. AI: What could we do? Prediction, scenarios, reasoning, agent workflows. Action: What should we do? Decisions, execution, outcomes, learn and improve. FACTS Consulting, We Make You Smarter." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<em>Analysis to AI to Action, Article 2 of 3</em>
+
+Most of the companies I have worked inside produced a month-end package. Financial statements, a variance report, an aging, a sales summary by region, later a dashboard with the same numbers in color. It went to the same people on the same day each month. The numbers were accurate, the charts were clean, and the package arrived on schedule, because a great deal of effort went into making sure it did.
+
+What was harder to find was the connection between the package and the decisions management was about to make. Executives did act, on pricing, on hiring, on a customer, on a line of credit. The reports had rarely changed what they decided. The decisions were made on other grounds, with the package as background, and when I asked which page had tipped a decision one way or the other, the answer was usually a pause.
+
+Client confidentiality keeps me from naming any of these companies, and I am not going to assemble a composite and present it as one engagement. The pattern across them is the point, and it was remarkably consistent: the organization knew a great deal about what had happened and considerably less about what it should do next. That is not a complaint about the reports. They did what they were asked to do, which was to establish that last month happened and who was responsible for it. Nobody had asked them to do anything else.
+
+Here is the oddity. The same companies had the data to answer the questions that would have changed something. Which customers make us money, after the cost of serving them. Where cash will come under pressure in the next ninety days. What to change this quarter to improve margin two quarters out. Every one of those answers was sitting in the accounting system, the order system, the payroll system, and the customer file, and nobody had assembled it, because nobody had been asked a question that required it.
+
+<a href="/blog/ai-pilots-where-are-the-profits" class="text-navy underline">Article 1 in this series</a> was about value: what counts as a financial return from an AI investment and what has to be established before the money moves. This article is about the step before that, and before any technology at all. It is about finding the decision.
+
+## The report describes. The decision needs a forecast.
+
+Suppose gross margin fell from 32 percent to 29 percent. The dashboard shows the three points. A good analyst can decompose them within a day: mix shifted toward lower-margin lines, freight rose, two customers negotiated better terms. All of that is true and all of it is about last quarter.
+
+Management's questions point the other way. Will it keep falling? Which accounts and which products are doing the damage? If we raise prices selectively, how much volume do we lose and is the trade worth it? If we change how we buy, does the number move?
+
+Those are not reporting questions. They are forecasting questions with a decision attached, and the honest answer to each is a range, not a number. A company that is used to exact figures from the general ledger finds ranges uncomfortable. It should get used to them. A decision made on a defensible range beats a decision deferred until the number is exact, because the number will not be exact until the quarter is over and the decision is moot.
+
+## Three jobs, not three levels of sophistication
+
+The analytics trade sorts its work into three kinds, and the labels are useful if you read them as what each one does for a decision rather than as a ladder of technical difficulty.
+
+<strong>Describing</strong> answers what happened. Revenue fell four percent; inventory rose twelve; three customers did not reorder. This is where nearly all management reporting lives, and it is necessary. You cannot forecast from data you have not first reconciled.
+
+<strong>Predicting</strong> answers what is likely to happen. Given buying history, order patterns, seasonality, and what is in the pipeline today, which customers are at risk of leaving, where will inventory exceed demand, what is the probability that cash is short in week nine? These forecasts are wrong by construction. They are still worth having, because a warning that is right six times in ten and arrives eight weeks early is worth more than a report that is right every time and arrives after the fact.
+
+<strong>Prescribing</strong> answers what to do. Which combination of price changes, purchase quantities, staffing, and customer interventions most improves the result, under the constraints the business actually has? This is where analysis meets judgment, and it is the only one of the three that produces money on its own. The other two produce the conditions for it.
+
+The point I would hold onto is that these are three different contributions to a decision, not three stages of a technology program. A complicated predictive model with no decision attached is worth less than a plain contribution-margin analysis that changes how the company allocates half a million dollars of working capital. I have seen both in client work. The plain one paid.
+
+## Where the money usually is
+
+For a company between, say, ten and two hundred million in revenue, the applications that pay are rarely exotic. They are the ones the month-end package almost answers and then stops.
+
+<strong>Customer profitability.</strong> Revenue is not profit, and the largest customer is often not the most profitable one. The account that demands expedited shipments, special packaging, frequent small orders, and ninety-day terms can contribute less than a smaller account that orders in full pallets and pays in thirty. This is old knowledge; the Harvard case on Kanthal, written in 1989, showed a manufacturer discovering through customer-level costing that a minority of its customers produced all of its profit and a long tail consumed it. What has changed is that the data to run the analysis is now in every mid-sized company's systems. What has not changed is that somebody has to decide to run it.
+
+<strong>Cash.</strong> An annual budget does not know which week a large receipt lands or which week payroll, a loan payment, and a supplier's quarterly invoice all fall together. A rolling thirteen-week cash forecast, rebuilt every week with actuals replacing the week just completed, does. The format came out of turnaround work, where lenders required it, and it is a strange thing that the companies in the best position to benefit from it are the ones that have never been in trouble. A finance director who sees a shortfall in week nine has eight weeks to collect, defer, or borrow on their own terms.
+
+<strong>Inventory and purchasing.</strong> Too much inventory ties up capital and goes obsolete; too little loses sales and customers. A demand forecast joined to supplier lead times and a stated service level turns purchasing from a habit into a decision with a number attached.
+
+<strong>Pricing.</strong> An across-the-board increase is easy to administer and economically crude. Some products and customers can carry a higher price; others will leave. Segmenting by contribution margin and testing demand assumptions where that is possible turns one pricing decision into several better ones.
+
+None of these needs generative AI. Most of them can begin with an export from the ERP, a spreadsheet, a few standard statistical tools, and a management meeting that asks for the result and acts on it. That is the point I would most want a CEO to take from this article, because it runs against everything they are currently being sold: you do not need to buy artificial intelligence to start making more intelligent decisions.
+
+## The inventory arithmetic, with the assumptions showing
+
+Take a hypothetical distributor carrying four million dollars of average inventory. Suppose a better demand forecast and tighter purchasing discipline could reduce the average by ten percent without a material increase in stockouts. That releases $400,000 of working capital. At a carrying-cost assumption of twelve percent a year, it also avoids about $48,000 of annual carrying cost, to the extent those costs are genuinely variable.
+
+Now the labels, the way Article 1 asked for them. The $400,000 is a balance-sheet and cash benefit, once. It is not profit. The $48,000 is a projected saving that depends on three things being true: that the forecast is as accurate as assumed, that the stockout rate does not rise, and that the carrying costs actually fall when the inventory does rather than sitting in a warehouse lease that does not change. Each of those is testable before the purchasing policy changes, and each should be.
+
+Notice where the value comes from. Not from the dashboard. Not from an AI subscription. Not from the forecasting model, which on its own produces a number nobody is obliged to act on. It comes from a purchasing manager buying less, on the strength of a forecast. The analysis found the decision. Carrying the decision out, and measuring what it did, is the third article's subject.
+
+## What AI changes here, and what it does not
+
+Generative AI makes this work more accessible. A manager who could not write a query can now ask one. A controller can have the tool draft the analysis code, explain an anomaly, summarize three scenarios, and try a fourth. Machine-learning methods can find patterns in customer behavior and improve some forecasts, and for a company with enough transaction history they are worth trying.
+
+What AI does not do is repair the inputs. It does not fix inconsistent product costing, missing cost-to-serve data, or a business objective nobody has written down. A recommendation generated by a model can be fluent and economically wrong, and it is more dangerous than a wrong spreadsheet because it is more persuasive. McKinsey's 2026 State of AI survey makes the same point from the other direction. Nearly three-quarters of the companies it classes as AI high performers, the six percent of respondents attributing at least five percent of earnings to AI, report having fundamentally redesigned workflows because of their AI use, up from 55 percent a year earlier. Among everyone else the figure is about one-quarter. That is an association in a survey, not proof that the redesign produced the profit, but it points where this article points: a tool added to an unchanged process rarely changes the result.
+
+So the architecture is not "ask the chatbot what we should do." It is reliable data, a method appropriate to the question, a decision rule written down in advance, and a person who decides. The AI can sit in any of those four places. It cannot be all of them.
+
+## Start with a decision, not a dashboard
+
+Before the next analytics initiative, five questions, and they belong on one page the same way Article 1's did.
+
+<strong>1. Which recurring decision are we trying to improve?</strong> Not "customer analytics" but "which accounts get the sales team's time next quarter" or "how much of this product we buy in March."
+
+<strong>2. What information would change that decision?</strong> If no answer would change it, the analysis is for comfort, and comfort has a price.
+
+<strong>3. What does getting it wrong cost?</strong> In dollars, so the analysis can be sized to the decision rather than to the data available.
+
+<strong>4. How will we know the new method decides better than the old one?</strong> The honest test is a forward one: the method is fixed, then run on a period it has not seen, and compared with what the company would have done anyway. I learned the force of that test on my own work. A model that beat its benchmark in every backtest lost to it the first time it was run forward on data it had not been shown. Nothing was wrong with the model. It had learned the years it was given.
+
+<strong>5. Who decides?</strong> Not who runs the analysis. If the answer is the analyst, the analysis will be admired and not used. What the decider then does with it, and how the result is measured, is the third article.
+
+These questions reverse the usual order. Instead of collecting more data in the hope of discovering something, management starts from a decision with money attached and works backward to the information that would improve it. The same discipline that makes an AI pilot testable makes an analytics project worth funding, and the two are often the same project.
+
+## The advantage a smaller company actually has
+
+Large companies have spent billions on data platforms, analytics teams, and now AI, and a smaller company cannot match that. It does not have to. Its advantage is distance: the gap between seeing a problem, deciding, and acting is days, not quarters. An owner who finds a pricing problem on Monday can have a change in the system by Friday. A finance director who sees the week-nine shortfall can be on the phone to the bank the same afternoon.
+
+I am less sure than the brief for this article was that smaller companies use that advantage. In my experience they lose it the same way large ones do, by letting the report stand in for the decision. The speed is available. It is used when someone asks the forward question and insists on an answer with a date on it.
+
+Analysis tells you what you know and what may happen. AI can widen what you are able to analyze. Neither creates a dollar of value until someone decides, and a decision creates none until it is carried out and measured. That last step, from a recommendation to a result that shows up in the accounts, is the third article.
+
+### Sources
+
+- Kanthal (A), Harvard Business School Case 190-002, Robert S. Kaplan, July 27, 1989: a costing system built to determine the profitability of individual customer orders, including the cost of processing orders and supplying nonstandard products. <a href="https://store.hbr.org/product/kanthal-a/190002" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://store.hbr.org/product/kanthal-a/190002</a>
+- McKinsey, "The State of AI in 2026: On the Road to ROI," August 25, 2026: nearly three-quarters of AI high performers report fundamentally redesigning workflows because of their AI use, up from 55 percent a year earlier, against about one-quarter of other respondents; high performers are 6 percent of respondents, those reporting significant value and at least 5 percent of EBIT attributable to AI. <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" class="text-navy underline" target="_blank" rel="noopener noreferrer">https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai</a>
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-10',
+    category: 'AI',
+    image: '/images/blog/facts/your-business-has-the-data.jpg',
+    readTime: '8 min',
+    slug: 'your-business-has-the-data',
+  },
+  {
     id: 'facts-cxo-advisory-letter-2026-11-11',
     title: "CxO Advisory Letter: Week of November 11, 2026",
     excerpt: "The Census Bureau asked firms what AI did to their headcount: among firms using AI, 6.6% say it raised their headcount and 2.5% say it lowered it. Also this week: CFO returns from AI by company size, customer-service ROI, and October's layoff announcements.",
