@@ -3,6 +3,134 @@ import type { BlogPost } from './blogPosts';
 
 export const factsPosts: BlogPost[] = [
   {
+    id: 'facts-the-recommendation-was-approved',
+    title: "The Recommendation Was Approved. What Changed on Monday?",
+    excerpt: "A recommendation can survive a management meeting without changing the business. Who changes the work, what authority they need, how management establishes whether the change paid, and five questions for the operating review.",
+    content: `<em>Analysis to AI to Action, Article 3 of 3</em>
+
+A recommendation can survive a management meeting without changing the business. The analysis is accepted, the opportunity goes into the forecast, and somebody agrees to follow up. The following Monday, the purchasing rules, customer terms, and approval habits are still what they were on Friday. The projected benefit has acquired a place in the budget. It has not acquired a way to happen.
+
+<a href="/blog/ai-pilots-where-are-the-profits" class="text-navy underline">Article 1</a> opened with the corporate performance management systems I implemented twenty years ago, for executives who believed the software was the hard part. The software could give us better numbers. We still had to agree which decision would change when those numbers arrived.
+
+The first article in this series asked what counts as a financial return. The second asked which decision the analysis should improve. This one follows the decision into the business: who changes the work, what authority they need, and how management establishes whether the change paid.
+
+The useful starting point is a question for the next operating meeting: what will someone do differently next week because this recommendation was approved?
+
+## The benefit needs an owner who can change the work
+
+Return to <a href="/blog/your-business-has-the-data" class="text-navy underline">Article 2's</a> hypothetical distributor, carrying four million dollars of average inventory. Better forecasting and purchasing discipline might reduce that investment by ten percent, releasing $400,000 as inventory comes down, under the conditions described there. An assumed twelve-percent carrying-cost rate suggested a potential annual economic benefit of $48,000.
+
+Those are opportunities. To realize them, somebody must change replenishment quantities, review supplier minimums, handle exceptions, and accept the consequences when a customer wants something the warehouse does not have.
+
+For this example, suppose the COO owns the inventory result. The purchasing manager changes the replenishment rules. Finance tests the cash and expense claims. Sales helps identify service commitments that must be protected. In a smaller company, one person might hold several of those roles. The responsibilities still need to be explicit.
+
+Ownership also requires a way to resolve competing objectives. A buyer told to reduce inventory while being judged solely on whether anything ever runs out has been given a conflict. Management must decide the acceptable service level and who can approve an exception. Otherwise, the old purchasing habit has a stronger instruction behind it than the new recommendation does.
+
+## The change starts in a defined piece of the operation
+
+The distributor does not need to change every product's purchasing policy on the first day. It could start with a defined group for which demand history and supplier lead times are usable, then observe the result through enough replenishment cycles to test the assumptions.
+
+Three things have to exist before the first changed order goes out, because none of them can be reconstructed afterward. The old rules and the opening inventory position, preserved. The service levels, supplier terms, purchasing commitments, and costs expected to move, recorded. And a review date, a spending limit, and the conditions under which management will continue, revise, or stop, agreed while nobody yet knows the answer.
+
+A test on predictable products does not establish that the same policy will work for seasonal demand, unreliable suppliers, or a customer's critical spare part. Expansion needs its own evidence.
+
+## Authority is written down before the action is delegated
+
+Mihailo Zoin's guide, <em>ChatGPT and the Boundaries of Control</em>, has a device I have borrowed for this stage. His Delegation Boundary Card is filled in before an AI agent is given anything to act on. It records the goal, the allowed and forbidden actions, the scope, the points at which the agent must stop and report, the consequence that requires human approval, the evidence to be shown afterward, the way back to the previous state, and the owner of the decision. I would fill in the same card for an operating change whether the executor is a person, an ordinary software rule, or an AI agent.
+
+At the distributor, the initial authority might be to propose replenishment quantities for the test group. Releasing purchase orders could remain with the buyer. After the test, management might authorize routine orders within specified limits while reserving unusual quantities, new suppliers, and changed terms for review.
+
+A departure from the plan then becomes recognizable. If supplier lead times change materially, or the system encounters a product outside the test group, there is a stated point at which the decision returns to management.
+
+A card is a statement of intent, and Zoin says so himself: "No prompt can turn an uncontrolled tool into a safe system by itself." Real interruption, logging, and rollback, he writes, depend on the application and its permissions. At the distributor that means access rights, approval settings, and retained records in the purchasing system. An instruction to be careful is useful. It is not evidence that the boundary held.
+
+## Recommendations are getting cheaper. Attention is not.
+
+Zoin's second device is an Oversight Budget: how much output a person can truly review before approval becomes automatic. He means it for agents. It describes a management team just as well.
+
+AI lowers the cost of producing an analysis and a recommendation. It does not lower the cost of changing a purchasing rule, renegotiating a supplier minimum, or telling a customer no. The recommendations can now arrive faster than a management team can put them into practice. In the McKinsey survey cited in Article 1, 80 percent of respondents said AI had improved their individual productivity, and 37 percent reported a positive impact on their organization's earnings before interest and taxes (EBIT). Article 1 offered one explanation for that gap. This may be a second. It is a hypothesis, and I have no way of separating the two.
+
+The same limit applies inside a single initiative. If the system produces purchasing recommendations faster than a manager can inspect them, management must choose a narrower scope, stronger automated checks, different exception rules, or more review capacity. A successful demonstration that depends on unsustainable attention is an unfinished operating design.
+
+## Two questions at the review, and they do not move together
+
+There are two different questions at the review meeting. Did the company implement the new purchasing policy? Did that policy improve the result?
+
+The first needs operating evidence. Compare the approved rules with the settings in the purchasing system, the recommendations with the orders actually released, and the exceptions with their approvals. Auditors have worked this way for a long time: whoever did the work does not get to be the only evidence that the work was done.
+
+The second needs a credible comparison. Inventory may have fallen because demand weakened. Cash may have improved because a supplier extended payment terms. Neither establishes that the forecast produced the benefit.
+
+The policy can be carried out exactly as designed and still disappoint, because the forecast was worse than assumed. It can be half-implemented while inventory falls anyway, and the company will be tempted to book the fall as a success. A good decision can meet a bad quarter, and a poor one can be rescued by luck. A management team that judges only by outcome learns to reward luck. One that judges only by the quality of the analysis rewards elegant work that changed nothing. The review has to hold both, which is uncomfortable, because the two verdicts can land on different people.
+
+Where feasible, use a phased rollout or a suitable comparison group. Otherwise, estimate what the old policy would have required under the conditions actually encountered and state the assumptions. The answer may be a range. It should be a range the evidence can defend. Record unmet demand and lost orders; a system can make inventory look efficient by failing to serve customers whose demand then disappears from the sales record.
+
+## The opportunity, reconciled with the money
+
+Continue the hypothetical example through a full year at the lower inventory level. Assume the comparison supports a $400,000 reduction attributable to the purchasing change, with comparable demand and product costs, unchanged supplier terms, no inventory write-down creating the reduction, and service performance maintained. The cash released is used to repay the working-capital line.
+
+That is a working-capital benefit, with the cash used to reduce debt. It is not $400,000 of profit, and it does not recur every year. The lower inventory requirement continues to free capital only while the company sustains the change.
+
+Now suppose the evidence supports $28,000 of annual interest avoided and $8,000 of lower outside-storage charges, each compared with what the company would otherwise have paid. That is $36,000 of annual expense benefit. Suppose new licenses and purchased support cost $12,000 a year. The recurring improvement in profit before tax is $24,000. Recurring EBIT falls by $4,000 because the $8,000 in storage savings only partly offsets the $12,000 in new costs. The interest savings improve profit before tax.
+
+If the company also incurs $10,000 of one-time implementation expense, the first year's improvement in profit before tax is $14,000, assuming a full twelve months of those benefits and recurring costs, and that implementation spending is expensed in that year. A gradual inventory reduction would produce less interest benefit in the first year. Extra freight, lost contribution margin, or other consequences would also have to be deducted if they occurred; this illustration assumes none.
+
+The original $48,000 carrying-cost estimate has now been replaced by specific evidence for the costs that actually moved. It is not an additional benefit to add to the $36,000. Any opportunity-cost benefit should be identified separately, without counting the same financing benefit twice.
+
+These figures are deliberately hypothetical. Their purpose is to show what the review must distinguish: capital released, recurring expenses avoided, new operating costs, and the cost of making the change.
+
+## Five questions for the operating review
+
+The one-page discipline from the first two articles has a third use. Before calling an initiative successful, I would want five answers.
+
+<strong>1. What changed in the operation, and who had authority to make it happen?</strong> Name the rule, schedule, customer treatment, purchasing decision, or resource commitment. Name the owner.
+
+<strong>2. What evidence shows the change was carried out?</strong> Identify the system records, transactions, and exceptions. A completion report should lead to evidence someone can inspect.
+
+<strong>3. What happened relative to what would otherwise have happened?</strong> State the comparison, the financial category, and the uncertainty. Separate the intervention from changes in volume, prices, mix, and terms.
+
+<strong>4. What did it take to operate the new method?</strong> Include licenses, support, review, correction, and the capacity consumed. Explain which costs changed cash expense and which represent time redirected from other work.
+
+<strong>5. What decision follows this review?</strong> Continue, revise, expand, or stop, with a named person and a date. Expansion should depend on the observed economics and service results, not simply on the completion of the pilot.
+
+The owner should continue reviewing the result after the project team leaves. Demand changes. Suppliers change. People override settings. A benefit can disappear while the dashboard still displays the original target.
+
+## The record that outlasts the project
+
+There is one more thing I would ask for, and it is a page instead of a question. I am developing a one-page decision record I call the Recommendation Tape. It is started on the day the recommendation is approved, and it has four entries. What we believed: the assumptions, with their numbers, and the basis on which the result will be compared, both written at approval. What we decided, and who decided it. What we actually did, taken from the system records and not from the plan, and dated. What happened, against that comparison, dated as the evidence arrives.
+
+The value is in the dates. An assumption written down before the result cannot be adjusted to fit it. Article 2 described a model of mine that beat its benchmark in every backtest and lost the first time it was run forward. The forward test and the page start the same way, by fixing what will be judged before the results are known.
+
+The purpose is less to grade the last recommendation than to improve the next decision. A company that kept those pages for a few years would know things about itself that no outside adviser can tell it: which kinds of forecast it habitually gets wrong, which benefits it tends to count twice, and how long it takes to stop something after the evidence says stop.
+
+## The last step belongs to management
+
+There is room here for a modest result. An initiative can release less cash than expected and still be worth doing. It can reveal that a proposed operating change is uneconomic, making the decision to stop a useful outcome. What matters is that management can explain what changed, what it cost, and what the evidence now supports.
+
+The test of the record comes when the result disappoints. The page is easy to keep when the initiative worked. When it did not, the person who approved it is usually the person who has to write the last entry, and I am not sure that person will be as willing to document what happened as to approve it in the first place. Having finance hold the pen helps. I do not think it settles the matter.
+
+Analysis can expose an opportunity. AI can make parts of the work faster and extend what a small team can attempt. The return depends on the purchasing decision made, the customer treated differently, the cost actually avoided, or the capacity put to productive use.
+
+So the Monday question comes back at the review, with one addition: what did someone do differently because this was approved, and what was it worth after the costs? A team that can answer has something more useful than a successful demonstration. It has evidence for deciding what to do next.
+
+### Source and attribution
+
+Mihailo Zoin, <em>ChatGPT and the Boundaries of Control: How to Recognize When Execution Is Faster Than Oversight and When Delegation Must Stop</em>, a ten-page guide. This article borrows two of his devices, the Delegation Boundary Card and the Oversight Budget, and his caution that real interruption, logging, and rollback depend on the application and its permissions, not on the prompt. They are proposed working methods; the guide is not an empirical study of financial returns. The application to the distributor and all worked financial figures are hypothetical illustrations developed for this article.
+
+<a href="https://outofboxprogramming.gumroad.com/l/chatgpt-control" class="text-navy underline" target="_blank" rel="noopener noreferrer">Public description of Zoin's guide</a>.
+
+The McKinsey survey figures are from "The State of AI in 2026: On the Road to ROI," August 25, 2026, cited in full in Article 1.
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-12',
+    category: 'AI',
+    image: '/images/blog/facts/the-recommendation-was-approved.jpg',
+    readTime: '10 min',
+    slug: 'the-recommendation-was-approved',
+  },
+  {
     id: 'facts-your-business-has-the-data',
     title: "Your Business Has the Data. Why Aren't You Using It to Make Better Decisions?",
     excerpt: "Most companies know a great deal about what happened and much less about what to do next. Where analysis pays in a mid-sized business, and five questions that start from the decision instead of the dashboard.",
