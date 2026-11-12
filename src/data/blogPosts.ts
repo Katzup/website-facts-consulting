@@ -36,7 +36,7 @@ export const getRecentBlogPosts = (count: number = 3): BlogPost[] => {
 };
 
 export const getAllCategories = (): string[] => {
-  return ['Finance', 'Analytics', 'Consulting', 'Transformation', 'AI'];
+  return ['Finance', 'Analytics', 'Consulting', 'Transformation', 'AI', 'CxO Advisory'];
 };
 
 export const getBlogPostsByYear = (year: number): BlogPost[] => {
