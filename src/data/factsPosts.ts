@@ -6,7 +6,7 @@ export const factsPosts: BlogPost[] = [
     id: 'facts-your-business-has-the-data',
     title: "Your Business Has the Data. Why Aren't You Using It to Make Better Decisions?",
     excerpt: "Most companies know a great deal about what happened and much less about what to do next. Where analysis pays in a mid-sized business, and five questions that start from the decision instead of the dashboard.",
-    content: `<a href="/images/blog/facts/your-business-has-the-data.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/your-business-has-the-data.jpg" alt="Cover: From Analysis to AI to Action. Turning intelligence into decisions. Turning decisions into results. Three panels over a mountain road at sunrise. Analysis: What do we know? Data, models, evidence, insights. AI: What could we do? Prediction, scenarios, reasoning, agent workflows. Action: What should we do? Decisions, execution, outcomes, learn and improve. FACTS Consulting, We Make You Smarter." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+    content: `<a href="/images/blog/facts/your-business-has-the-data.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/your-business-has-the-data.webp" alt="Cover: From Analysis to AI to Action. Turning intelligence into decisions. Turning decisions into results. Three panels over a mountain road at sunrise. Analysis: What do we know? Data, models, evidence, insights. AI: What could we do? Prediction, scenarios, reasoning, agent workflows. Action: What should we do? Decisions, execution, outcomes, learn and improve. FACTS Consulting, We Make You Smarter." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
 <em>Analysis to AI to Action, Article 2 of 3</em>
 
@@ -105,7 +105,7 @@ Analysis tells you what you know and what may happen. AI can widen what you are 
     author: 'Bob Katz',
     date: '2026-11-10',
     category: 'AI',
-    image: '/images/blog/facts/your-business-has-the-data.jpg',
+    image: '/images/blog/facts/your-business-has-the-data.webp',
     readTime: '8 min',
     slug: 'your-business-has-the-data',
   },
@@ -623,7 +623,7 @@ The Federal Reserve's October Beige Book says firms in five of its twelve distri
     id: 'facts-ai-pilots-where-are-the-profits',
     title: "AI Pilots Are Everywhere. Where Are the Profits?",
     excerpt: "Most people report being more productive with AI; most companies cannot yet show it in enterprise earnings. Five questions that make an AI investment testable before the money moves.",
-    content: `<a href="/images/blog/facts/ai-pilots-where-are-the-profits.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/ai-pilots-where-are-the-profits.jpg" alt="Cover: a stone bridge with its center span missing, a stopwatch on one bank and an open ledger on the other, under the title AI Pilots Are Everywhere. Where Are the Profits? Analysis to AI to Action, Article 1 of 3, Bob Katz, factservices.com" class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+    content: `<a href="/images/blog/facts/ai-pilots-where-are-the-profits.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/ai-pilots-where-are-the-profits.webp" alt="Cover: a stone bridge with its center span missing, a stopwatch on one bank and an open ledger on the other, under the title AI Pilots Are Everywhere. Where Are the Profits? Analysis to AI to Action, Article 1 of 3, Bob Katz, factservices.com" class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
 <em>Analysis to AI to Action, Article 1 of 3</em>
 
@@ -700,7 +700,7 @@ This series is about the distance between a promising demo and a measurable busi
     author: 'Bob Katz',
     date: '2026-11-01',
     category: 'AI',
-    image: '/images/blog/facts/ai-pilots-where-are-the-profits.jpg',
+    image: '/images/blog/facts/ai-pilots-where-are-the-profits.webp',
     readTime: '7 min',
     slug: 'ai-pilots-where-are-the-profits',
   },
@@ -708,7 +708,7 @@ This series is about the distance between a promising demo and a measurable busi
     id: 'facts-two-ncms-two-ai-futures',
     title: "Two NCMs, Two AI Futures: From Faster Answers to Better Decisions",
     excerpt: "Why the next competitive advantage in AI may have less to do with generating information and more to do with understanding consequences.",
-    content: `<a href="/images/blog/facts/two-ncms-two-ai-futures.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/two-ncms-two-ai-futures.jpg" alt="Infographic comparing two NCMs: Next-Concept Modeling (coarse-to-fine, parallel text generation for faster answers) and Neural Causal Modeling (estimating how pricing, marketing, production and other drivers change revenue, margin and cash flow), and how both fit a financial decision-support pipeline from enterprise data to executive decisions and a recommendation tape." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+    content: `<a href="/images/blog/facts/two-ncms-two-ai-futures.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/two-ncms-two-ai-futures.webp" alt="Infographic comparing two NCMs: Next-Concept Modeling (coarse-to-fine, parallel text generation for faster answers) and Neural Causal Modeling (estimating how pricing, marketing, production and other drivers change revenue, margin and cash flow), and how both fit a financial decision-support pipeline from enterprise data to executive decisions and a recommendation tape." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
 <em>Why the next competitive advantage in AI may have less to do with generating information and more to do with understanding consequences.</em>
 
@@ -870,7 +870,7 @@ That is where the next generation of financial intelligence systems should be he
     author: 'Bob Katz',
     date: '2026-10-24',
     category: 'AI',
-    image: '/images/blog/facts/two-ncms-two-ai-futures.jpg',
+    image: '/images/blog/facts/two-ncms-two-ai-futures.webp',
     readTime: '5 min',
     slug: 'two-ncms-two-ai-futures',
   },

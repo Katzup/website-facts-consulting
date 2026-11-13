@@ -132,7 +132,7 @@ In business, confidence isn't having an answer for everything. Sometimes it's be
 
 I'm still kind of angry that I never got to learn what the kids thought. And as David Banner used to say "Don't make me angry. You wouldn't like me when I'm angry."
 
-<img src="/images/blog/linkedin/you-wouldnt-like-me-when-im-bluffing-inline-19.jpg" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
+<img src="/images/blog/linkedin/you-wouldnt-like-me-when-im-bluffing-inline-19.webp" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
 
 <em>Originally published on <a href="https://www.linkedin.com/pulse/you-wouldnt-like-me-when-im-bluffing-bob-katz-cma-cfm-cfp--m5akc" class="text-navy underline" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</em>`,
     author: 'Bob Katz',
@@ -528,7 +528,7 @@ Wishing everyone a thoughtful and safe <strong>4th of July</strong>!
     author: 'Bob Katz',
     date: '2026-07-02',
     category: 'AI',
-    image: '/images/blog/linkedin/the-ai-trade-is-a-knot-of-contradictions-a-sentientedge-study.jpg',
+    image: '/images/blog/linkedin/the-ai-trade-is-a-knot-of-contradictions-a-sentientedge-study.webp',
     readTime: '3 min',
     slug: 'the-ai-trade-is-a-knot-of-contradictions-a-sentientedge-study',
   },
@@ -578,7 +578,7 @@ This work was completed as part of Georgia Tech's OMSA Practicum in partnership 
     author: 'Bob Katz',
     date: '2026-04-03',
     category: 'Analytics',
-    image: '/images/blog/linkedin/win-by-failing-first-a-practicum-in-3-acts.jpg',
+    image: '/images/blog/linkedin/win-by-failing-first-a-practicum-in-3-acts.webp',
     readTime: '2 min',
     slug: 'win-by-failing-first-a-practicum-in-3-acts',
   },
@@ -712,7 +712,7 @@ Here’s to the journey, the growth, and whatever comes next. If you’re thinki
     author: 'Bob Katz',
     date: '2026-02-22',
     category: 'Analytics',
-    image: '/images/blog/linkedin/de-light-at-the-end-of-the-tunnel.jpg',
+    image: '/images/blog/linkedin/de-light-at-the-end-of-the-tunnel.webp',
     readTime: '4 min',
     slug: 'de-light-at-the-end-of-the-tunnel',
   },
