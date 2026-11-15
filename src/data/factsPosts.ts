@@ -6,7 +6,7 @@ export const factsPosts: BlogPost[] = [
     id: 'facts-the-recommendation-was-approved',
     title: "The Recommendation Was Approved. What Changed on Monday?",
     excerpt: "A recommendation can survive a management meeting without changing the business. Who changes the work, what authority they need, how management establishes whether the change paid, and five questions for the operating review.",
-    content: `<a href="/images/blog/facts/the-recommendation-was-approved.jpg" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/the-recommendation-was-approved.jpg" alt="Cover: The Recommendation Was Approved. What Changed on Monday? Analysis to AI to Action, Article 3 of 3. A miniature stone bridge, now complete, runs from a stopwatch on one bank to an open ledger with a pen resting on it on the other." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+    content: `<a href="/images/blog/facts/the-recommendation-was-approved.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/the-recommendation-was-approved.webp" alt="Cover: The Recommendation Was Approved. What Changed on Monday? Analysis to AI to Action, Article 3 of 3. A miniature stone bridge, now complete, runs from a stopwatch on one bank to an open ledger with a pen resting on it on the other." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
 <em>Analysis to AI to Action, Article 3 of 3</em>
 
@@ -126,9 +126,9 @@ The McKinsey survey figures are from "The State of AI in 2026: On the Road to RO
 
 <em>We Make You Smarter.</em>`,
     author: 'Bob Katz',
-    date: '2026-11-12',
+    date: '2026-11-14',
     category: 'AI',
-    image: '/images/blog/facts/the-recommendation-was-approved.jpg',
+    image: '/images/blog/facts/the-recommendation-was-approved.webp',
     readTime: '10 min',
     slug: 'the-recommendation-was-approved',
   },
