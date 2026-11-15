@@ -1,24 +1,35 @@
 import { Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { subscribeConfig, subscribeAction } from '@/data/subscribe';
+import { subscribeAction } from '@/data/subscribe';
 
-const SubscribeBox = () => {
-  if (!subscribeConfig.buttondownUsername) return null;
+interface SubscribeBoxProps {
+  // Defaults are the SentientEdge research list.
+  action?: string;
+  emailField?: string;
+  blurb?: string;
+}
 
-  // A plain form post: Buttondown may need to show its own page (confirmation or a CAPTCHA).
+const SubscribeBox = ({
+  action = subscribeAction(),
+  emailField = 'email',
+  blurb = 'Free. SentientEdge research letters and Market Week. You confirm by email and can unsubscribe at any time.',
+}: SubscribeBoxProps) => {
+  if (!action) return null;
+
+  // A plain form post: the list service may need to show its own page (confirmation or a CAPTCHA).
   return (
     <div className="mt-12 bg-white rounded-2xl p-6 sm:p-8 shadow-card border border-accent-gold/30">
       <h3 className="text-xl font-bold text-dark-blue mb-2">Get the next issue by email</h3>
       <p className="text-gray-600 mb-5">
-        Free. SentientEdge research letters and Market Week. You confirm by email and can unsubscribe at any time.
+        {blurb}
       </p>
-      <form action={subscribeAction()} method="post" target="_blank">
+      <form action={action} method="post" target="_blank">
         <div className="flex flex-col sm:flex-row gap-3">
           <label htmlFor="subscribe-email" className="sr-only">Email address</label>
           <input
             id="subscribe-email"
             type="email"
-            name="email"
+            name={emailField}
             required
             autoComplete="email"
             placeholder="you@example.com"
