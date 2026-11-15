@@ -4,6 +4,138 @@ import type { BlogPost } from './blogPosts';
 
 export const sentientEdgePosts: BlogPost[] = [
   {
+    id: 'facts-sentientedge-research-letter-2026-11-14',
+    title: "SentientEdge Research Letter: Anthropic (ANT) and the IPO price",
+    excerpt: "An analyst says Anthropic could be worth $10 trillion. The company's amended filing says its margins are about to get worse. We read the S-1's own numbers: twelvefold revenue growth, $900.9 billion of committed spending, and what a buyer at the IPO price is being asked to believe.",
+    content: `## Anthropic (ANT): what the amended S-1 says about the IPO price
+
+## This issue
+
+Two weeks ago an analyst said on a podcast that Anthropic could be a $10 trillion company. Last Tuesday the company filed a document that says its own operating margin is about to get worse. Both statements can be true, and the distance between them is the whole question for anyone deciding whether to buy the IPO.
+
+This letter is a departure from our usual format. Instead of new papers, it reads one filing: Amendment No. 2 to Anthropic's Form S-1, filed 10 November 2026, and in particular its Management's Discussion and Analysis. That amendment adds third-quarter results, which the public commentary so far, including the interview that prompted this letter, did not have.
+
+A disclosure belongs at the top. The AI assistant we use to draft these letters is Claude, which Anthropic makes. Every figure below comes from the filing and can be checked there.
+
+## 1. The claim: "Anthropic is asking Wall Street to believe in AGI"
+
+Nilay Patel interviewing Joey Brookhart of SemiAnalysis · Decoder, The Verge · 29 October 2026 · <a href="https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview" class="text-navy underline" target="_blank" rel="noopener noreferrer">theverge.com</a>
+
+<strong>The argument.</strong>
+
+- Serving the models is now very profitable. Brookhart puts inference gross margin at 85%, up from negative 94% two years ago.
+- Only about 30% of the company's compute serves paying customers. The rest goes to research and training.
+- The large reported losses are mostly non-cash charges from marking convertible notes to a rising valuation.
+- Coding alone will not carry the growth. To reach the $1 trillion of revenue the chief executive has talked about, Brookhart says some white-collar work has to move from AI assisting people to AI saving or replacing labor.
+- He expects revenue to cover the compute commitments, and does not think $1 trillion has to arrive quickly for that. What he calls "huge bets" are the pursuit of far more capable AI and how fast it spreads through the economy.
+- The $10 trillion figure appears once, in an answer about dilution: "You're probably looking at a $10 trillion-plus business." It is conditional on the long-term AGI case. No path from revenue to that number is given.
+
+<strong>How it holds up against the filing.</strong> Better than we expected on the facts, and the filing is less comfortable than the interview on the obligations.
+
+- The 85% is in the filing. A note to the financial statements puts cost of revenue at $4.8 billion on $33.2 billion of revenue for the first nine months of 2026, an 85.5% gross margin. The same calculation gives 40% for 2025 and negative 95% for 2024.
+- The compute split is also there, and it is the catch. Cost of revenue, nearly all of it compute, equals about a quarter of the $18.8 billion spent on compute and infrastructure. Research and development took $19.2 billion, 58% of revenue.
+- The non-cash point is right: $94.3 billion of the $104.0 billion nine-month net loss is the change in fair value of convertible notes and related instruments.
+- The commitments are larger than the interview said. Brookhart worked with $500–600 billion. The amended filing gives $900.9 billion.
+
+## 2. What the amended MD&amp;A reports
+
+Anthropic, PBC · Form S-1/A, Amendment No. 2 · filed 10 November 2026 · <a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm" class="text-navy underline" target="_blank" rel="noopener noreferrer">SEC EDGAR</a>
+
+<strong>The offering.</strong>
+
+- 825 million Class A shares: 801.4 million from the company and 23.6 million from selling stockholders. The underwriters can buy 123.75 million more.
+- The price range is $70.00 to $78.00. The filing's own calculations use the midpoint, $74.00.
+- A concurrent private placement of about $26.0 billion at the IPO price goes to Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC. Net proceeds to the company from both are estimated at $84.6 billion.
+- 13.09 billion shares will be outstanding afterwards, which is $968 billion at $74. Adding outstanding options, unvested stock units and the Amazon notes that have not yet converted, we count about 17.5 billion shares, or roughly $1.3 trillion. That fully diluted figure is our own count, and it leaves out shares reserved for future grants and for the company's charitable programs.
+- The shares sold to the public are 6.3% of the shares outstanding.
+
+<strong>Growth.</strong>
+
+<div class="overflow-x-auto mb-6"><table class="w-full text-sm text-left text-gray-700 border-collapse"><thead><tr><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Quarter</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Revenue ($ millions)</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Change on prior quarter</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Compute and infrastructure, % of revenue</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Operating margin</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Adjusted operating margin</th></tr></thead><tbody><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Q1 2025</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">376</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap"></td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">251%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(249)%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(221)%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Q2 2025</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">787</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+109%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">177%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(152)%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(129)%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Q3 2025</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">1,382</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+76%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">148%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(224)%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(93)%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Q4 2025</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">2,040</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+48%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">144%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(139)%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(84)%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Q1 2026</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">4,731</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+132%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">72%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(35)%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(13)%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Q2 2026</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">11,555</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+144%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">48%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">8%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">19%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Q3 2026</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">16,956</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+47%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">58%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">(3)%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">15%</td></tr></tbody></table></div>
+
+- Third-quarter revenue of $17.0 billion is twelve times the year-earlier quarter. Annualized, it is about $68 billion.
+- Growth slowed in the third quarter, from 144% to 47% quarter on quarter. The dollar increase also fell, from $6.8 billion to $5.4 billion.
+- More than 11,900 customers each account for at least $100,000 of trailing revenue, up from just over 950 a year earlier. They supply 74% of revenue. No customer is above 10%.
+- Net revenue retention is stated as approximately 900%.
+- Consumption-based revenue is 79% of the total. The filing says much of it is not under long-term contract.
+
+<strong>Margins.</strong>
+
+- The second quarter of 2026 was the first with operating income, $974 million. The third quarter returned to a loss of $567 million.
+- The company gives two reasons for the third-quarter loss. It bought $5.0 billion of compute on short-term contracts, which "currently costs significantly more" than its long-term supply. And it recorded $2.0 billion of non-cash charges for its employee donation matching program.
+- Adjusted operating income, which excludes stock compensation and the donation charges, was $2.5 billion in the third quarter, a 15% margin, against 19% in the second.
+- The filing says this will continue: "We expect our use of short-term compute to continue to increase in the near term and to in turn compress our operating margin and Adjusted Operating Margin as a result."
+- Fees to cloud channel partners are large. Sales, marketing and partnerships cost $5.5 billion in nine months, 17% of revenue, and nearly all of the increase was channel fees.
+
+<strong>Commitments.</strong>
+
+- Total committed spend is about $900.9 billion, substantially all for compute and infrastructure. About $451.6 billion falls before the end of 2030, and most of the rest between 2031 and 2045.
+- $70.7 billion is due in the twelve months after 30 September 2026. Compute and infrastructure expense in the third quarter ran at about $39 billion a year.
+- A further $150–175 billion of expected payments is outside that total because the contracts set no fixed amount.
+- About $186.2 billion of the total can still be terminated or depends on conditions the counterparty has not yet met.
+- The commitments are take-or-pay. The risk factors say that a default under certain commercial agreements could trigger cross-defaults on the credit facility and convertible notes.
+
+<strong>Cash.</strong>
+
+- Cash and short-term investments were $131.9 billion at 30 September, before the offering. A $15 billion credit facility is almost entirely undrawn.
+- Operating cash flow was positive $6.6 billion for the nine months, against negative $2.0 billion a year earlier.
+- Partners have agreed to buy up to $77 billion of further convertible notes, falling to $67 billion once Google's part of the private placement closes. Some would convert at a discount to the market price.
+
+<strong>Two smaller disclosures that matter.</strong>
+
+- The company estimates that 5% to 7% of nine-month revenue, roughly $1.7–2.3 billion, came from customers later found to be breaking its usage rules. It stepped up enforcement in August and September and says the effect on future revenue is uncertain.
+- Price cuts on new model versions and contractual discounts took about $600 million off second-quarter revenue.
+
+<strong>Limitations.</strong>
+
+- This is the issuer's own account, written to sell shares. The third-quarter figures are unaudited.
+- Total compute is not split between serving customers and training. The company says it manages compute as one pool, so the 85% gross margin depends on its own allocation.
+- "Adjusted" results leave out stock compensation of $3.3 billion in nine months. That is a real cost to shareholders, paid in dilution.
+- There is no forecast. The company says only that revenue growth will decline and margins will fluctuate.
+- Public shareholders will have little say. The Class A shares carry one vote each and a large part of the capital is non-voting. The company's Long-Term Benefit Trust, through a single special share, elects a majority of the board, which makes Anthropic a "controlled company" under Nasdaq rules. As a public benefit corporation it must weigh its mission against shareholder returns, and the filing says its benefit programs may reduce revenue and add dilution.
+- Holders of about 15.5 billion shares are locked up for 180 or 365 days, but 3.6 billion of those can be released early, some from the first day of trading.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE: revenue grew twelvefold in a year and the customer base broadened. Serving customers earns an 85% gross margin. The business generated cash from operations in 2026.
+- EVIDENCE: the reported net losses are overwhelmingly non-cash valuation charges that largely end as the notes convert.
+- EVIDENCE: fixed obligations of $900 billion have been taken on against revenue that is mostly not contracted, and the payments due in the next year are close to twice the rate of compute spending in the third quarter.
+- EVIDENCE: growth slowed and margins fell in the most recent quarter, and the company expects further margin pressure.
+- SPECULATION: that revenue keeps growing fast enough to cover the commitments. The filing's own model depends on it.
+- SPECULATION: that training spend can ever fall as a share of revenue. The company says staying at the frontier is what sells the product.
+- SPECULATION: $10 trillion. Nothing in the filing supports a number of that size or rules it out.
+
+## What the price requires
+
+These are our assumptions, not the filing's.
+
+At $74 the fully diluted value is about $1.3 trillion. After the cash on hand and the offering proceeds, that is about 16 times annualized third-quarter revenue and about 130 times annualized adjusted operating income.
+
+For the shares to return 10% a year for five years, before any further dilution, the company would need to be worth about $2.1 trillion in late 2031. At 25 times earnings that is $83 billion of net income. At a 25% net margin it is about $330 billion of revenue, five times today's run rate, or 38% growth a year for five years.
+
+That is a demanding path, but it is not an AGI path. It is roughly the path the company has already committed to. $451.6 billion due before the end of 2030 averages more than $100 billion a year. If compute stays near half of revenue, paying for that needs revenue of about $200 billion a year on average across the period.
+
+So the buyer at $74 is not being asked to believe in $10 trillion. The buyer is being asked to believe that revenue triples again and then keeps going, on contracts customers can walk away from, while the bills are fixed. If it works, the commitments look like foresight. If growth stalls at two times today's revenue, the same commitments are the problem.
+
+## Our view
+
+The business is real: it has customers, gross margin and operating cash flow. The price is defensible, not cheap. The filing itself says the next few quarters will show lower margins as more compute arrives ahead of the revenue it supports.
+
+We would not buy on the first day. Three things make waiting inexpensive. Only about 6% of the shares are being sold, so early trading will reflect scarcity more than value. Every $10 above the midpoint adds about $175 billion to the fully diluted value. And the first two quarterly reports, which will show whether revenue is outrunning the commitments, arrive within about six months.
+
+A small position at or below the range is a reasonable speculation for an investor who can hold through a period of falling margins. A large one, or one bought well above the range, is a bet on the AGI case, and should be sized as such.
+
+<strong>What we will do with it.</strong> The stock cannot enter our screens until it has a trading history, so we will make no decision at the offering. We will read the first two quarterly reports against three figures from this filing: compute and infrastructure as a share of revenue (58% in the third quarter), revenue growth on the prior quarter (47%), and the amount of short-term compute bought ($5.0 billion). If compute is still above 60% of revenue in the second quarter of 2027, or quarterly growth falls below 15% before annualized revenue reaches $120 billion, we will treat the IPO price as unsupported by the company's own model and say so here.
+
+<em>This letter is drafted with AI research assistance and reviewed and signed by Bob Katz. The assistant used is Claude, a product of Anthropic, the company discussed in this issue. It is research commentary, not investment advice. Figures are taken from Amendment No. 2 to Anthropic's Form S-1 as filed on 10 November 2026; the offering terms can change before pricing. Valuation figures and the five-year arithmetic are our own calculations.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-14',
+    category: 'SentientEdge Research',
+    image: '/images/blog/facts/sentientedge-research-letter-2026-11-14.jpg',
+    readTime: '10 min',
+    slug: 'sentientedge-research-letter-2026-11-14',
+  },
+  {
     id: 'facts-sentientedge-research-letter-2026-11-13',
     title: "SentientEdge Research Letter: November 13, 2026",
     excerpt: "The most careful papers this week mostly find nothing. A live overfitting gate inside an AI strategy search refused to certify 36 of 37 runs, a quantum layer in a stock ranker added nothing, and a pre-registered retest found an old effect alive with no mechanism to explain it.",
