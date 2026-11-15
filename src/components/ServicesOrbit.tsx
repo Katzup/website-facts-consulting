@@ -32,7 +32,7 @@ const Hub = ({ style }: { style: HubStyle }) => {
     return (
       <div className="flex h-24 w-24 items-center justify-center overflow-hidden rounded-2xl border border-accent-gold/30 bg-white shadow-2xl">
         <img
-          src="/images/facts-icon.png"
+          src="/images/facts-icon.webp"
           alt="FACTS Consulting"
           className="h-full w-full object-contain p-2"
         />

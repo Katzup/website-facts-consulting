@@ -214,7 +214,7 @@ const BlogArticle = () => {
                   Browse by Category
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Finance', 'Analytics', 'Consulting', 'Transformation', 'AI', 'CxO Advisory'].map((category) => (
+                  {['Finance', 'Analytics', 'Consulting', 'Transformation', 'AI', 'CxO Advisory', 'SentientEdge Research'].map((category) => (
                     <Link
                       key={category}
                       to={`/#blog`}

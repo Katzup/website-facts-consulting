@@ -2,6 +2,7 @@ import { wordpressPosts } from './wordpressPosts';
 import { mediumPosts } from './mediumPosts';
 import { linkedinPosts } from './linkedinPosts';
 import { factsPosts } from './factsPosts';
+import { sentientEdgePosts } from './sentientEdgePosts';
 
 export interface BlogPost {
   id: string;
@@ -16,9 +17,9 @@ export interface BlogPost {
   slug: string;
 }
 
-// The blog is Bob Katz's own writing: articles written for this site, LinkedIn articles
+// The blog is Bob Katz's own writing: articles written for this site, SentientEdge research letters and market notes, LinkedIn articles
 // (2014–2026), Medium articles (2023–2026) and the original WordPress posts (2009–2018), newest first.
-export const blogPosts: BlogPost[] = [...factsPosts, ...linkedinPosts, ...mediumPosts, ...wordpressPosts].sort(
+export const blogPosts: BlogPost[] = [...factsPosts, ...sentientEdgePosts, ...linkedinPosts, ...mediumPosts, ...wordpressPosts].sort(
   (a, b) => b.date.localeCompare(a.date)
 );
 
@@ -36,7 +37,7 @@ export const getRecentBlogPosts = (count: number = 3): BlogPost[] => {
 };
 
 export const getAllCategories = (): string[] => {
-  return ['Finance', 'Analytics', 'Consulting', 'Transformation', 'AI', 'CxO Advisory'];
+  return ['Finance', 'Analytics', 'Consulting', 'Transformation', 'AI', 'CxO Advisory', 'SentientEdge Research'];
 };
 
 export const getBlogPostsByYear = (year: number): BlogPost[] => {

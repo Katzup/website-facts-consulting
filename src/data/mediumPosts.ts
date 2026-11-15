@@ -6,7 +6,7 @@ export const mediumPosts: BlogPost[] = [
     id: 'medium-70d4d4dd',
     title: 'Can Timing Beat Bitcoin DCA? What a Georgia Tech OMSA Practicum Taught Me',
     excerpt: 'Most Bitcoin accumulation advice boils down to: buy the same amount every day and don\'t look at the chart. Dollar-cost averaging (DCA) is simple, disciplined, and hard to beat. So when Georgia Tech\'s OMSA program…',
-    content: `<img src="/images/blog/medium/1_vo2nB_y9Gihqzuiv8tluVQ.png" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
+    content: `<img src="/images/blog/medium/1_vo2nB_y9Gihqzuiv8tluVQ.webp" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
 
 <pre class="bg-gray-100 p-4 rounded overflow-x-auto text-sm"><code>Most Bitcoin accumulation advice boils down to: buy the same amount every day and don&#x27;t look at the chart. Dollar-cost averaging (DCA) is simple, disciplined, and hard to beat. So when Georgia Tech&#x27;s OMSA program challenged me to try, I expected the answer to be &quot;no.&quot;I was almost right.The Hypothesis That FailedThe original idea was straightforward: train a CNN on candlestick chart images to classify next-day price direction, then tilt daily Bitcoin purchases based on the model&#x27;s confidence. If the model says &quot;up,&quot; buy more. If &quot;down,&quot; buy less.The CNN achieved respectable classification accuracy during training. But when fed through the tournament&#x27;s actual evaluation metric — recency-weighted sats-per-dollar across 3,076 rolling windows from 2016–2025 — it scored 41.43%. A neutral baseline that simply buys the same amount every day? 41.94%. The CNN was indistinguishable from a coin flip in the metric that mattered.Pattern recognition is not the same as a trading edge.What Actually WorkedRather than abandon the project, I stripped the approach down to something almost embarrassingly simple.Take the OLS trend slope of Bitcoin&#x27;s log price over a 60-day window. Normalize it as a z-score against a 252-day rolling standard deviation. Clip outliers at ±2 standard deviations. Then convert to a daily purchase weight:      prob_up = 0.5 − 0.15 × tanh(z-score)That&#x27;s the entire signal. When Bitcoin&#x27;s trend is unusually strong relative to recent volatility, the formula slightly reduces your daily purchase. When the trend is unusually weak, it slightly increases it. The tilt is modest — never more than ±15 percentage points from equal weighting.This scored 44.95% on the tournament percentile — a +3.01 percentage point improvement over neutral DCA.Three points doesn&#x27;t sound like much. But in a tournament where thousands of rolling windows are evaluated and most signals cluster near the baseline, a consistent 3-point edge is meaningful. It means you&#x27;re accumulating more sats per dollar across a wide variety of market conditions.</code></pre>
 
@@ -22,7 +22,7 @@ export const mediumPosts: BlogPost[] = [
     author: 'Bob Katz',
     date: '2026-04-15',
     category: 'Analytics',
-    image: '/images/blog/medium/1_vo2nB_y9Gihqzuiv8tluVQ.png',
+    image: '/images/blog/medium/1_vo2nB_y9Gihqzuiv8tluVQ.webp',
     readTime: '5 min',
     slug: 'can-timing-beat-bitcoin-dca-what-a-georgia-tech-omsa-practicum-taught-me',
   },
@@ -30,7 +30,7 @@ export const mediumPosts: BlogPost[] = [
     id: 'medium-b79bba51',
     title: 'Riding the Worm',
     excerpt: '## Harnessing the Shai-Hulud of Artificial Intelligence There’s a scene in Dune — Frank Herbert’s sci-fi epic — where Paul Atreides in his rite of passage to become the Kwisatz Haderach, finally summons and rides a…',
-    content: `<img src="/images/blog/medium/1_Fq1Hpci3zJspfdZQXj0mQw.png" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
+    content: `<img src="/images/blog/medium/1_Fq1Hpci3zJspfdZQXj0mQw.webp" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
 
 ## Harnessing the Shai-Hulud of Artificial Intelligence
 
@@ -93,7 +93,7 @@ The future isn’t controlled by the most cautious or the most confident. It’s
     author: 'Bob Katz',
     date: '2025-06-20',
     category: 'AI',
-    image: '/images/blog/medium/1_Fq1Hpci3zJspfdZQXj0mQw.png',
+    image: '/images/blog/medium/1_Fq1Hpci3zJspfdZQXj0mQw.webp',
     readTime: '3 min',
     slug: 'riding-the-worm',
   },
@@ -101,7 +101,7 @@ The future isn’t controlled by the most cautious or the most confident. It’s
     id: 'medium-e5060474',
     title: 'When ya know, ya know',
     excerpt: 'With all the buzz about AI and ChatGPT these days, what’s a management consultant to do? Clients that used to rely on experts to assist their businesses are now going to chatbots for answers instead. In my early…',
-    content: `<img src="/images/blog/medium/1_4ITgXKn2wU2qSs0eNAzTag.png" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
+    content: `<img src="/images/blog/medium/1_4ITgXKn2wU2qSs0eNAzTag.webp" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
 
 <strong>With all the buzz about AI and ChatGPT these days, what’s a management consultant to do?</strong> Clients that used to rely on experts to assist their businesses are now going to chatbots for answers instead.
 
@@ -133,7 +133,7 @@ A consultant can dream, right?
     author: 'Bob Katz',
     date: '2023-03-22',
     category: 'Consulting',
-    image: '/images/blog/medium/1_4ITgXKn2wU2qSs0eNAzTag.png',
+    image: '/images/blog/medium/1_4ITgXKn2wU2qSs0eNAzTag.webp',
     readTime: '3 min',
     slug: 'when-ya-know-ya-know',
   },

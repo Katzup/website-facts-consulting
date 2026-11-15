@@ -49,7 +49,7 @@ Meanwhile, back in the “real world” the stock market as measured by the DJIA
     id: 'wp-889',
     title: 'A Real-World Guide to Artificial Intelligence – Tom Davenport/Rajeev Ronanki – HBR Jan./Feb. 2018',
     excerpt: 'Practical advice on the practical applications of AI in business. Tom Davenport (Babson professor) and Raj Ronanski, prinicpal at Deloitte Consulting discuss how companies can successfully apply AI in their…',
-    content: `<img src="/images/blog/wp/BR1801_500-242x300.png" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
+    content: `<img src="/images/blog/wp/BR1801_500-242x300.webp" alt="" class="my-6 max-w-full h-auto rounded" loading="lazy"/>
 
 Practical advice on the practical applications of AI in business.  Tom Davenport (Babson professor) and Raj Ronanski, prinicpal at Deloitte Consulting discuss how companies can successfully apply AI in their organizations. The authors identify three types of AI:
 
@@ -66,7 +66,7 @@ To then successfully apply AI, companies must:
     author: 'Bob Katz',
     date: '2018-01-20',
     category: 'AI',
-    image: '/images/blog/wp/BR1801_500-242x300.png',
+    image: '/images/blog/wp/BR1801_500-242x300.webp',
     readTime: '1 min',
     slug: 'a-real-world-guide-to-artificial-intelligence-tom-davenportraj-ronanki-hbr-jan-feb-2018',
   },
@@ -215,7 +215,7 @@ But while tools are important to create new models and understanding of how the 
     author: 'Bob Katz',
     date: '2013-06-18',
     category: 'Analytics',
-    image: '/images/blog/wp/brad-pitt-moneyball.jpg',
+    image: '/images/blog/wp/brad-pitt-moneyball.webp',
     readTime: '3 min',
     slug: 'batter-up',
   },
@@ -474,7 +474,7 @@ So the next time you hear statements like these —
     author: 'Bob Katz',
     date: '2012-10-10',
     category: 'Consulting',
-    image: '/images/blog/wp/strategy-or-execution.jpg',
+    image: '/images/blog/wp/strategy-or-execution.webp',
     readTime: '4 min',
     slug: 'strategy-or-execution-which-is-more-important',
   },
@@ -795,7 +795,7 @@ I’ve included links to the opening presentation and the luncheon presentation 
     author: 'Bob Katz',
     date: '2009-04-02',
     category: 'Consulting',
-    image: '/images/blog/wp/shutterstock_105540734.jpg',
+    image: '/images/blog/wp/shutterstock_105540734.webp',
     readTime: '1 min',
     slug: 'clean-tech-investing',
   },
