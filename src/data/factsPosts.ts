@@ -3,6 +3,145 @@ import type { BlogPost } from './blogPosts';
 
 export const factsPosts: BlogPost[] = [
   {
+    id: 'facts-cxo-advisory-letter-2026-11-18',
+    title: "CxO Advisory Letter: Week of November 18, 2026",
+    excerpt: "Gartner finds finance workers save about five hours a week with AI and redeploy 1.7 of them. Also this week: CFO budget assumptions for 2027, who controls AI investment, how deep small-business AI use goes, and executives who trust AI output more than their staff do.",
+    content: `## This week
+
+By Gartner's count, finance workers save a little over five hours a week with AI, and 1.7 of those hours go to work that improves team or business outcomes. Finance also has the widest gap of any major function between AI-related staff cuts and additions: 27% of finance functions report a decrease and 6% an increase. In a separate survey of more than 5,000 AI users, executives were about twice as likely as their staff to trust AI over their own judgment. The people with AI in their job titles hold surprisingly little of the money: 18% of chief AI officers in IBM's new study say they fully control AI investment decisions.
+
+## Finance &amp; performance management
+
+### Finance has the widest gap between AI-related staff cuts and additions, and is redeploying little of the time it saves
+
+<em>Gartner research reported by CFO.com, "AI spurs finance headcount dip," November 16, 2026.</em> <a href="https://www.cfo.com/news/ai-spurs-finance-headcount-dip/874563/" class="text-navy underline" target="_blank" rel="noopener noreferrer">CFO.com</a> · <a href="https://www.gartner.com/en/newsroom/press-releases/2026-11-04-gartner-idnetifies-three-steps-for-cfos-to-turn-ai-time-saavings-into-business-value" class="text-navy underline" target="_blank" rel="noopener noreferrer">Gartner release, Nov 4</a>
+
+<strong>What the evidence shows.</strong> Gartner surveyed 1,303 senior functional leaders. Through April of this year, 27% of finance functions reported an AI-related decrease in headcount and 6% an increase. That 21-point gap is the widest of any major function. Supply chain is next (29% decrease, 11% increase), and across all functions it is 23% against 17%. Finance workers save an average of 5.4 hours a week after implementing traditional AI and 5 hours after generative AI. Only 1.7 hours a week are redeployed to activities that improve team or business outcomes. Finance reported a 19% productivity gain from AI, behind IT, marketing and legal at 22% each. Finance leaders name "readiness of functional talent" as the top barrier. Gartner's advice is to require finance leaders to report "how saved time is converted into measurable business outcomes, not activities."
+
+<a href="/images/blog/facts/cxo-advisory-letter-2026-11-18-gartner-ai-headcount-by-function.png" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/cxo-advisory-letter-2026-11-18-gartner-ai-headcount-by-function.png" alt="Bar chart: share of functional leaders reporting an AI-related headcount change through April 2026. Finance: fell 27%, rose 6%. Supply chain: fell 29%, rose 11%. All functions: fell 23%, rose 17%. Source: Gartner survey of 1,303 senior functional leaders, as reported by CFO.com, November 16, 2026." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<a href="/images/blog/facts/cxo-advisory-letter-2026-11-18-gartner-finance-hours-redeployed.png" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/cxo-advisory-letter-2026-11-18-gartner-finance-hours-redeployed.png" alt="Single figure: 1.7 hours per week of finance workers' AI time savings are redeployed to work that improves team or business outcomes, out of an average 5.4 hours saved with traditional AI or 5 hours with generative AI. Source: Gartner, as reported by CFO.com, November 16, 2026." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<strong>How solid is it.</strong> INDEPENDENT SURVEY. The leaders are reporting on their own functions, and the 1,303 covers every function, not finance alone. The figures here are as reported by CFO.com from Gartner's release; its report gives no company-size threshold or fieldwork dates.
+
+<strong>Which roles it affects.</strong> CFO, Chief Accounting Officer, controller, CPO (People), CAIO.
+
+<strong>For an SMB leadership team.</strong>
+
+- For each AI tool in finance, have the controller write down the hours it saves per week and what those hours now go to: forecast accuracy, scenario work, time with operating managers. Review the list at the next quarterly close.
+- Before you leave a finance seat unfilled because AI covers it, decide who will learn the judgment that junior staff used to pick up by doing reconciliations and variance analysis.
+
+### CFOs at larger companies are planning to buy growth, and fewer than half expect organic growth above 5%
+
+<em>Gartner CFO survey on 2027 budget assumptions, reported by Journal of Accountancy, November 11, 2026.</em> <a href="https://www.journalofaccountancy.com/news/2026/nov/2027-cfo-forecast-mergers-and-acquisitions-on-the-rise/" class="text-navy underline" target="_blank" rel="noopener noreferrer">Journal of Accountancy</a> · <a href="https://www.gartner.com/en/newsroom/press-releases/2026-11-11-gartner-says-cfos-plan-bigger-investments-in-m-and-a-and-capital-projects-to-drive-growth-in-2027" class="text-navy underline" target="_blank" rel="noopener noreferrer">Gartner release</a>
+
+<strong>What the evidence shows.</strong> Gartner surveyed 150 finance leaders at companies with 2025 revenue of at least $250 million (80 in North America, 29 in Europe, 26 in Asia-Pacific, 15 in Australia and New Zealand), from mid-August to mid-September. 50% expect a revenue-impacting acquisition in 2027, up from 32% a year earlier. 69% expect capital expenditure to rise, up from 56%. 53% call the external environment favorable, up from 39%, yet only 43% expect organic revenue growth above 5%. The cost side is tight. 95% are planning for direct labor cost increases of 3% or more, and 67% expect nonpersonnel input costs to increase similarly. Only half expect to raise prices by more than 3%. The report's title sums up the plan: "2027 Budget Assumptions: More AI, Flat Headcount Amid Weaker Organic Growth."
+
+<strong>How solid is it.</strong> INDEPENDENT SURVEY. The sample is small and every company has at least $250 million in revenue. The figures here are as reported by the Journal of Accountancy from Gartner's release.
+
+<strong>Which roles it affects.</strong> CEO, CFO, GC (deal work), CPO (People) for labor-cost planning.
+
+<strong>For an SMB leadership team.</strong>
+
+- Build the 2027 budget with labor up at least 3% and price increases limited to what you actually got through in 2026. Name where the difference will come from.
+- If your company could be one of those acquisitions, ask the CFO how long it would take to produce trailing-twelve-month financials, customer concentration and contract assignment terms for a buyer. If the answer is more than two weeks, fix that first.
+
+## C-suite role shifts
+
+### Chief AI officers are accountable for AI value, but few control the AI budget
+
+<em>IBM Institute for Business Value with Oxford Economics, study of chief AI officers, press release November 17, 2026.</em> <a href="https://newsroom.ibm.com/2026-11-17-ibm-study-chief-ai-officers-see-where-ai-creates-value,-but-few-control-investment-decisions" class="text-navy underline" target="_blank" rel="noopener noreferrer">IBM release</a>
+
+<strong>What the evidence shows.</strong> IBM surveyed 1,667 senior executives responsible for enterprise AI strategy, governance, implementation and value realization, including CAIOs, chief data and AI officers and heads of AI, across 33 geographies and 20 industries from April to June 2026. 18% say they have full control over AI investment decisions. 75% say governance, risk or compliance delays AI-driven action, and 61% say AI decision rights are clearly defined and consistently applied. 40% say that when performance insights reveal an opportunity, it gets discussed but action is delayed. IBM separates a "high-impact" group of CAIOs from everyone else, and the gap is mostly about stopping and redeploying money. 96% of the high-impact group stop or cut investment in failing initiatives, even ones with senior sponsors, against 46% of the rest. 95% reinvest AI productivity gains in higher-value transformation, against 44%. They report 63% of AI projects delivering measurable outcomes (43% for the rest), and they scale successes in 8 months rather than 13.5.
+
+<strong>How solid is it.</strong> VENDOR SURVEY. IBM sells AI software and services. The release doesn't say how the "high-impact" group was defined, gives no company-size threshold, and doesn't cover reporting lines. The comparisons are correlations: organizations that are already well run may also be the ones willing to kill projects.
+
+<strong>Which roles it affects.</strong> CAIO, CEO, CFO, CIO/CTO.
+
+<strong>For an SMB leadership team.</strong>
+
+- Write down, for each live AI initiative, who can approve it, who can pause it and the result that would stop it. If nobody can answer the third question, that is the gap IBM's high-impact group closed.
+- If you have made one person accountable for AI results, whatever their title, give them either a budget line or a vote in the meeting where capital is allocated.
+
+### Few leaders think their own executives are ready to lead AI change, and entry-level hiring is being redesigned rather than simply cut
+
+<em>Korn Ferry, "Talent Trends 2027," October 22, 2026; Fortune coverage November 7, 2026.</em> <a href="https://www.kornferry.com/insights/featured-topics/future-of-work-articles/talent-trends" class="text-navy underline" target="_blank" rel="noopener noreferrer">Korn Ferry</a> · <a href="https://fortune.com/2026/11/07/korn-ferry-survey-ai-transformation-leaders-middle-managers/" class="text-navy underline" target="_blank" rel="noopener noreferrer">Fortune</a>
+
+<strong>What the evidence shows.</strong> Korn Ferry's 13th annual survey covers more than 1,300 talent and senior leaders, from talent teams and CHROs to CEOs and board members, in more than 75 countries. 6% believe their senior leaders are fully prepared to guide the organization through AI-driven transformation. Respondents were asked what will happen to their entry-level and early-career roles in 2027. The answers add up to well over 100%, so respondents evidently could choose more than one. 40% will hold volumes but redesign the roles around higher-value work. 21% will reduce entry-level hiring and lean on experienced people, 19% will cut entry-level roles and lean on AI and AI agents, and 16% will grow entry-level hiring. 69% agree that HR, talent acquisition, learning and development and workforce planning will become one integrated function.
+
+<strong>How solid is it.</strong> INDEPENDENT SURVEY, from a firm that sells leadership and talent consulting. Sampling method, fieldwork dates and the exact sample size aren't disclosed, and the sample isn't limited to smaller companies.
+
+<strong>Which roles it affects.</strong> CEO, CPO (People), CFO, plus every CxO who hires junior staff.
+
+<strong>For an SMB leadership team.</strong>
+
+- In finance, marketing and customer service, list the entry-level tasks AI now does. For each, decide how new hires will build the skill it used to teach.
+- At the next leadership offsite, have each executive name one AI-related change they have personally led to completion this year. The 6% is how talent and senior leaders rate their own top teams. Your team should get the same check.
+
+## AI adoption in SMBs
+
+### Two-thirds of very small businesses use AI, but one in five uses it across more than a few tasks
+
+<em>Gusto, 2026 State of Small Business report, as reported by CPA Practice Advisor, November 12, 2026.</em> <a href="https://www.cpapracticeadvisor.com/2026/11/12/small-business-owners-are-more-confident-in-their-own-companies-than-in-the-economy-and-two-thirds-use-ai/193807/" class="text-navy underline" target="_blank" rel="noopener noreferrer">CPA Practice Advisor</a> · <a href="https://gusto.com/resources/gusto-insights/state-of-small-business-2026" class="text-navy underline" target="_blank" rel="noopener noreferrer">Gusto report</a>
+
+<strong>What the evidence shows.</strong> Gusto surveyed 1,731 owners of U.S. businesses with 24 or fewer employees. 67% use AI tools. That breaks down as 19% experimenting, 28% using it for at least some tasks, 15% using it regularly across multiple functions and 5% who say it is built into every part of the business the technology allows. In professional services, 27% use AI across multiple functions or the whole business, against 16% in personal services and 13% in community services. 25% of businesses with employees now have an AI policy, up from 15% a year ago. About 60% of AI users are comfortable letting AI draft marketing content with limited oversight, against 27% of non-users. On outlook, 61% of owners are optimistic about their own business, unchanged from last year, and 18% are optimistic about the U.S. economy, down from 29%. 52% raised prices in the past 12 months, and 50% plan to raise them again next year.
+
+<a href="/images/blog/facts/cxo-advisory-letter-2026-11-18-gusto-ai-use-depth.png" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/cxo-advisory-letter-2026-11-18-gusto-ai-use-depth.png" alt="Bar chart: owners of U.S. businesses with 24 or fewer employees, by depth of AI use. Experimenting 19%, some tasks 28%, regularly across multiple functions 15%, built into every part of the business possible 5%. Source: Gusto 2026 State of Small Business survey of 1,731 owners (vendor survey), as reported by CPA Practice Advisor, November 12, 2026." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<strong>How solid is it.</strong> VENDOR SURVEY. Gusto sells payroll and HR software to small businesses. The figures here are as reported by CPA Practice Advisor, whose article doesn't give fieldwork dates, weighting, or whether respondents were Gusto customers. The 67% is far above the Census Bureau's estimate for AI use in a business function. The definitions differ, and this survey counts experimenting as use.
+
+<strong>Which roles it affects.</strong> CEO/owner, CFO or outsourced controller, CMO, CPO (People).
+
+<strong>For an SMB leadership team.</strong>
+
+- If you have employees and no AI policy, write a one-page version this quarter. It should list approved tools, what customer and employee data may not be entered, and which outputs need a named person's review before they leave the building.
+- Ask each function head which of the four Gusto stages describes their team. Pick one function to move from "some tasks" to regular use, with a measure attached.
+
+### Executives trust AI more than their staff do, including output they doubt
+
+<em>Charter, "AI Pulse," released October 21, 2026; Fortune coverage November 16, 2026.</em> <a href="https://www.charterworks.com/research/ai-pulse/" class="text-navy underline" target="_blank" rel="noopener noreferrer">Charter</a> · <a href="https://fortune.com/2026/11/16/executives-trust-ai-more-than-gen-z-charter-survey/" class="text-navy underline" target="_blank" rel="noopener noreferrer">Fortune</a>
+
+<strong>What the evidence shows.</strong> Charter's report is based on more than 5,000 surveys and 90 interviews of AI users. Fortune describes the sample as 5,002 full-time U.S. desk workers who use AI on the job. Executives are 2.5 times as likely as workers to trust AI outputs and about twice as likely to trust AI over their own judgment. 85% of executives are at least somewhat optimistic about AI's impact on their organization, against 56% of employees. Fortune reports two figures not on Charter's summary page: 81% of executives say they always or usually fact-check AI output, against 71% of workers, yet executives are 3.3 times as likely to use outputs they doubt. 36% of AI users have hidden their AI use from a manager, colleague or client, and managers are 1.6 times as likely as workers to conceal it. Fewer than 40% receive hands-on training, and Charter puts the share of employers that provide AI policies and guidelines at 50.5%. 42.7% say AI makes their work and life at least somewhat better, and 10.5% say much better.
+
+<strong>How solid is it.</strong> INDEPENDENT SURVEY, from a company that also sells memberships and advisory services. Only AI users were sampled, so it says nothing about non-users. Fieldwork dates and weighting aren't on the summary page, and the sample isn't limited to smaller firms. The 81%/71% and 3.3x figures come from Fortune only.
+
+<strong>Which roles it affects.</strong> CEO, CFO, CAIO, GC, CPO (People).
+
+<strong>For an SMB leadership team.</strong>
+
+- For board, lender and investor materials, require any AI-assisted analysis to name the tool used and the person who checked the figures against source data.
+- Ask managers directly whether their teams hide AI use, and what would make them stop. Hidden use can't be governed or improved.
+
+## The numbers
+
+- <strong>27% vs 6%</strong>: Finance functions reporting an AI-related headcount decrease vs increase (Gartner, via CFO.com)
+- <strong>1.7 of ~5.4 hours</strong>: Weekly AI time savings in finance redeployed to outcome-improving work (Gartner, via CFO.com)
+- <strong>50% (from 32%)</strong>: CFOs at $250M+ companies expecting a revenue-impacting acquisition in 2027 (Gartner, via Journal of Accountancy)
+- <strong>18%</strong>: Chief AI officers with full control over AI investment decisions (IBM Institute for Business Value)
+- <strong>6%</strong>: Talent and senior leaders who say their senior leaders are fully prepared to lead AI transformation (Korn Ferry)
+- <strong>25% (from 15%)</strong>: U.S. small businesses with employees that have an AI policy (Gusto, vendor survey)
+
+## What I'm watching
+
+<strong>How locked in mid-market cloud workloads really are.</strong> <a href="https://www.techtarget.com/news/5-cio-priorities-that-wont-wait-for-ai-in-2027/874606/" class="text-navy underline" target="_blank" rel="noopener noreferrer">TechTarget</a> reports a survey commissioned by the hosting provider Leaseweb: 800 C-suite executives at companies with 500 to 5,000 employees in four countries. 89% estimated they couldn't move critical workloads away from their largest cloud or infrastructure provider within three weeks, and 55% said it would take more than three months or isn't currently possible. These are estimates, not tested migrations, and they come from a seller of hosting. The figures here are as reported by TechTarget, not from Leaseweb's own release. I suspect the number is directionally right, and the harder question is whether anyone has priced the exit.
+
+<strong>ERP migration overruns.</strong> ISG says nearly 60% of SAP migrations are both behind schedule and over budget (58% in its own breakdown, with another 27% missing one or the other). The finding rests on a survey of more than 200 senior decision-makers and on ISG's own advisory engagements; I have not checked it against the full report, which requires registration. Mainstream maintenance for the core SAP Business Suite 7 applications runs to the end of 2027. Mid-market SAP customers who haven't started are running out of room to plan.
+
+<strong>Hardware prices.</strong> TechTarget cites Gartner saying memory prices more than doubled over the past year, and North Carolina State University's CIO told InformationWeek in March that server quotes were two to three times what they had been a month earlier. That is one anecdote, now eight months old, and one analyst remark. It's still worth asking your IT lead whether 2027 hardware refresh budgets used this year's quotes.
+
+<em>This letter is general information, not legal, tax, accounting or investment advice.</em>
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-18',
+    category: 'CxO Advisory',
+    image: '/images/blog/facts/cxo-advisory-letter-2026-11-18.jpg',
+    readTime: '11 min',
+    slug: 'cxo-advisory-letter-2026-11-18',
+  },
+  {
     id: 'facts-the-recommendation-was-approved',
     title: "The Recommendation Was Approved. What Changed on Monday?",
     excerpt: "A recommendation can survive a management meeting without changing the business. Who changes the work, what authority they need, how management establishes whether the change paid, and five questions for the operating review.",
