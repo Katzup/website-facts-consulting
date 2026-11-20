@@ -4,6 +4,117 @@ import type { BlogPost } from './blogPosts';
 
 export const sentientEdgePosts: BlogPost[] = [
   {
+    id: 'facts-sentientedge-market-week-2026-11-20',
+    title: "SentientEdge Market Week, Issue 002: November 20, 2026",
+    excerpt: "Investors sold the companies building AI capacity all week and, in the same week, handed them about $139 billion of new money. The largest new bond paid 8.259%. Last week the broad credit market ignored the strain; this week high-yield spreads began to widen.",
+    content: `## Stocks Fall All Week. The Money Arrives Anyway, at a Price.
+
+<em>Covers the week of 16 to 20 November, measured from the close on Friday 13 November. Credit figures run to 19 November, the latest published.</em>
+
+## Implication
+
+Investors spent the week selling the companies that build AI capacity and, in the same week, handed those companies about $139 billion of new money. Both things are true, and the second did not stop the first.
+
+The money was not cheap. The largest piece of new debt paid 8.259%, close to what a high-yield borrower pays, and the largest piece of new equity closed its first day 13% below the price at which it opened, though still 17% above the offering price. Capital is available to this build. It is being priced as risk.
+
+Last week the broad credit market ignored all of this. This week it began to notice. That is the change worth watching, more than the fall in the indexes, large as it was.
+
+## Dashboard
+
+<div class="overflow-x-auto mb-6"><table class="w-full text-sm text-left text-gray-700 border-collapse"><thead><tr><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300"></th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">13 Nov</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">20 Nov</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Change</th></tr></thead><tbody><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">2-year Treasury</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">4.88%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">4.63%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−25 bp</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">10-year Treasury</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">5.15%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">4.92%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−23 bp</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">10-year real yield (TIPS)</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">2.91%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">2.77%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−14 bp</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">High-yield spread over Treasuries</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">3.23 pts</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">3.52 pts (19 Nov)</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+29 bp</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">High-yield index yield</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">8.20%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">8.35% (19 Nov)</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+15 bp</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Investment-grade spread</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.89 pts</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.94 pts (19 Nov)</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+5 bp</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">S&amp;P 500</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">7,561.67</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">6,910.39</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−8.6%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Nasdaq Composite</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">25,136.27</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">22,617.73</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−10.0%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Retail sales, monthly change</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+0.8% (Sep)</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">+0.2% (Oct)</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap"></td></tr></tbody></table></div>
+
+## Executive summary
+
+<strong>Rates.</strong> Treasury yields eased while stocks fell. The 10-year yield fell 23 basis points on the week to 4.92% and the 2-year fell 25 to 4.63%. The real 10-year yield fell 14, so more than half of the move was a lower real return and the rest was lower inflation compensation. The Treasury sold $16 billion of 20-year bonds at 5.459%, with bids covering the sale 2.63 times, and $19 billion of 10-year inflation-protected notes at a real yield of 2.903%.
+
+<strong>Credit.</strong> The extra yield on high-yield bonds rose from 3.23 points to 3.52 by Thursday, above its level on the day of the 5 November selloff. The index yield reached 8.35% even though Treasury yields fell underneath it.
+
+<strong>Inflation and data.</strong> Producer prices rose 0.3% in October and 6.5% over twelve months. Retail sales rose 0.2% after 0.8% in September. Industrial production fell 0.4%. The Philadelphia Fed's factory index dropped to 6.3 from 20.9 while its prices-paid measure rose to 58.2. The Federal Reserve's October minutes record two votes for an immediate rise in rates, and say a couple of participants thought a rise of more than a quarter point could warrant consideration in December.
+
+<strong>Earnings.</strong> Nvidia reported revenue of $115.8 billion, up 103% from a year earlier, and $48.3 billion of cash from operations. Walmart, Home Depot, Lowe's and Target all reported higher sales; Lowe's and Target each noted a one-time gain from tariff refunds.
+
+<strong>Equities.</strong> The S&amp;P 500 fell on all five sessions and closed at 6,910.39, down 8.6% on the week. The Associated Press counted seven straight losses, the longest run since 2020, and put the index more than 10% below its 6 October record. The Nasdaq Composite fell 10.0% and is now lower for the year. Friday was the worst day: the S&amp;P 500 lost 3.7% and the Nasdaq 5.3%.
+
+## The tension
+
+On Thursday 19 November more than nine in ten S&amp;P 500 stocks fell, and the Associated Press gave the reason as worry that the AI boom may be over. That same morning Anthropic began trading after raising $81.3 billion, the largest initial public offering on record, at a price above its marketed range. That same day a SpaceX financing vehicle sold $32 billion of bonds to pay for processors, mainly Nvidia's.
+
+A market that believed the boom was over would not have written those cheques. A market that believed in it without reservation would not have asked for 8.259%.
+
+<div class="border border-gray-200 bg-white rounded-lg p-5 mb-6 text-gray-700 leading-relaxed"><strong>A note from Bob Katz.</strong> Last week I wrote about dark fiber and about memory customers who over-ordered to protect their allocation. I said I could not tell how much of a large order book is need. This week a single buyer borrowed tens of billions of dollars to place an order mostly with one supplier, and that supplier's own quarterly cash flow was about the same size. I still cannot tell. What I can see is that the question has moved from the equity market into the bond market, where the people asking it are paid to be less hopeful.</div>
+
+## The seller and its customers
+
+Nvidia is the clearest seller in this build, and its quarter was strong on the figures the company reports.
+
+<div class="overflow-x-auto mb-6"><table class="w-full text-sm text-left text-gray-700 border-collapse"><thead><tr><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300"></th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Nvidia, quarter ended 25 October</th></tr></thead><tbody><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Revenue</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$115.8B, up 103% on the year</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Data center revenue</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$107.6B</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Gross margin</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">74.8%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Cash from operations</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$48.3B</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Outlook for next quarter</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$130.0B, plus or minus 3%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Outlook for gross margin</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">71.0% to 72.0%</td></tr></tbody></table></div>
+
+The company guided to a lower gross margin next quarter. Its release also refers to a search for a new chief executive and to an investigation by an independent committee of its board. It says no more than that, and neither will we. Nvidia's shares fell about 14% on Friday after a news report about the company that neither it nor any regulator has confirmed. We do not repeat unconfirmed reports here.
+
+Now the customers, in the order the week delivered them.
+
+<div class="overflow-x-auto mb-6"><table class="w-full text-sm text-left text-gray-700 border-collapse"><thead><tr><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Financing</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Size</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Terms</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Where it goes</th></tr></thead><tbody><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Anthropic initial public offering, priced 18 Nov</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$81.3B</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$83 a share, range was $70 to $78</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">The company; a small part went to selling holders</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Anthropic concurrent private placement</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$26.0B</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Non-voting shares at the offering price</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Buyers: Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">SpaceX chip-lease bonds, priced 19 Nov</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">$32B</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Largest part, about $25.2B, yields 8.259%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">About $47.3B of processors, mainly Nvidia's</td></tr></tbody></table></div>
+
+The Anthropic price, share count and placement are from its final prospectus; the $81.3 billion is our multiplication of 980 million shares by $83, and it includes shares sold by existing holders. The SpaceX figures are as reported by Bloomberg and relayed by other outlets; we have not seen the bond documents and do not know the maturity. Reports of the sale put the average yield that day at 5.95% for high-grade U.S. corporate bonds and 8.3% for bonds rated below investment grade.
+
+Two details matter more than the totals. First, part of the money going into the largest buyer comes from its own suppliers: chip makers and cloud providers bought the $26.0 billion private placement, with Google and Nvidia taking about $10 billion each. Second, the SpaceX bonds were sold by a trust set up to buy the processors and lease them to the company for about five years, and their yield sits beside the high-yield average, not beside investment-grade debt.
+
+We wrote about Anthropic's filing on 14 November. The offering priced $9 above the midpoint we used. The shares closed their first day at $97.17 after opening at $111.50, and ended Friday at $88.91. The AI assistant used to draft this note is Claude, which Anthropic makes.
+
+## Last issue's call, checked
+
+Issue 001 listed four things that would count against the skeptical reading of the AI build. One week on:
+
+- <strong>An operator reporting positive cash from operations after interest for two quarters.</strong> No operator reported this week. No evidence either way.
+- <strong>Backlog converting to revenue on schedule.</strong> No new disclosure. No evidence either way.
+- <strong>New financing priced meaningfully closer to Treasuries than Oracle's 7.000% to 8.650%.</strong> Not met. The largest new issue paid 8.259%. Alphabet also sold C$6 billion of notes in Canada, a much stronger borrower in a different currency; we could not confirm its coupons.
+- <strong>Real yields falling back while credit spreads stay near 3.2 points.</strong> Half met. Real yields did fall back, by 14 basis points. Spreads did not stay near 3.2: they widened to 3.52 by Thursday.
+
+Last week we said the open question was whether calm in ordinary credit or the high price of funding this build would give way. On this week's figures, ordinary credit gave some ground and the price of funding the build did not come down.
+
+## Evidence vs speculation
+
+- <strong>Evidence:</strong> the seller is converting demand into cash. Nvidia generated $48.3 billion from operations in one quarter and guided revenue higher.
+- <strong>Evidence:</strong> buyers raised about $139 billion in two days, by our sum of the three financings above. Demand for the paper exists.
+- <strong>Evidence:</strong> the price of that money is high. 8.259% is more than two points above the average high-grade yield reported for the same day.
+- <strong>Evidence:</strong> high-yield spreads widened 29 basis points in four sessions while Treasury yields fell. Last week they narrowed while yields rose. Friday's figure, for the worst day of the week in stocks, is not yet published.
+- <strong>Evidence:</strong> the Federal Reserve's minutes say most participants observed that AI-related debt had grown rapidly, much of it through what the minutes call "complex and opaque financing structures".
+- <strong>Speculation:</strong> that the selling was caused by doubts about AI returns. CBS News also cited tension with Iran, a possible government shutdown and tighter chip export rules, and one strategist it quoted saw no single cause.
+- <strong>Speculation:</strong> that a record offering drained money from other technology shares. It is a tidy story and there is no measurement behind it.
+- <strong>Speculation:</strong> that a spread of 3.52 points signals stress. It is a small move from a low level.
+
+## What would change our mind
+
+Our reading is that the build is being financed, but on terms that leave little room for delay. These would count against it:
+
+- high-yield spreads returning below 3.3 points while new AI financings continue to clear;
+- a large AI-related bond or loan priced within one point of the high-grade average;
+- Anthropic's first quarterly report showing compute spending falling as a share of revenue, the first of the tests we set on 14 November;
+- an operator such as CoreWeave or Nebius reporting cash from operations that covers its interest.
+
+And one thing would make the reading worse: a financing that is announced and then pulled or cut in size.
+
+## Next week
+
+- Monday 23 November: flash purchasing managers' surveys; $69 billion 2-year note auction.
+- Tuesday 24 November: consumer confidence; $70 billion 5-year note auction; results from Dell and Analog Devices.
+- Wednesday 25 November: October personal income, spending and the PCE price index; second estimate of third-quarter GDP; $44 billion 7-year note auction.
+- Thursday 26 November: Thanksgiving, markets closed. Friday is a shortened session.
+- 8–9 December: Federal Reserve meeting.
+
+## Sources
+
+Index closes and the reasons given for daily moves: Associated Press daily tables, with closes cross-checked against a second price source; CBS News for Thursday's other cited causes. Treasury yields, real yields and auction results: U.S. Treasury. Credit spreads and high-yield index yield: ICE BofA indexes as published by the Federal Reserve Bank of St. Louis, through 19 November. Producer prices: Bureau of Labor Statistics. Retail sales: Census Bureau. Industrial production and meeting minutes: Federal Reserve. Factory survey: Federal Reserve Bank of Philadelphia. Nvidia, Walmart, Home Depot, Lowe's and Target: each company's earnings release. Anthropic offering price, share count and private placement: its final prospectus, filed 19 November; first-day prices: CBS News and BNN Bloomberg. SpaceX bond terms: Bloomberg, as relayed by other outlets. Next week's calendar: U.S. Treasury for auctions; a published calendar for the rest, not independently confirmed.
+
+<em>This note is drafted with AI research assistance and reviewed and signed by Bob Katz. The assistant used is Claude, a product of Anthropic, a company discussed in this issue. It is market commentary, not investment advice, and not a recommendation to buy or sell any security named. Company figures are as reported by the companies and have not been audited by us.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-20',
+    category: 'SentientEdge Research',
+    image: '/images/blog/facts/sentientedge-market-week-2026-11-20.jpg',
+    readTime: '9 min',
+    slug: 'sentientedge-market-week-2026-11-20',
+  },
+  {
     id: 'facts-sentientedge-research-letter-2026-11-13',
     title: "SentientEdge Research Letter: November 13, 2026",
     excerpt: "The most careful papers this week mostly find nothing. A live overfitting gate inside an AI strategy search refused to certify 36 of 37 runs, a quantum layer in a stock ranker added nothing, and a pre-registered retest found an old effect alive with no mechanism to explain it.",
