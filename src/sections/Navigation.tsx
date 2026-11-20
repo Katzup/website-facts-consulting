@@ -25,7 +25,7 @@ const Navigation = () => {
     { name: 'About', href: '#about' },
     { name: 'Blog', href: '#blog' },
     { name: 'Research', href: '#research' },
-    { name: 'Newsletter', href: 'https://bobkatz2.substack.com' },
+    { name: 'Newsletter', href: 'https://factsconsulting.substack.com' },
     { name: 'Contact', href: '#contact' },
   ];
 

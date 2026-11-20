@@ -1,8 +1,7 @@
 // Newsletter signup settings for the Subscribe box shown on SentientEdge Research articles.
-// The list lives at Buttondown. The box stays hidden while buttondownUsername is empty.
+// The list lives at Substack. The box stays hidden while substackUrl is empty.
 export const subscribeConfig = {
-  buttondownUsername: '',
+  substackUrl: 'https://factsconsulting.substack.com',
 };
 
-export const subscribeAction = () =>
-  `https://buttondown.com/api/emails/embed-subscribe/${subscribeConfig.buttondownUsername}`;
+export const subscribeLink = () => `${subscribeConfig.substackUrl}/subscribe`;
