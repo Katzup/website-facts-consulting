@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { getBlogPostBySlug, getBlogPostsByCategory } from '@/data/blogPosts';
 import Navigation from '@/sections/Navigation';
 import Footer from '@/sections/Footer';
+import SubscribeBox from '@/components/SubscribeBox';
 
 const BlogArticle = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -149,6 +150,10 @@ const BlogArticle = () => {
                 className="prose prose-lg max-w-none"
                 dangerouslySetInnerHTML={{ __html: formatContent(post.content) }}
               />
+
+              {post.category === 'SentientEdge Research' && (
+                <SubscribeBox />
+              )}
 
               {/* Share Section */}
               <div className="mt-12 pt-8 border-t border-gray-200">
