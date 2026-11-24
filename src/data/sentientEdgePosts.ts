@@ -4,6 +4,199 @@ import type { BlogPost } from './blogPosts';
 
 export const sentientEdgePosts: BlogPost[] = [
   {
+    id: 'facts-sentientedge-research-letter-2026-11-20',
+    title: "SentientEdge Research Letter: November 20, 2026",
+    excerpt: "The biggest number this week is a Sharpe ratio of 6.37 from matching stock charts to similar charts in the past. Charge costs and weight by size, and it falls to 0.01. An audit of 91 AI trading papers finds the same gaps: short tests, no costs, undisclosed searching.",
+    content: `## This week
+
+The biggest number this week is an equal-weighted Sharpe ratio of 6.37, from matching each stock's 20-day price chart to similar charts in the past. Charge trading costs and give large stocks more weight, and it falls to 0.01. Most of the gross result looks like a one-week reversal in small, hard-to-trade stocks.
+
+An audit of 91 papers that use large language models to trade points the same way. The median test window is 12 months, half the papers deduct no costs, and only 9% report a result adjusted for how many things were tried. The two quieter papers this week are the more honest ones. One reports its edge decaying over time; the other builds a language model that cannot have seen the future and tests it after its cutoff.
+
+Four items, all from arXiv. We found no new SSRN or NBER papers in these areas that we could verify.
+
+## 1. When Price Charts Rhyme: Historical Visual Retrieval for Stock Return Prediction
+
+Hui Chen, Haoyu Liu, Ke Wu, Dexin Zhou · submitted 18 Nov 2026 · <a href="https://arxiv.org/abs/2611.23723" class="text-navy underline" target="_blank" rel="noopener noreferrer">arXiv:2611.23723</a> · 155 pages · no code or data release stated.
+
+<strong>Method.</strong>
+
+- Charts: 20-day colour price charts (open, high, low, close) with a moving average and volume, following the Jiang–Kelly–Xiu (JKX) design. Prices are rebuilt from CRSP total returns.
+- Encoder: each chart is turned into a 384-number description by DINOv2-S, a general-purpose self-supervised vision model.
+- Retrieval: each week, every stock's chart is compared with a growing library of all stocks' past charts. The 1,000 most similar are kept, and the signal is the average of what those stocks returned over the next 5 days.
+- Look-ahead rule: a library chart is eligible only once its full 5-day forward return is known on the query date.
+- FT-DINO: a version of the encoder fine-tuned on 1993–99 to group charts with similar forward-return ranks, selected on 2000 and frozen before the 2001–2025 out-of-sample period.
+
+<strong>What they tested and found.</strong>
+
+- Sample: CRSP common stocks, 2001–2025 out of sample, 4.57 million stock-weeks. Weekly top-minus-bottom decile portfolios, held 5 days.
+- Before costs, FT-DINO's equal-weighted portfolio earned 85% a year (Sharpe 6.37). Weighted by market value it earned 24% (1.45); with capped value weights (CVW), 28% (2.38). A JKX-style convolutional network earned 61% equal-weighted (4.46) and 22% capped (1.82).
+- Controlling for the convolutional network, the DINO model without fine-tuning, and the Fama–French five factors plus momentum and short-term reversal, FT-DINO keeps an alpha of 41% a year (t = 16.5) equal-weighted and 14.7% (t = 8.5) capped.
+- After costs (10 basis points one way for stocks above the NYSE 80th size percentile, 20 for the rest, charged on every change in weight):
+
+<div class="overflow-x-auto mb-6"><table class="w-full text-sm text-left text-gray-700 border-collapse"><thead><tr><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">FT-DINO portfolio</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Sharpe before costs</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Sharpe after costs</th></tr></thead><tbody><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Equal-weighted</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">6.37</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">4.12</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Capped value-weighted</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">2.38</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.01</td></tr></tbody></table></div>
+
+- After costs, the capped DINO and convolutional-network versions lose money (Sharpe −2.39 and −0.62).
+- The capped version is fading. Its gross Sharpe was 4.12 in 2001–09, 2.61 in 2010–17 and 0.66 in 2018–25, below the convolutional network's 1.01 in the last period. The equal-weighted version went 8.49, 7.91, 4.41.
+- High-signal stocks are recent losers. The long-short portfolio loses 5.4% in the week the chart is formed, then earns 2.6% over the next 20 days. By size, the spread runs from 13% a year in the largest stocks to 127% in the smallest. Turnover is 600% at weekly rebalancing.
+- The authors concede that this pattern "does not distinguish retrieval from a reversal sort".
+- The nearest thing to a null test: flipping the query chart horizontally takes the equal-weighted Sharpe to −0.45; rotating it 180° takes it to −0.07.
+
+<strong>Limitations.</strong>
+
+- The result that survives costs is a small-stock result. Every headline number left after costs is equal-weighted; the capped version earns nothing net and is fading.
+- Reversal is never ruled out. Short-term reversal enters as a control factor and the alpha survives it, but no test asks whether retrieval beats a well-built reversal sort within the same size group. The paper's own evidence (high signal means recent losers, profit concentrated in illiquid names) points that way.
+- No placebo with shuffled forward returns in the library. The image flips are clever but are not the same test.
+- The breadth of the search isn't reported. Chart design, the number of neighbours, the encoder, the fine-tuning target and the horizon all vary across the robustness tables, with no count of configurations tried.
+- The encoder was retrained only once, on 1993–2007. The retrained version did better than the original, which is encouraging, but it is a single alternative fit.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE: a retrieval signal built from chart images predicts next-week returns out of sample over 2001–2025, before costs and equal-weighted, with t-statistics above 15.
+- EVIDENCE: under capped value weights and the paper's own cost model, net performance is zero, and the capped gross Sharpe fell to 0.66 in 2018–25.
+- SPECULATION: that the model reads "visual patterns" rather than repackaging short-term reversal in hard-to-trade stocks. The two have not been separated where the money is made.
+
+<strong>What we will do with it.</strong> Our leading weekly shadow strategy forms a book each week and holds it about five days, in stocks above a $5 price and $5 million of daily trading. That is this paper's horizon, in the part of the market where its edge disappears. We will first measure the average prior-week return of the stocks our weekly books buy: if they systematically buy last week's winners, this paper says that is the wrong side of a five-day trade, and we want to know how large the headwind is. We will then build a simple, non-image version of the signal (each stock's last 20 days of prices and volume, matched to the 1,000 most similar past patterns among S&amp;P 500 stocks, with the same five-day maturity rule) and test it against the null the paper skipped: a plain five-day reversal sort on the same stocks, after our own trading-cost model, weekly from 2008 to 2026. We drop the idea if its net weekly return over the reversal sort is zero or less, or if its alpha after controlling for five-day reversal has a t-statistic below 2.
+
+## 2. Short Windows, Unmodelled Costs, Unknown Cutoffs: A Pre-Registered Evidence Audit of 91 LLM Trading Papers
+
+Henry Zhang · submitted 13 Nov 2026 · <a href="https://arxiv.org/abs/2611.18934" class="text-navy underline" target="_blank" rel="noopener noreferrer">arXiv:2611.18934</a> · also SSRN 7687481 · rubric, coded records, second-coder pass and analysis script at github.com/henryzhangpku/llm-trading-evidence-audit.
+
+<strong>Method.</strong>
+
+- Sample: 91 papers from a curated corpus of 233. Included papers are LLM-agent, alpha-mining or headline-Sharpe papers with full text available. This is not a systematic search.
+- Pre-registration: the population, a ten-field rubric and five directional hypotheses were frozen in version control before coding began.
+- Rubric fields include the test window, number of assets, cost model, handling of leakage, disclosure of trials, baseline, code, and whether the model's training cutoff falls before the test.
+- Coders: language models. Each code must carry a verbatim quote, checked as a substring of the paper. A blind second coder redid 18 papers and agreed 89–100% of the time, depending on the field.
+- Three deviations, all logged. One was a bug that made a hypothesis pass "by construction"; it was fixed, and the original output is kept.
+
+<strong>What they tested and found</strong> (75 papers with a trading test).
+
+- Costs: 51% deduct none, 40% use a flat 5–20 basis points, and 9% model costs from data.
+- Test window: median 12 months (quartiles 6 and 36). 18 papers test six months or less. Of the 54 papers that give an asset count, 20 trade ten assets or fewer.
+- Leakage: 40% don't discuss it. Only 19% test after the model's training cutoff, and 8% evaluate live. Of the 51 papers whose cutoff is not known to precede the test, 50 neither test after the cutoff nor evaluate live.
+- Search disclosure: 52% say nothing about how much they searched. 9% report a result adjusted for multiple testing, such as a deflated Sharpe ratio or a reality check.
+- All three together: only 5 papers (7%) have costs, leakage control and a trial count, and only one of those releases code.
+- Two of the five hypotheses passed. The predicted link between higher Sharpe ratios and shorter windows or missing costs was not significant (ρ = −0.10, p = 0.36; medians of 1.62 and 3.46 across the cost groups, p = 0.10). Only 13 papers put a Sharpe ratio in the abstract, so these tests had little power.
+- A proposed six-line reporting minimum: a dated window and asset count; the model's cutoff against the test period; the cost model plus a breakeven cost; the number of things tried; a statistic that accounts for that number; and a null with the same composition.
+
+<strong>Limitations.</strong>
+
+- One curated corpus, so the shares describe that corpus, not the field.
+- Language-model coders. The quote check proves the text exists, not that the judgement is right, and the blind recode covered only 18 papers.
+- A stated conflict of interest: the author sells research tooling in this area. This is a companion to his pre-registered signal test covered on 6 November.
+- It is a careful description, not market evidence, and the link between Sharpe and rigour that it set out to show did not reach significance.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE (descriptive, not out of sample): in this corpus, short windows, missing costs and undisclosed searching are the norm, and testing after the model's cutoff is rare.
+- SPECULATION: that headline Sharpe ratios in the field are inflated by these gaps. The pre-registered tests of that link failed for lack of power.
+
+<strong>What we will do with it.</strong> We will score our own past verdicts against the paper's six-line minimum. The line we have never reported is the breakeven cost: the trading cost at which a signal stops working. A rough calculation from our 2008–2026 replay of our clean 12-month momentum signal suggests its edge would vanish at somewhere between two and a half and four times our base cost assumption, depending on how much of the book trades in our higher-cost tier. That is arithmetic, not a test. We will re-run the replay at 1.5, 2 and 3 times our base costs. If the signal's net excess return over SPY is zero or less at twice our base costs, we will mark it cost-fragile, and it will then need live evidence at 1.5 times base costs before it can be considered for promotion.
+
+## 3. Which Past Matters? Training History and Multi-Forecast Horizon in Equity Transformers
+
+Chariton Chalvatzis · submitted 17 Nov 2026 · <a href="https://arxiv.org/abs/2611.23126" class="text-navy underline" target="_blank" rel="noopener noreferrer">arXiv:2611.23126</a> · no code or data release (the data is commercial).
+
+<strong>Method.</strong>
+
+- Universe: up to 1,000 liquid US common stocks, rebuilt monthly (price above $5, average daily trading above $10 million).
+- Features: 572 features derived from price bars. The author notes these come from only 20 underlying signals.
+- Model: a small Transformer whose attention runs across stocks rather than through time. It predicts factor-adjusted returns 5 to 120 minutes ahead, issued every 30 minutes, never across the overnight gap.
+- Twelve training-history policies: four sampling schemes (contiguous, uniform, recency-weighted with a six-month half-life, and a mix of recency weights) times training lengths of 6, 12 and 24 months.
+- Walk-forward testing: monthly refits with a two-month validation block for early stopping, 264 refits over 22 test months.
+
+<strong>What they tested and found.</strong>
+
+- Test period: January 2025 to October 2026 out of sample; 451 sessions; 5.2 million stock-forecast rows per configuration.
+- The rank correlation between forecasts and outcomes (the information coefficient, IC) is small: for the best single model, 1.90% at 5 minutes, falling to 0.76% at 120 minutes. An equal-weighted ensemble beats every single model only at 15 to 25 minutes, and by 0.05 to 0.10 points.
+- More history does not uniformly help. Twenty-four months of contiguous history is never the best contiguous choice. Only the recency-weighted family shows a clean pattern: shorter histories win at short horizons and longer ones at long horizons.
+- The striking table is the decay:
+
+<div class="overflow-x-auto mb-6"><table class="w-full text-sm text-left text-gray-700 border-collapse"><thead><tr><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Period</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Ensemble IC, 5 minutes</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Ensemble IC, 30 minutes</th></tr></thead><tbody><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">First half of 2025</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">3.72%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">1.65%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Second half of 2025</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.28%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.50%</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">2026 to October</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">1.01%</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.89%</td></tr></tbody></table></div>
+
+- In bootstrap tests, only one of five paired comparisons has an interval that excludes zero: the mixed-recency 24-month model beats the contiguous 24-month model at 30 minutes by 0.33 points (interval 0.03 to 0.63).
+- No trading results at all. Naive turnover would be 2,000–2,900% of the portfolio a day.
+
+<strong>Limitations.</strong>
+
+- An IC is not a profit. At those turnovers, a 1–2% IC is very unlikely to survive costs. The author says so and reports no Sharpe ratio.
+- Stated by the author: the best model for each horizon was chosen after seeing the test sample; there is one random seed; there is no correction for testing 12 configurations at 8 horizons; and training length and universe width change together.
+- Possible survivorship bias: the security classification is "not independently certified" as point-in-time.
+- It is here anyway because it is unusually candid about what didn't work. The half-year decay table is a real out-of-sample observation that most papers would have averaged away.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE: the out-of-sample intraday IC for this feature set fell by an order of magnitude from the first to the second half of 2025 and only partly recovered in 2026.
+- EVIDENCE (weak): recency-weighted training helps at the shortest horizons. The direction is consistent, but most intervals include zero.
+- SPECULATION: any trading value. None is shown.
+
+<strong>What we will do with it.</strong> The question for us is whether the second half of 2025 was a common shock to short-horizon equity signals or something specific to this paper's features. We have weekly books for our momentum signal and our original scorer back to November 2024. We will compute each signal's weekly rank IC against five-day forward excess returns, by half-year. If both signals' IC in the second half of 2025 is below a third of their first-half IC, we will record a common-decay flag, and every promotion case will have to report half-year IC stability alongside the pooled figure. If not, we drop the idea and spend nothing more on it.
+
+## 4. NoLBERT-Calls: Reading Earnings Calls Without Hindsight
+
+Kevin Foley, Jonathan Hartadi, Shivesh Prakash, Hino Wirachapong Suwanphibun, Swapnil Vatsal · submitted 15 Nov 2026 · <a href="https://arxiv.org/abs/2611.19849" class="text-navy underline" target="_blank" rel="noopener noreferrer">arXiv:2611.19849</a> · the authors state that code (MIT licence) and model weights are released at github.com/Shivesh777/NoLBERT-Calls; the transcripts are licensed and not redistributed.
+
+<strong>Method.</strong>
+
+- Base model: NoLBERT, a DeBERTa-v3-base text encoder pretrained only on text from 1976–1995, with its own vocabulary, so it cannot have read about later events.
+- Adaptation: contrastive training on earnings-call question-and-answer sessions. For each analyst question, the model must pick out management's answer from the other answers on the same call. Stage 1 uses global calls up to 2012; stage 2 uses US calls up to 31 December 2023.
+- Splits fixed before training: 2024 for validation, and a test set used once, covering every US call from 1 January 2025 to 31 October 2026 (20,323 calls, 254,575 questions).
+- Compute: about 13 GPU-hours on consumer graphics cards.
+
+<strong>What they tested and found.</strong>
+
+- On 2025–26 calls the model picks the right answer first 78.0% of the time (interval 77.8–78.2; chance is 8.0%).
+- Against comparators: a keyword-matching baseline (BM25) scores 58.2%, and a version of FinBERT adapted to calls scores 74.7%. The model is 1.0 point ahead of a call-adapted ChronoBERT.
+- A leakage check: the model's lead over a sibling with a 2012 cutoff is about the same before and after its own cutoff (12.0 points on 2013–23, 12.9 on 2025–26). In 2021–23, just before the cutoff, the difference is 0.3 points with an interval that spans zero.
+- Returns: none. The authors explicitly do not test volatility or returns after the call.
+
+<strong>Limitations.</strong>
+
+- A reading test, not a signal. Matching answers to questions is not return prediction.
+- One random seed per model, and the stage-2 recipe was tuned only for this model.
+- The leakage check has a blind spot, which the authors note: it shows the model has not memorised later calls, not that it is ignorant of how later events turned out.
+- The transcripts come from a commercial academic database we do not have.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE: an encoder that cannot have seen the future can be adapted to earnings-call language cheaply and still read calls well after its cutoff, on a large test that genuinely postdates it.
+- SPECULATION: that its outputs carry return information. That is untested.
+
+<strong>What we will do with it.</strong> We already label management tone on earnings calls with a modern language model and show it as a badge, not as a scoring input. It should stay that way until it is properly tested, and a backtest of that badge is unreliable: the labelling model was trained on text describing how most past quarters turned out. This paper offers a cleaner route. We will compute an evasiveness score from the released weights (one minus the average match between each question and its answer within a call, the task the model was trained on) for S&amp;P 500 calls after 1 January 2025, past the model's adaptation cutoff, and measure sector-adjusted returns 20 and 60 days after each call by quintile. If the 60-day return gap between the least and most evasive fifth has a 95% interval that includes zero, call text stays a badge and we stop work on it. We will also report its correlation with the size of the earnings surprise, and drop it if that is above 0.5, since it would then be restating the surprise.
+
+## Promising experiments
+
+- <strong>The breakeven cost of our momentum signal</strong> (item 2). A re-run of an existing replay at three cost levels, so the cheapest test here. It closes the most obvious gap in our own reporting: we have never said at what cost our best signal stops working.
+- <strong>Chart analogs against plain reversal, and last week's return in our weekly books</strong> (item 1). The most interesting test this week, because it touches our leading weekly strategy directly. If our weekly books reliably buy last week's winners, that is a structural headwind at a five-day hold, and we should measure it.
+- <strong>Half-year IC stability</strong> (item 3). Half a day of work on data we already have. A common-decay result would change how we read our live shadow period.
+
+## Watching / not yet credible
+
+- <strong>Auto-Alpha</strong> (Cai et al., StepFun, arXiv:2611.25732). An LLM-agent factor factory on Chinese A-shares, which the authors call "retrospective illustrations, rather than discovery-time out-of-sample tests". Of 420 self-directed outputs, 69 passed a net long-short Sharpe bar of 3 and 62 were kept. The true number of backtests is higher and not reported, and there is no deflation. The portfolio made 16.8% a year after costs in 2020–26 against 1.7% for the CSI 1000, but on factors chosen using that same period. Credit for publishing the funnel counts; it is still in-sample.
+- <strong>Explaining Realized Returns: Roll's R² 40 Years Later</strong> (Kelly, Su, Zhang, arXiv:2611.22277). Reasons extracted by a language model from daily Wall Street Journal market wraps explain about 30–50% of the variation in daily and monthly index returns out of sample (33.9% daily after filtering), against under 10% for conventional macro variables. The authors say plainly that this is explanation, not forecasting. We are interested in whether the clusters of reasons could label market regimes after the fact, as a check on our own regime classifier; that idea is ours, not theirs.
+- <strong>ST-GAT-NCO multi-asset portfolios</strong> (Supriadi, arXiv:2611.19903). A graph-attention network with clustered optimisation on 13 ETFs and bitcoin, with a replication package on GitHub. Out of sample in 2020–26, a plain equal-weighted portfolio beats it (Sharpe 0.72 against 0.30). The abstract's turnover (15.3% a month) does not match its own Table I (30.7%), and "statistically superior" has no test behind it.
+- <strong>Ricci-flow clustering of the Nikkei 225</strong> (Laloux, Srinivasan, arXiv:2611.25860). A single in-sample clustering, with no variation over time and no early-warning test. Earlier work proposes this curvature measure as a sign of market fragility; this paper does not test that.
+- <strong>"Two Blind Spots in Backtest Validation"</strong> (Risks 14(11):247, doi:10.3390/risks14110247). We have still not been able to read the full text and will drop it unless an open copy appears.
+- Not covered: an equity–bond diversification study of 30 multi-asset ETFs (arXiv:2611.21897). It is mostly in-sample and, despite its title, has no analysis of correlation regimes or breaks.
+
+The Watching items were not verified against their arXiv pages.
+
+## Updates
+
+Item 2 follows the same author's pre-registered test of eleven signals (arXiv:2611.06607, covered 6 November). It audits the literature rather than revising that paper.
+
+Nothing previously covered appeared as a revised version in this week's listings. Older items were not systematically re-checked for new versions.
+
+<em>This letter is drafted with AI research assistance and reviewed and signed by Bob Katz. It is research commentary, not investment advice. No result described here is a claim net of trading costs unless stated, and the experiments listed are planned tests of our own models, not findings.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-20',
+    category: 'SentientEdge Research',
+    image: '/images/blog/facts/sentientedge-research-letter-2026-11-20.jpg',
+    readTime: '16 min',
+    slug: 'sentientedge-research-letter-2026-11-20',
+  },
+  {
     id: 'facts-sentientedge-market-week-2026-11-20',
     title: "SentientEdge Market Week, Issue 002: November 20, 2026",
     excerpt: "Investors sold the companies building AI capacity all week and, in the same week, handed them about $139 billion of new money. The largest new bond paid 8.259%. Last week the broad credit market ignored the strain; this week high-yield spreads began to widen.",
