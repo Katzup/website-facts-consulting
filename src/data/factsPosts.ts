@@ -3,6 +3,165 @@ import type { BlogPost } from './blogPosts';
 
 export const factsPosts: BlogPost[] = [
   {
+    id: 'facts-cxo-advisory-letter-2026-11-25',
+    title: "CxO Advisory Letter: Week of November 25, 2026",
+    excerpt: "In the same poll, 67% of CFOs at companies under $50 million forecast higher 2027 revenue, against 95% at $1 billion or more. Also this week: finance's jump in AI agent use, mid-market software spend and AI renewal uplifts, how buyers and sellers price AI, and the Census Bureau's \"do not know\" answers.",
+    content: `## This week
+
+In the same three-day poll this month, 67% of CFOs at companies under $50 million in revenue forecast higher revenue for 2027, against 95% at companies of $1 billion or more. Software spending data from a procurement vendor shows the same split. Mid-market software spend growth fell from 27% to 4% year over year between the second and third quarters, while enterprise growth rose to 26%. Over the same period, vendors have been asking for AI-related renewal increases of 10% to 30%. And the federal government's measure of business AI use still hasn't recovered from being renamed: 13.3% of firms now answer "do not know" when asked whether they use "Super Intelligence."
+
+## Finance &amp; performance management
+
+### CFOs at small companies are much less sure about 2027 than CFOs at large ones, and the year-ahead index hit its lowest reading
+
+<em>CFO Leadership / Chief Executive Group Research, "CFO Confidence Sinks To Record Low In Q4," November 9, 2026.</em> <a href="https://cfoleadership.com/cfo-confidence-sinks-to-record-low-in-q4/" class="text-navy underline" target="_blank" rel="noopener noreferrer">CFO Leadership</a>
+
+<strong>What the evidence shows.</strong> The poll ran November 4–6 among 246 U.S. senior finance executives, after the midterm results were in. CFOs rated current conditions 5.4 out of 10, down from 6.0 in the third quarter. Their 12-month outlook was 5.2, the lowest year-ahead reading since the index began in 2020. Asked about the next 12 months, 28% expect conditions to improve, 38% expect no change and 34% expect them to get worse. Only 46% expect U.S. economic growth over the next six months.
+
+Company plans haven't followed the mood down. 74% of CFOs forecast higher revenue in 2027 (67% in Q3), 65% higher profits, 48% plan to raise capital spending (38% in January) and 44% plan to add headcount. Even among CFOs who expect conditions to worsen, 68% forecast higher 2027 revenue.
+
+The size split is the part that matters for this readership:
+
+- Year-ahead outlook, out of 10: 5.1 under $50 million in revenue, 5.7 at $1 billion or more
+- Expect U.S. growth over the next six months: 36% against 71%
+- Forecast higher 2027 revenue: 67% against 95%
+- Expect higher 2027 profits: 56% against 76%
+
+CEOs polled by the same group on November 3–5 (435 respondents) were more optimistic than CFOs. 80% forecast higher 2027 revenue and 59% expect U.S. growth. Among CFOs, those at private equity-backed companies were among the most optimistic: 88% forecast higher 2027 revenue, and nearly six in ten expect to add headcount, against 44% of CFOs overall.
+
+<a href="/images/blog/facts/cxo-advisory-letter-2026-11-25-cfo-confidence-by-size.png" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/cxo-advisory-letter-2026-11-25-cfo-confidence-by-size.png" alt="Bar chart: CFOs at companies under $50 million in revenue against $1 billion or more. Expect U.S. growth over the next six months: 36% and 71%. Forecast higher 2027 revenue: 67% and 95%. Expect higher 2027 profits: 56% and 76%. Source: CFO Leadership / Chief Executive Group Research poll of 246 U.S. senior finance executives, November 4–6, 2026." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<strong>How solid is it.</strong> INDEPENDENT SURVEY. The publisher is a media and research group, not a vendor. The sample is small (246), the article doesn't say how respondents were recruited, and it was fielded over three days, so a single news cycle can move it. The article does not say how many respondents fall in each revenue band, so the size comparisons may rest on a few dozen answers each.
+
+<strong>Which roles it affects.</strong> CFO, CEO, board.
+
+<strong>For an SMB leadership team.</strong>
+
+- If the CEO's 2027 revenue number is higher than the CFO's, as it is across these two polls, have both write down their single biggest assumption (price, volume, a new customer, a hire) before the budget is final. Then agree in advance which monthly indicator would show it isn't happening.
+- A company under $50M whose plan looks like a $1B company's plan (higher revenue, more capex, more people all at once) should have a written downside case with a hiring trigger: a revenue level below which open requisitions pause.
+
+### Finance had the biggest one-year jump in AI agent adoption of the departments surveyed, but humans still approve what reaches the ledger
+
+<em>Zapier, "88% of enterprises now use or test AI agents, but most still need a human in the loop," updated November 2026; reported by CFO Dive, November 17, 2026.</em> <a href="https://zapier.com/blog/ai-agents-survey/" class="text-navy underline" target="_blank" rel="noopener noreferrer">Zapier</a> · <a href="https://www.cfodive.com/news/finance-teams-ramp-agentic-ai-adoption-zapier-survey/874855/" class="text-navy underline" target="_blank" rel="noopener noreferrer">CFO Dive</a>
+
+<strong>What the evidence shows.</strong> Zapier surveyed 513 U.S. managers and executives at organizations with at least 1,000 employees, on September 16–21. The share of organizations using AI agents in finance rose from 24% in 2025 to 41% in 2026. That 17-point gain was the largest of the seven departments tracked. HR rose from 30% to 43% and operations from 47% to 59%. 71% say their organizations have agents in production, up from 40% in 2025.
+
+Autonomy is still limited. Only 30% of leaders at organizations using agents say their agents complete more than 60% of assigned tasks without human intervention. The figure depends heavily on how agents are wired. Where more than half of an organization's agents are part of broader automated workflows, 77% report that level of autonomy; where half or fewer are connected, 8% do. 46% say their most mature agent has paid for itself or is expected to within 12 months. The top barriers are data privacy, security and compliance (27%) and accuracy and errors (24%). Zapier's own CFO, Ryan Roccon, told CFO Dive: "Nothing hits the general ledger ever without a human clicking approved."
+
+<a href="/images/blog/facts/cxo-advisory-letter-2026-11-25-zapier-agents-by-department.png" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/cxo-advisory-letter-2026-11-25-zapier-agents-by-department.png" alt="Bar chart: point change from 2025 to 2026 in the share of organizations using AI agents in each department. Finance 17, HR 13, operations 12, sales 11, DevOps and engineering 9, customer support 8, marketing 8. Source: Zapier survey of U.S. managers and executives at organizations with 1,000 or more employees (vendor survey)." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<strong>How solid is it.</strong> VENDOR SURVEY. Zapier sells workflow automation, including AI agents, and its finding that connected workflows make agents work better favors its own product. The report doesn't define "AI agent" for respondents, and every organization surveyed has at least 1,000 employees, so it describes companies larger than most of this letter's readers. The fieldwork took six days.
+
+<strong>Which roles it affects.</strong> CFO, Chief Accounting Officer, controller, CIO.
+
+<strong>For an SMB leadership team.</strong>
+
+- Have the controller list every automated or AI step that can create, change or post a journal entry, and name the person who approves each one. If a step has no named approver, fix that before year-end close.
+- Before buying a finance agent, ask the vendor what share of tasks it completed without human correction at a reference customer your size, and how that was measured.
+
+## C-suite role shifts
+
+### Nine in ten senior executives expect AI to do at least a quarter of the CMO's job within two years
+
+<em>Gartner survey, released November 19, 2026; reported by ANA, November 23, 2026.</em> <a href="https://www.ana.net/magazines/show/id/news-2026-11-23-gartner-ai-cmo-eclipse" class="text-navy underline" target="_blank" rel="noopener noreferrer">ANA</a> · <a href="https://www.gartner.com/en/newsroom/press-releases/2026-11-19-gartner-survey-finds-91-percent-of-c-level-executives-expect-ai-to-perform-at-least-25-percent-of-cmo-responsibilities-within-two-years1" class="text-navy underline" target="_blank" rel="noopener noreferrer">Gartner release</a>
+
+<strong>What the evidence shows.</strong> According to a new Gartner survey, 91% of C-level executives expect AI to perform at least a quarter of CMO responsibilities within two years. ANA's subhead adds that marketing leaders will still decide where a company should grow. The finding measures what the CMO's peers expect, not what AI can currently do.
+
+<strong>How solid is it.</strong> INDEPENDENT SURVEY. The 91% is the one figure in the public part of ANA's article, which is otherwise for members only; the sample size, the respondents' company sizes and the fieldwork dates are not given there. Large companies usually dominate Gartner samples.
+
+<strong>Which roles it affects.</strong> CMO, CEO, CFO.
+
+<strong>For an SMB leadership team.</strong>
+
+- Ask the CMO for a one-page list of marketing work they expect AI to take over by the end of 2027, and the work only a person can do: positioning, pricing input, choosing which segments to pursue. The CEO's list and the CMO's list should match. If they don't, have that conversation before the 2027 marketing budget is set.
+
+## Tech/IT strategy for the mid-market
+
+### Mid-market software spending growth stalled in the third quarter while vendors pushed AI into renewals
+
+<em>Tropic Intelligence Hub, Q3 2026 software spend and "AI tax" data.</em> <a href="https://www.tropicapp.io/intelligence-hub/software-spend-growth-by-company-size-q3-2026" class="text-navy underline" target="_blank" rel="noopener noreferrer">Spend growth by company size</a> · <a href="https://www.tropicapp.io/intelligence-hub/ai-tax-q3-2026" class="text-navy underline" target="_blank" rel="noopener noreferrer">AI tax, Q3 2026</a> · <a href="https://www.tropicapp.io/intelligence-hub/ai-native-saas-spend-by-company-size-q3-2026" class="text-navy underline" target="_blank" rel="noopener noreferrer">AI-native spend by company size</a>
+
+<strong>What the evidence shows.</strong> Tropic, a software procurement company, reports year-over-year change in average software and AI spend, drawn from more than $25 billion of spend under its management. In mid-market companies, growth fell from 27.16% in the second quarter to about 4% in the third. Enterprise growth rose from 19.11% to about 26%, and SMB has held near 3% for three quarters. In mid-market accounts, spend with traditional software vendors without a meaningful AI offering grew 4.79%, against 32.12% the prior quarter. Spend with vendors that have added AI to existing software grew 0.99%, against 20.89%, and spend with AI-native vendors grew 122.81%.
+
+On renewals, Tropic says AI-related price uplifts are "still landing in the 10–30% range," against a standard annual renewal increase of 3–9%. Buyers who pushed back cut those uplifts by 50% in 2025 and the first quarter of 2026. In the third quarter, vendors changed contract structure instead of adding an AI line item. They retired older tiers and moved customers onto packages that include AI, in several cases with no way to decline it, moved from per-user pricing to token, credit or usage-based pricing, and cut discounts on usage components from "5–20% or more" to "0–7%."
+
+<a href="/images/blog/facts/cxo-advisory-letter-2026-11-25-tropic-software-spend-growth-by-segment.png" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/cxo-advisory-letter-2026-11-25-tropic-software-spend-growth-by-segment.png" alt="Bar chart: year-over-year change in average software spend, Q2 and Q3 2026. SMB 3.30% and 3%. Mid-market 27.16% and 4%. Enterprise 19.11% and 26%. Source: Tropic Intelligence Hub (vendor data)." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<strong>How solid is it.</strong> VENDOR DATA (proprietary transaction data, not a survey). Tropic negotiates software contracts for a living, so it benefits when buyers believe prices are rising. The pages carry no publication date and don't define the company-size segments or say how many customers are in each. A single quarter's swing in one segment of one vendor's customer base may reflect a few large deals.
+
+<strong>Which roles it affects.</strong> CIO/CTO, CFO, procurement.
+
+<strong>For an SMB leadership team.</strong>
+
+- List software renewals due in the first half of 2027 that are above a set dollar level, and mark which vendors have retired a tier, added AI to a bundle, or moved to credits or usage pricing. Start those renewals 120 days out, not 30.
+- For any contract moving to usage or credit pricing, have the CFO set a monthly spending cap and an alert threshold in the contract or the admin console before signing. Discounts on usage components are shrinking, so the price per unit is what you'll actually pay.
+
+### Software buyers have moved budget to AI faster than sellers have worked out how to price it
+
+<em>West Monroe, "The New Rules of Enterprise Software &amp; AI Spend," November 5, 2026.</em> <a href="https://www.westmonroe.com/press-releases/survey-enterprise-ai-spending-surges" class="text-navy underline" target="_blank" rel="noopener noreferrer">Press release</a> · <a href="https://www.westmonroe.com/insights/enterprise-software-ai-spend" class="text-navy underline" target="_blank" rel="noopener noreferrer">Report page</a>
+
+<strong>What the evidence shows.</strong> The survey covered U.S. executives in Q3 2026. Buyers came from organizations with at least $100 million in annual revenue, and sellers from software companies with at least $30 million. Among buyers, 74% now put more than 10% of their IT budget into AI, up from 23% in 2025. The two sides disagree on almost everything else. 42% of buyers say they mainly buy AI rather than build it, but only 22% of sellers think their customers mainly buy. Buyers' preferred pricing models are enterprise subscriptions (33%) and usage-based pricing (24%). Meanwhile, 36% of sellers think buyers prefer hybrid pricing that includes outcome-based fees; the release gives no buyer figure for hybrid pricing.
+
+<strong>How solid is it.</strong> VENDOR SURVEY. West Monroe is a consulting firm that sells AI and software advisory work. Its two pages disagree on the basics: the press release says 300 executives in Q3, while the report page lists 156 buyers and 160 sellers (316 in all), fielded by Centiment in August. Most of the figures here appear only in the press release. The $100 million floor puts it at the upper end of this letter's audience.
+
+<strong>Which roles it affects.</strong> CIO/CTO, CFO, CEO, CAIO.
+
+<strong>For an SMB leadership team.</strong>
+
+- When a vendor proposes outcome-based or hybrid pricing, ask them to write down the outcome measure, who measures it, and what you pay if it isn't reached. If they can't, ask for an enterprise subscription price instead. By this survey, that's what most buyers want.
+- Have the CFO calculate your own share of IT spend going to AI (licenses, add-ons, usage, staff time) so that next year's comparison is against your number, not a survey's.
+
+## AI adoption in SMBs
+
+### The Census "do not know" jump did not settle, and AI is still more often credited with adding jobs than cutting them
+
+<em>U.S. Census Bureau, Business Trends and Outlook Survey (BTOS), data release of November 19, 2026.</em> <a href="https://www.census.gov/newsroom/press-releases/2026/btos-nov-19.html" class="text-navy underline" target="_blank" rel="noopener noreferrer">Release notice</a> · <a href="https://www.census.gov/hfp/btos/data" class="text-navy underline" target="_blank" rel="noopener noreferrer">BTOS data</a> · <a href="https://www2.census.gov/data/experimental-data-products/business-trends-and-outlook-survey/questionnaire-si-supplement.pdf" class="text-navy underline" target="_blank" rel="noopener noreferrer">Questionnaire</a>
+
+<strong>What the evidence shows.</strong> BTOS samples about 1.2 million employer businesses in six panels, each reporting once every 12 weeks. This release covers responses collected November 2–15. 25.0% of firms said they used AI in a business function in the past two weeks (standard error 0.6 points), 61.6% said no and 13.3% said they did not know.
+
+In the previous release, the question was reworded to ask about "Super Intelligence or SI (formerly referred to as Artificial Intelligence or AI)," and the "do not know" share jumped from 9.6% to 13.9%. Because consecutive periods draw on different panels, this release was the first chance to see whether that jump was a one-panel blip. It wasn't. "Do not know" stayed at 13.3%. The "no" share, which had been 65.8% under the old wording, stayed near 62%. The "yes" share barely changed throughout (24.6%, 24.2%, 25.0%). Among firms with one to four employees, "do not know" went from 8.8% under the old wording to 13.5% and then 13.0%.
+
+By firm size, use rises from 23.4% (1–4 employees) and 25.3% (5–9) to 28.1% (20–49), 33.1% (50–99), 35.3% (100–249) and 44.0% (250 or more, standard error 3.7 points). 27.6% of firms say employees used generative AI for work, and 28.2% expect to use AI within six months.
+
+The workforce questions are asked only of firms that say they use AI. Among those users, 7.3% say AI increased total headcount over the past six months and 2.4% say it decreased, roughly unchanged from the prior release. On new hiring the balance goes the other way: 2.3% say AI increased the number of new hires and 3.0% say it reduced them. These two answers can both be true if AI is slowing replacement hiring while some firms add roles around it. They could also mean respondents read "headcount" loosely. I can't tell which from the data.
+
+<strong>How solid is it.</strong> PRIMARY DATA. It is a large probability sample with published standard errors. The weakness is the break in the series: any trend line that runs across October 19, 2026 is comparing two different questions. The spreadsheet doesn't state the denominator for the headcount items; I took it from the questionnaire's skip instructions.
+
+<strong>Which roles it affects.</strong> CEO, CFO, CPO (People), CAIO.
+
+<strong>For an SMB leadership team.</strong>
+
+- If an AI adoption benchmark goes into a board deck this quarter, cite the period and note the October wording change. A chart that shows a dip or plateau in "yes" answers after October may be showing the rename, not a change in behavior.
+- In the people report, show AI's effect on total headcount and on hiring as two separate lines. The national data suggests the effect shows up in hiring first, and a headcount-only view would miss it.
+
+## The numbers
+
+- <strong>67% vs. 95%</strong>: CFOs forecasting higher 2027 revenue, companies under $50M vs. $1B+ (CFO Leadership, Nov 9)
+- <strong>+4% (from +27%)</strong>: Year-over-year growth in mid-market software spend, Q3 vs. Q2 2026 (Tropic, vendor data)
+- <strong>10–30%</strong>: AI-related renewal price uplifts, against a standard 3–9% (Tropic, vendor data)
+- <strong>24% to 41%</strong>: Organizations using AI agents in finance, 2025 to 2026 (Zapier, vendor survey)
+- <strong>23% to 74%</strong>: Software buyers putting more than 10% of IT budget into AI, 2025 to 2026 (West Monroe, vendor survey)
+- <strong>13.3%</strong>: U.S. employer firms answering "do not know" on AI use, up from 9.6% before the "Super Intelligence" wording (Census BTOS, Nov 19)
+
+## What I'm watching
+
+- <strong>Rehiring after AI cuts.</strong> Coverage of a November 5 Gartner release says 21% of customer service leaders have cut agent headcount because of AI and 7% have already rehired. I have not seen the release itself or a full account of it, so treat these as reports, not findings. If reversals like this are real, they will show up in customer service first.
+- <strong>Usage pricing reaching the mid-market.</strong> Tropic's description of seat licenses giving way to credits and tokens comes from one vendor's customer base. If it spreads, software costs become harder to forecast, and FP&amp;A will have to budget them as a variable cost.
+- <strong>An AI spending figure attributed to the Atlanta Fed.</strong> A secondary report says firms using AI raised AI spending 96% this year, to $1,024 per employee, based on the September Survey of Business Uncertainty. I read the September and October survey reports, and their special questions were about tariff refunds, not AI. Until the Atlanta Fed publishes it, I would not repeat that number.
+
+<em>This letter is general information, not legal, tax, accounting or investment advice.</em>
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-25',
+    category: 'CxO Advisory',
+    image: '/images/blog/facts/cxo-advisory-letter-2026-11-25.jpg',
+    readTime: '12 min',
+    slug: 'cxo-advisory-letter-2026-11-25',
+  },
+  {
     id: 'facts-cxo-advisory-letter-2026-11-18',
     title: "CxO Advisory Letter: Week of November 18, 2026",
     excerpt: "Gartner finds finance workers save about five hours a week with AI and redeploy 1.7 of them. Also this week: CFO budget assumptions for 2027, who controls AI investment, how deep small-business AI use goes, and executives who trust AI output more than their staff do.",
