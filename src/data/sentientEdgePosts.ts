@@ -4,6 +4,135 @@ import type { BlogPost } from './blogPosts';
 
 export const sentientEdgePosts: BlogPost[] = [
   {
+    id: 'facts-sentientedge-research-letter-2026-11-27',
+    title: "SentientEdge Research Letter: November 27, 2026",
+    excerpt: "A graph-based statistical-arbitrage model reports a Sharpe ratio of 1.78. At 5 basis points a trade it is −0.43. In all three papers this week, the extra machinery stops adding value once it faces a proper control: a twenty-year-old volatility forecast, or a simple rule about how many stocks to hold.",
+    content: `## This week
+
+A graph-based statistical-arbitrage model reports a Sharpe ratio of 1.78 on S&amp;P 500 stocks over 2015–2024, against 0.55 for the classic factor-model version. It trades about one and a half times its book every day. At 2 basis points a trade the Sharpe ratio is 0.90; at 5 basis points it is −0.43.
+
+The other two papers this week reach a quieter version of the same answer. A carefully built covariance model with three physics-inspired ingredients does no better than a twenty-year-old volatility forecast, and the ablations find nothing for any of the three. A robust portfolio optimiser turns out, once its breadth is matched, to be doing almost nothing that a simple rule about how many stocks to hold would not do. In each case the extra machinery stops adding value once it faces a proper control.
+
+Three items, all from arXiv. One (item 2) was posted on 20 November and missed last week's letter.
+
+## 1. Graph-Informed Deep Factor Model for Statistical Arbitrage
+
+Evelyn Zhu, Mucheng Zhu, Brendan Martin, Mihai Cucuringu · submitted 25 Nov 2026 · <a href="https://arxiv.org/abs/2611.34209" class="text-navy underline" target="_blank" rel="noopener noreferrer">arXiv:2611.34209</a> · no code release found; the data is CRSP, which requires a licence.
+
+<strong>Method.</strong>
+
+- Network: each day, a correlation network among stocks is rebuilt from rolling rank correlations after removing the dominant market-wide patterns (the paper calls this FADE). What remains is meant to capture links between stocks beyond the market and sector factors.
+- Model: a graph-attention network combines that network with firm characteristics and macroeconomic inputs to estimate a one-factor model. The residual for each stock, scaled by its volatility, is the trading signal: buy stocks that have fallen behind what the model expects and sell those that have run ahead, a daily reversal rule from Avellaneda and Lee.
+- Sample: historical S&amp;P 500 membership with delisting returns, 1,069 stocks over 2000–2024, about 500 tradable on a given day.
+- Testing: five expanding windows, each with one year of validation and two years of testing, covering 2015–2024. Hyperparameters were fixed after the first validation window.
+
+<strong>What they tested and found.</strong>
+
+<div class="overflow-x-auto mb-6"><table class="w-full text-sm text-left text-gray-700 border-collapse"><thead><tr><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Model</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">Sharpe before costs</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">1 bp</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">2 bp</th><th class="py-2 pr-4 font-semibold text-dark-blue border-b border-gray-300">5 bp</th></tr></thead><tbody><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Graph model (FADE network)</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">1.78</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">1.34</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.90</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−0.43</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Same model, no links between stocks</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">1.59</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">1.14</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.69</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−0.68</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Fama–French six factors</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.93</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.52</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.11</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−1.12</td></tr><tr><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">Classic PCA version</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.55</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.29</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">0.02</td><td class="py-2 pr-4 border-b border-gray-200 whitespace-nowrap">−0.78</td></tr></tbody></table></div>
+
+- A conditional autoencoder, the best-known deep-learning factor model, reaches 1.03 before costs.
+- The network's own contribution is the gap between 1.78 and 1.59. A block bootstrap gives it a p-value of 0.034 at the headline trading threshold. Across five thresholds the gap ranges from 0.17 to 0.26, with p-values from 0.004 to 0.069; no correction is made for testing five.
+- Turnover is 154% of the book a day, similar across all models (152–181%).
+
+<strong>Limitations.</strong>
+
+- Costs decide the result. At 5 basis points every model in the table loses money, and 5 basis points per trade is a modest assumption for a strategy that turns over one and a half times its book every day. Borrow costs, market impact and capacity are not modelled.
+- The signal uses the closing price it assumes it can trade at. Trading near the close is not the same unless the inputs are recomputed with what was known at the time.
+- The timing of macroeconomic data releases and revisions is not described.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE: before costs, the graph model's residuals produce a better daily reversal signal than the classic factor-model residuals, and the network adds about 0.19 to the Sharpe ratio over the same model without it.
+- EVIDENCE: at 5 basis points a trade, none of the versions makes money.
+- SPECULATION: that the network finds real economic links between companies. The test shows that the residuals trade better, not why.
+
+<strong>What we will do with it.</strong> Two of our own earlier studies of relative-value reversal found that the relationship between stocks added nothing beyond a plain short-term reversal, so we start sceptical. Our base cost assumption for the most liquid stocks is 10 basis points for a round trip, the same as the paper's 5 basis points per unit traded, and higher for less liquid names. At that level the published strategy loses money. We will not build it. We will reopen it only if the authors release code, and then as one test: the graph residual against a plain PCA residual with the same daily reversal rule, on point-in-time S&amp;P 500 membership, after our cost model. We drop it if the gap in net Sharpe ratio between the two is zero or less at our base costs.
+
+## 2. Do Econophysics-Inspired Inputs Improve Neural Covariance Forecasting? A Leakage-Free Walk-Forward Study of Intraday DJIA Data
+
+Gabriele Ranco · submitted 20 Nov 2026 · <a href="https://arxiv.org/abs/2611.27616" class="text-navy underline" target="_blank" rel="noopener noreferrer">arXiv:2611.27616</a> · the paper describes a code repository and supplement, but we could not find a public link; the minute data is licensed.
+
+<strong>Method.</strong>
+
+- Task: forecast tomorrow's covariance matrix (how much each stock moves, and how they move together) for the 29 Dow Jones stocks from one-minute prices, December 2012 to February 2015.
+- Model (PINC): a neural network given three extra inputs borrowed from physics (correlations cleaned with random-matrix theory, fat-tail estimates and self-exciting "Hawkes" intensities) plus an optional penalty term, used only if the validation data chooses it.
+- Testing: eleven nested walk-forward folds of 189 training, 42 validation and 21 test days, three random seeds, 231 out-of-sample days.
+- Comparators: the sample covariance, Ledoit–Wolf shrinkage, a random-matrix estimator, an extreme-value estimator, the HAR realized-volatility model (Corsi, 2009), an LSTM network and the same neural network without the physics inputs.
+
+<strong>What they tested and found.</strong>
+
+- Forecast loss (QLIKE, lower is better): sample 0.492, Ledoit–Wolf 0.414, random-matrix 0.381, HAR 0.324, the physics model and the plain network both 0.319, LSTM 0.319.
+- The neural models beat the static estimators clearly (Holm-adjusted p below 0.001). They do not beat HAR (p = 0.151) or the LSTM (p = 0.528).
+- Validation rejected the physics penalty in every fold. Removing the random-matrix, fat-tail or Hawkes inputs makes no detectable difference.
+- In minimum-variance portfolios after 10 basis points of costs, the physics model's Sharpe ratio is 1.19, with a 95% interval from −0.67 to 3.30. No method's Sharpe ratio is significantly better than another's.
+
+<strong>Limitations.</strong>
+
+- One short period (about two years, one market regime) and 29 large stocks. The treatment of survivorship in a fixed index list is unclear.
+- The leakage tests are the author's own; the code that would let others check them is not publicly linked.
+- The portfolio test is too short to separate the methods: the Sharpe ratio's interval runs from −0.67 to 3.30.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE: on this data, none of the three physics-inspired ingredients improves next-day covariance forecasts, and a well-tuned neural network ties a HAR model.
+- SPECULATION: that the result holds in other periods or larger universes. It is a single, careful null on a small sample.
+
+<strong>What we will do with it.</strong> This is the kind of paper we want more of: a model with every ingredient switched off in turn, against strong simple baselines, with validation allowed to say no. Our rankings currently use a simple volatility penalty, not a forecast. We are adopting the paper's design as a rule rather than running its model: any risk input we add later must beat a HAR-style realized-volatility forecast and a shrinkage estimator on the same stocks, one ingredient at a time, with "off" as an option in every fold. If its forecast improvement over HAR is not significant after correcting for the number of variants tried, or if it does not improve the net result of the book it feeds, we keep the simple penalty.
+
+## 3. Wasserstein Penalisation as an Endogenous Breadth Constraint in Penalised Mean-Variance Portfolio Selection
+
+Jiahao Chen · submitted 23 Nov 2026 · <a href="https://arxiv.org/abs/2611.30046" class="text-navy underline" target="_blank" rel="noopener noreferrer">arXiv:2611.30046</a> · <a href="https://github.com/ChenJiahaoJNU/GU2026-11" class="text-navy underline" target="_blank" rel="noopener noreferrer">code</a> and <a href="https://huggingface.co/datasets/Changahou/GU2026_1" class="text-navy underline" target="_blank" rel="noopener noreferrer">return panels with checksums</a> released.
+
+<strong>Method.</strong>
+
+- The claim: a popular "robust" portfolio optimiser (Wasserstein-penalised mean-variance, long only) is, in this formulation, the same as choosing how many stocks to hold. The robustness setting controls the portfolio's effective number of holdings and nothing else. The author is careful to say the equivalence does not hold for other robust formulations.
+- Data: fourteen overlapping panels of 255 Chinese A-share stocks, March 2018 to January 2024. Sample means and 60-day shrinkage covariances, holdings of five days.
+- The key comparison: the robust portfolio against benchmarks with the same breadth. Matching breadth after the fact is exact by construction, as the paper says, so it is not evidence. The informative test sets breadth from past windows only.
+
+<strong>What they tested and found.</strong>
+
+- At the smallest robustness setting, the robust portfolio beats an equal-weighted portfolio by 45.7 basis points a day before costs. Against a rule that simply holds as many effective names as the past average, the gain shrinks to 7.7 basis points a day.
+- Split into two separate periods, the gain over equal weight is +50.3 basis points a day in 2018–20 (t = 2.6) and −4.6 in 2021–24 (t = −0.7), before costs. Against the breadth-matched portfolio it is zero in both periods, with or without 30 basis points of costs.
+
+<strong>Our check.</strong> We downloaded the published return panel and confirmed it matches its checksum. On its first 60-day window, solving the constrained and the penalised problems separately gives the same mean-variance value to within 3.3 × 10⁻¹³, at three robustness settings. Recomputing the archived outputs reproduces the 45.7 and 7.7 basis-point figures. This confirms the arithmetic and the identity on one window; it is not a rerun of every strategy or test.
+
+<strong>Limitations.</strong>
+
+- The panels overlap in time and are not independent, and there is no untouched final period.
+- The return files carry no security identifiers or volumes, so survivorship, China's daily price limits and capacity cannot be checked.
+- The 30-basis-point cost test applies to the breadth-matched comparison, not to the headline gain over equal weight.
+
+<strong>Evidence vs speculation.</strong>
+
+- EVIDENCE: in this formulation, the robust optimiser's benefit over equal weight is mostly a choice of breadth; a rule based on past breadth captures most of it, and the remaining gap is small.
+- EVIDENCE: the gain over equal weight was positive in 2018–20 and gone in 2021–24.
+- SPECULATION: that the same holds for other robust optimisers. The author says it does not follow.
+
+<strong>What we will do with it.</strong> Before we adopt any portfolio optimiser for our books, we will compare it with two simple alternatives built from the same forecasts: equal weight over the same names, and a rule that holds a fixed number of effective names chosen from past data only. The optimiser has to beat both after our trading costs, on a final period we do not look at while choosing its settings. If its net gain over the past-breadth rule has a 95% interval that includes zero, we keep the simpler rule.
+
+## Promising experiments
+
+- <strong>A breadth control for any optimiser</strong> (item 3). Cheap, and it changes how we read any future "the optimiser helped" result: most of the help may be a choice of how many stocks to hold.
+- <strong>A strong-baseline rule for risk inputs</strong> (item 2). No new model to build; a standard for the next time we are tempted to add one.
+- <strong>Graph residuals against plain residuals</strong> (item 1). Only if code appears, and only against plain residual reversal after our costs. Our own earlier results make this the least likely to survive.
+
+## Watching / not yet credible
+
+Nothing new reached our watch list this week.
+
+## Updates
+
+Item 2 was posted on 20 November, the date of last week's letter, and is covered here for the first time. No previously covered paper is repeated, and none appeared as a revised version in this week's listings. Older items were not systematically re-checked for new versions.
+
+<em>This letter is drafted with AI research assistance and reviewed and signed by Bob Katz. It is research commentary, not investment advice. No result described here is a claim net of trading costs unless stated, and the experiments listed are planned tests of our own models, not findings.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-27',
+    category: 'SentientEdge Research',
+    image: '/images/blog/facts/sentientedge-research-letter-2026-11-27.jpg',
+    readTime: '9 min',
+    slug: 'sentientedge-research-letter-2026-11-27',
+  },
+  {
     id: 'facts-sentientedge-research-letter-2026-11-20',
     title: "SentientEdge Research Letter: November 20, 2026",
     excerpt: "The biggest number this week is a Sharpe ratio of 6.37 from matching stock charts to similar charts in the past. Charge costs and weight by size, and it falls to 0.01. An audit of 91 AI trading papers finds the same gaps: short tests, no costs, undisclosed searching.",
