@@ -436,7 +436,7 @@ The McKinsey survey figures are from "The State of AI in 2026: On the Road to RO
     excerpt: "Most companies know a great deal about what happened and much less about what to do next. Where analysis pays in a mid-sized business, and five questions that start from the decision instead of the dashboard.",
     content: `<a href="/images/blog/facts/your-business-has-the-data.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/your-business-has-the-data.webp" alt="Cover: From Analysis to AI to Action. Turning intelligence into decisions. Turning decisions into results. Three panels over a mountain road at sunrise. Analysis: What do we know? Data, models, evidence, insights. AI: What could we do? Prediction, scenarios, reasoning, agent workflows. Action: What should we do? Decisions, execution, outcomes, learn and improve. FACTS Consulting, We Make You Smarter." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
-<em>Analysis to AI to Action, Article 2 of 3</em>
+<em>Analysis to AI to Action, Article 2</em>
 
 Most of the companies I have worked inside produced a month-end package. Financial statements, a variance report, an aging, a sales summary by region, later a dashboard with the same numbers in color. It went to the same people on the same day each month. The numbers were accurate, the charts were clean, and the package arrived on schedule, because a great deal of effort went into making sure it did.
 
@@ -1053,7 +1053,7 @@ The Federal Reserve's October Beige Book says firms in five of its twelve distri
     excerpt: "Most people report being more productive with AI; most companies cannot yet show it in enterprise earnings. Five questions that make an AI investment testable before the money moves.",
     content: `<a href="/images/blog/facts/ai-pilots-where-are-the-profits.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/ai-pilots-where-are-the-profits.webp" alt="Cover: a stone bridge with its center span missing, a stopwatch on one bank and an open ledger on the other, under the title AI Pilots Are Everywhere. Where Are the Profits? Analysis to AI to Action, Article 1 of 3, Bob Katz, factservices.com" class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
-<em>Analysis to AI to Action, Article 1 of 3</em>
+<em>Analysis to AI to Action, Article 1</em>
 
 Twenty years ago, I implemented corporate performance management (CPM) systems for executives who believed the software was the hard part. It never was. The hard part was that nobody had agreed, before the project started, which decision would change when the new number arrived. Systems approved to "give us visibility" gave visibility, and the visibility sat there. Systems approved to shorten the close from twelve days to five either did or did not, and everyone could see which.
 
