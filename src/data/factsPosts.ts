@@ -306,7 +306,7 @@ By Gartner's count, finance workers save a little over five hours a week with AI
     excerpt: "A recommendation can survive a management meeting without changing the business. Who changes the work, what authority they need, how management establishes whether the change paid, and five questions for the operating review.",
     content: `<a href="/images/blog/facts/the-recommendation-was-approved.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/the-recommendation-was-approved.webp" alt="Cover: The Recommendation Was Approved. What Changed on Monday? Analysis to AI to Action, Article 3 of 3. A miniature stone bridge, now complete, runs from a stopwatch on one bank to an open ledger with a pen resting on it on the other." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
-<em>Analysis to AI to Action, Article 3 of 3</em>
+<em>Analysis to AI to Action, Article 3</em>
 
 A recommendation can survive a management meeting without changing the business. The analysis is accepted, the opportunity goes into the forecast, and somebody agrees to follow up. The following Monday, the purchasing rules, customer terms, and approval habits are still what they were on Friday. The projected benefit has acquired a place in the budget. It has not acquired a way to happen.
 
