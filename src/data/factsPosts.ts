@@ -8,7 +8,7 @@ export const factsPosts: BlogPost[] = [
     excerpt: "Most setbacks are not crises, and most plans never say which ones are. Why the condition for pausing a decision belongs on the page the day it is approved, who should be allowed to pause, and why the threshold has to come first.",
     content: `<a href="/images/blog/facts/what-would-make-you-reverse-it.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/what-would-make-you-reverse-it.webp" alt="Cover: The Recommendation Was Approved. What Would Make You Reverse It? Analysis to AI to Action, a follow-up to Article 3. The same miniature stone bridge from stopwatch to ledger, now with an open wooden gate and a lit amber lantern at the stopwatch end, and a small ruled box on the ledger page." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
 
-<em>Analysis to AI to Action, Article 4</em>
+<em>Analysis to AI to Action: a follow-up to Article 3</em>
 
 <a href="/blog/the-recommendation-was-approved" class="text-navy underline">Article 3</a> asked what changed on Monday. Suppose the answer was a good one. The distributor's new purchasing rules went live for a defined group of products, the old rules were preserved, and a review date was set. Now it is a Thursday three weeks later. Two customers have called about items that were not on the shelf, and one of them buys a great deal.
 
