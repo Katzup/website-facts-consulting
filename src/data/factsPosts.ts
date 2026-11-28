@@ -7,6 +7,7 @@ export const factsPosts: BlogPost[] = [
     title: "Who Decides How Often the Bad News Gets Reported?",
     excerpt: "The SEC has proposed letting public companies choose each year between quarterly and semiannual reports. A group of Wharton accounting professors objects, and their sharpest point applies to every private company that reports to an owner, a board, or a bank.",
     content: `<a href="/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp" alt="Cover: a desk lamp lights one short, clipped report on a dark desk, while a loose pile of papers sits in shadow beside it." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+<span class="block -mt-4 mb-2 text-sm italic text-gray-500">Trim the report, not the reporting cadence.</span>
 
 <em>The SEC's semiannual reporting proposal, the Wharton critique, and what a private company can take from both</em>
 
