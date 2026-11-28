@@ -3,6 +3,78 @@ import type { BlogPost } from './blogPosts';
 
 export const factsPosts: BlogPost[] = [
   {
+    id: 'facts-who-decides-how-often-bad-news-gets-reported',
+    title: "Who Decides How Often the Bad News Gets Reported?",
+    excerpt: "The SEC has proposed letting public companies choose each year between quarterly and semiannual reports. A group of Wharton accounting professors objects, and their sharpest point applies to every private company that reports to an owner, a board, or a bank.",
+    content: `<a href="/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp" alt="Cover: a desk lamp lights one short, clipped report on a dark desk, while a loose pile of papers sits in shadow beside it." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<em>The SEC's semiannual reporting proposal, the Wharton critique, and what a private company can take from both</em>
+
+The Securities and Exchange Commission has proposed letting public companies choose, each year, whether to report every three months or every six. A group of Wharton accounting professors has filed a detailed objection, and one sentence from Paul Fischer, among the letter's authors, carries most of the argument: "You're more likely to turn it off when you want people to not pay attention, and you're more likely to turn it on when you want people to pay attention."
+
+Most of the companies I work with will never file a 10-Q. That sentence still applies to them.
+
+## What the SEC proposed
+
+On May 5, 2026, the SEC proposed allowing any reporting company to replace its three quarterly reports with a single semiannual report on a new Form 10-S, alongside the annual 10-K. The choice would be made by checking a box on the 10-K, and the company could change it from year to year. The comment period closed on July 6. Knowledge at Wharton reports that the SEC received roughly 206,000 comments and that most opposed the proposal. As far as I can find, it has not been adopted.
+
+The SEC's case has three parts. Quarterly reports cost money and management time. A six-month window would ease the pressure to manage to the next quarter and leave more room for longer-term spending on research, people, and marketing. And frequent disclosure tells competitors more than a company might want them to know. The SEC acknowledges the trade-off: investors would wait longer for material information. It expects earnings calls, 8-K filings for major events, and analyst research to fill much of the gap.
+
+## The objection
+
+The Wharton letter, from Fischer, Richard Lambert, Rongchen Li, Catherine Schrand, and Christina Zhu, takes the SEC's analysis apart in several places. Four of its points matter beyond Wall Street.
+
+<strong>The cost does not halve.</strong> Going from quarterly to semiannual reporting does not cut the cost in half, because most of the cost is fixed. An accounting system that can produce reliable statements twice a year can produce them four times a year for modest additional cost. Fischer grants that much of a 10-Q is boilerplate, but discarding the whole report to get rid of the noise, he said, "seems a little bit of overkill."
+
+<strong>Six months is still short.</strong> If quarterly reporting pushes managers toward short-term decisions, moving to six months only changes the horizon from three months to six. Research programs and capital projects run for years. The professors argue that short-termism is a problem of incentives and communication, better addressed through compensation and board oversight than through reporting frequency.
+
+<strong>The option itself is the problem.</strong> A company that changes an accounting policy must explain the change in standardized disclosures. A company that switches its reporting frequency under the proposal would not have to explain why. That leaves the decision open to exactly the pattern Fischer describes: reporting less when the news is bad.
+
+<strong>The person deciding has a stake in the answer.</strong> The letter's sharpest point is about who makes the choice. The proposal lets management decide each year. "The evidence doesn't show that firm managers will make the right decision for their own investors," Schrand said. "It's an agency problem." The professors note the irony: short-termism is itself an agency problem, and the proposal asks the same managers to make a short-horizon decision about disclosure.
+
+The letter also argues that less frequent reporting would raise the cost of capital, thin analyst coverage, and hurt retail investors most, and that firms going public would face a credibility problem if investors knew the company could cut back its reporting at any annual filing. Of the SEC's five alternatives, the professors take only one seriously: keep quarterly reporting and cut the unnecessary narrative from the 10-Q. The real choice, they argue, is between fewer pages and fewer points of accountability.
+
+## Both sides have a case
+
+I find the Wharton argument persuasive, but I don't think the SEC's position is foolish. The European Union and the United Kingdom dropped mandatory quarterly reporting in the 2010s, and markets there still function. A KPMG survey reported by the Wall Street Journal found that most companies would keep reporting earnings quarterly even if they stopped filing the full 10-Q, which suggests the market may enforce a cadence the rule no longer requires. Studies of companies in those markets have found an "opacity penalty," lower prices and less analyst coverage, for firms that reported less often. How large that penalty would be for a U.S. company that chooses semiannual reporting is harder to say.
+
+What I find hardest to defend is the year-by-year option. A fixed semiannual rule and a fixed quarterly rule each have arguments in their favor. A rule that lets management choose each year, without explaining the choice, invites exactly the behavior it is supposed to prevent.
+
+## Why a private company should care
+
+A private company has no 10-Q, but it has the same decision, made informally and often by default. How often does the owner, the board, or the bank see real numbers? Who decides, and does the answer change when results disappoint?
+
+Three ideas from the Wharton letter carry over directly.
+
+<strong>The close is a fixed cost.</strong> The expensive part of financial reporting is the infrastructure: a chart of accounts that means something, reconciliations that are actually done, and accruals made the same way each period. A company that has built that can close monthly at modest additional cost. A company that closes reliably only at year-end, with the accountant's help, is not saving the cost of a monthly close. It is going eleven months at a time without accurate numbers.
+
+<strong>Set the cadence before the news arrives.</strong> Lenders notice when a borrower's monthly statements arrive late in a bad quarter and on time in a good one. So do minority owners and boards. The cure is the one the professors point toward: decide the reporting schedule in advance, write it down, and do not leave the person whose results are being reported free to change it when results turn. I made a similar argument in <a href="/blog/what-would-make-you-reverse-it" class="text-navy underline">a recent article about reversing decisions</a>. The threshold has to be set before anyone knows which side of it the results will fall on.
+
+<strong>Trim the package, not the frequency.</strong> If the monthly reporting package has grown into forty pages nobody reads, the fix is a shorter package, not a less frequent one. This is the alternative the SEC set aside and the professors favored: fewer pages, not fewer points of accountability.
+
+## The open question
+
+I don't know whether the SEC will adopt the rule, or in what form. Some of the Wharton argument applies only to public markets: one company's silence makes other companies' stock harder to price, and a private company does not have that effect. The agency problem does apply to private companies, and it is the part of the debate worth taking home.
+
+So here is the question for an owner or a board, whatever the SEC decides. Who decides how often your company reports its results, and would that person decide differently after a bad quarter?
+
+### Source and attribution
+
+Shankar Parameshwaran, "How Would Semi-Annual Reporting Affect Firms, Investors, and Capital Formation?", <em>Knowledge at Wharton</em>, November 24, 2026. The quotations from Paul Fischer and Catherine Schrand, the summary of the Wharton comment letter, the comment count, the KPMG survey reference, and the international comparisons are from that article. <a href="https://knowledge.wharton.upenn.edu/article/how-would-semi-annual-reporting-affect-firms-investors-and-capital-formation/" class="text-navy underline" target="_blank" rel="noopener noreferrer">Knowledge at Wharton article</a>
+
+Securities and Exchange Commission, "Semiannual Reporting," proposed rule, File No. S7-2026-15, May 5, 2026. <a href="https://www.sec.gov/rules-regulations/2026/05/s7-2026-15" class="text-navy underline" target="_blank" rel="noopener noreferrer">sec.gov</a>; <a href="https://www.federalregister.gov/documents/2026/05/07/2026-09095/semiannual-reporting" class="text-navy underline" target="_blank" rel="noopener noreferrer">Federal Register, May 7, 2026</a>
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-28',
+    category: 'Finance',
+    image: '/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp',
+    readTime: '6 min',
+    slug: 'who-decides-how-often-bad-news-gets-reported',
+  },
+  {
     id: 'facts-what-would-make-you-reverse-it',
     title: "The Recommendation Was Approved. What Would Make You Reverse It?",
     excerpt: "Most setbacks are not crises, and most plans never say which ones are. Why the condition for pausing a decision belongs on the page the day it is approved, who should be allowed to pause, and why the threshold has to come first.",
