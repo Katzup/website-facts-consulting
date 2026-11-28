@@ -3,6 +3,175 @@ import type { BlogPost } from './blogPosts';
 
 export const factsPosts: BlogPost[] = [
   {
+    id: 'facts-what-would-make-you-reverse-it',
+    title: "The Recommendation Was Approved. What Would Make You Reverse It?",
+    excerpt: "Most setbacks are not crises, and most plans never say which ones are. Why the condition for pausing a decision belongs on the page the day it is approved, who should be allowed to pause, and why the threshold has to come first.",
+    content: `<a href="/images/blog/facts/what-would-make-you-reverse-it.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/what-would-make-you-reverse-it.webp" alt="Cover: The Recommendation Was Approved. What Would Make You Reverse It? Analysis to AI to Action, a follow-up to Article 3. The same miniature stone bridge from stopwatch to ledger, now with an open wooden gate and a lit amber lantern at the stopwatch end, and a small ruled box on the ledger page." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+
+<em>Analysis to AI to Action: a follow-up to Article 3</em>
+
+<a href="/blog/the-recommendation-was-approved" class="text-navy underline">Article 3</a> asked what changed on Monday. Suppose the answer was a good one. The distributor's new purchasing rules went live for a defined group of products, the old rules were preserved, and a review date was set. Now it is a Thursday three weeks later. Two customers have called about items that were not on the shelf, and one of them buys a great deal.
+
+Was the decision wrong?
+
+Usually the honest answer is that nobody knows yet. Two calls are not a pattern. They are not nothing, either. What happens next depends less on the analysis than on what the company decided, before the calls came in, about what would make it change course.
+
+Joe Procopio recently wrote about what he calls the "freeze-dried CEO," an executive who is "kind of playing the part of CEO," a walking SWOT analysis who knows the frameworks and does not know the business underneath them. Such executives come apart, he argues, when events push them off the script. His summary line stuck with me: "The playbooks never have a 'Shit Hits the Fan' chapter."
+
+I think he is right about the behavior and fair about the difficulty. He concedes that these executives are "super easy to spot in hindsight" and hard to spot in advance. Character cannot be written into a plan. A plan can say, before anyone is under pressure, what result would mean an assumption has failed and who is allowed to act on it. That part can be written down, and most plans leave it out.
+
+## Most setbacks are not crises
+
+A company that treats every complaint as a referendum on its strategy will never finish anything. One customer objecting to a price increase is something the sales team handles. A shortage on one item in the first weeks of a new purchasing policy may be noise, a supplier problem, or a sign that the forecast is wrong for that item. The operating review exists for this. It asks what we expected, what happened, what we learned, and what we should change, and most of the time that is enough.
+
+The explicit trigger is for a narrower set of decisions: the ones that are costly to reverse, or where waiting makes the damage larger. A price increase already rolling through the customer base. A capital commitment drawn in stages. A purchasing change that, if wrong, quietly loses customers whose missing demand then disappears from the sales record, as Article 3 warned. For those, the review date is too far away to be the only safeguard.
+
+## Two ways to get it wrong
+
+Without a condition set in advance, management can fail in either direction.
+
+The first is the one Procopio describes: defending the decision because it was ours. Every lost order looks like a negotiation. Every bad week has an explanation. The evidence is real, and it is read by the people with the most reason to discount it.
+
+The second gets less attention. A single loud call from a large customer can reverse a sound decision before it has had time to work. The test group goes back to the old rules, the forecast is never actually tested, and the company has paid for the change without learning whether it was right.
+
+Both failures have the same cause. The threshold was set during the event, by people under pressure, at a point that moved with how they felt about it.
+
+## Write the reversal condition on the day of approval
+
+Article 3 proposed a one-page decision record, started on the day of approval, in which the assumptions are written down before the results arrive. I would add one box to it. It has six entries.
+
+1. <strong>The trigger.</strong> A countable result that would mean a key assumption has failed, tied to the decision's own numbers.
+
+2. <strong>Who can pause.</strong> A named person, and not only the person who sponsored the decision.
+
+3. <strong>Who must be told,</strong> the same day.
+
+4. <strong>Who decides whether to resume, revise, or reverse.</strong>
+
+5. <strong>The evidence needed for that decision,</strong> and when it is due.
+
+6. <strong>The next scheduled review,</strong> whether or not the trigger fires.
+
+The distinction between the second and fourth entries matters most. Pausing is not reversing. A pause buys time to look at the evidence. It should be cheap, reversible, and available to someone other than the sponsor. Reversing a decision can stay with the people who made it.
+
+At the hypothetical distributor, the box might read like this. Suppose management agreed in advance on a service level for the test group, say 95 percent of order lines filled from stock. The trigger: the fill rate on the test group falls below 95 percent for two consecutive weeks, or a customer among the top ten reports a stockout on a test-group item that cost an order. The purchasing manager can pause by returning the test group to its old reorder points, which is easy because Article 3 insisted the old rules be preserved. The COO, who owns the inventory result, must be told the same day, along with sales. The COO decides whether to resume, revise, or reverse, after seeing unmet demand, lost orders, and supplier lead times for the affected items within ten business days. The review date set at approval stands either way.
+
+Notice what the trigger does not say. It does not say "if a customer complains." Two calls on a Thursday may or may not trip it. The box makes that a question of fact.
+
+## Why the threshold has to come first
+
+Article 3 made the case for dating every entry in the record: an assumption written before the result cannot be adjusted to fit it. The reversal condition follows the same logic. A threshold chosen after the bad news arrives tends to land just past wherever the numbers happen to be.
+
+Setting the threshold is also where the analysis earns its keep. A price increase has a break-even: the share of revenue the company can afford to lose before the increase stops paying for itself. A trigger set at half that break-even gives management time to decide before the increase has consumed its own benefit. A capital project has a breakeven price for whatever it produces; a trigger set partway between the expected price and that breakeven fires while there is still a cushion. In the decision memos we prepare at FACTS, the box now draws its trigger from the number the analysis already computed. Where the analysis could not compute one, the box says so and does not invent a figure.
+
+I do not know that half is the right fraction. Set the trigger too tight and the company flinches at noise. Set it too loose and it confirms the freeze. Half the break-even is a starting rule, chosen so that the trigger fires with room left to act. A company that kept these records would learn, over a few years, where its own thresholds belong.
+
+## When the decision was the CEO's
+
+The hardest case is the one Procopio is really writing about. The person who approved the decision is the person who would have to say it was wrong, and that person runs the company.
+
+A box on a page does not supply backbone. Procopio puts the requirement as "a moral compass and a requirement of backbone," and I agree that no document provides either. What a document can do is lower the cost of telling the truth. If the CFO can pause the next wave of price notices without first winning an argument with the CEO, the evidence gets looked at sooner. If the trigger was agreed when the CEO was still confident, then pausing is following the plan the CEO approved, not challenging the CEO.
+
+Beyond that, the question becomes one of governance: who the owners or the board expect to hear from when a serious concern is not being heard inside the company. That belongs in how the company is governed, and I would not try to solve it inside an operating memo.
+
+I closed Article 3 by doubting that the person who approved a disappointing initiative will be as willing to document it as to approve it. I still doubt it. The reversal box does not remove that doubt. It moves the hard conversation to the day of approval, when the decision still looks good and agreeing to the conditions costs nothing.
+
+## The Thursday question
+
+The Monday question was what someone would do differently because the recommendation was approved. The Thursday question is the one to ask in the same meeting: what would make us change our minds, and who gets to say so?
+
+A team that can answer both before the work starts has not guaranteed a good outcome. It has made it more likely that the next surprise is handled by the plan rather than by whoever feels most strongly that afternoon.
+
+### Source and attribution
+
+Joe Procopio, "NVidia's Leadership Crisis and the CEOs Who Are Screwing It Up For Everyone." The quotations in this article ("freeze-dried CEO," "kind of playing the part of CEO," "The playbooks never have a 'Shit Hits the Fan' chapter," "super easy to spot in hindsight," and "a moral compass and a requirement of backbone") are from that piece. <a href="https://ehandbook.com/nvidias-leadership-crisis-and-the-ceos-who-are-screwing-it-up-for-everyone-7f277bd01e7f" class="text-navy underline" target="_blank" rel="noopener noreferrer">Article link</a>
+
+The distributor, its service level, and all figures are hypothetical illustrations continued from Articles 2 and 3.
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-28',
+    category: 'AI',
+    image: '/images/blog/facts/what-would-make-you-reverse-it.webp',
+    readTime: '7 min',
+    slug: 'what-would-make-you-reverse-it',
+  },
+  {
+    id: 'facts-who-decides-how-often-bad-news-gets-reported',
+    title: "Who Decides How Often the Bad News Gets Reported?",
+    excerpt: "The SEC has proposed letting public companies choose each year between quarterly and semiannual reports. A group of Wharton accounting professors objects, and their sharpest point applies to every private company that reports to an owner, a board, or a bank.",
+    content: `<a href="/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp" target="_blank" rel="noopener noreferrer"><img src="/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp" alt="Cover: a desk lamp lights one short, clipped report on a dark desk, while a loose pile of papers sits in shadow beside it." class="my-6 max-w-full h-auto rounded" loading="lazy"/></a>
+<span class="block -mt-4 mb-2 text-sm italic text-gray-500">Trim the report, not the reporting cadence.</span>
+
+<em>The SEC's semiannual reporting proposal, the Wharton critique, and what a private company can take from both</em>
+
+The Securities and Exchange Commission has proposed letting public companies choose, each year, whether to report every three months or every six. A group of Wharton accounting professors has filed a detailed objection, and one sentence from Paul Fischer, among the letter's authors, carries most of the argument: "You're more likely to turn it off when you want people to not pay attention, and you're more likely to turn it on when you want people to pay attention."
+
+Most of the companies I work with will never file a 10-Q. That sentence still applies to them.
+
+## What the SEC proposed
+
+On May 5, 2026, the SEC proposed allowing any reporting company to replace its three quarterly reports with a single semiannual report on a new Form 10-S, alongside the annual 10-K. The choice would be made by checking a box on the 10-K, and the company could change it from year to year. The comment period closed on July 6. Knowledge at Wharton reports that the SEC received roughly 206,000 comments and that most opposed the proposal. As far as I can find, it has not been adopted.
+
+The SEC's case has three parts. Quarterly reports cost money and management time. A six-month window would ease the pressure to manage to the next quarter and leave more room for longer-term spending on research, people, and marketing. And frequent disclosure tells competitors more than a company might want them to know. The SEC acknowledges the trade-off: investors would wait longer for material information. It expects earnings calls, 8-K filings for major events, and analyst research to fill much of the gap.
+
+## The objection
+
+The Wharton letter, from Fischer, Richard Lambert, Rongchen Li, Catherine Schrand, and Christina Zhu, takes the SEC's analysis apart in several places. Four of its points matter beyond Wall Street.
+
+<strong>The cost does not halve.</strong> Going from quarterly to semiannual reporting does not cut the cost in half, because most of the cost is fixed. An accounting system that can produce reliable statements twice a year can produce them four times a year for modest additional cost. Fischer grants that much of a 10-Q is boilerplate, but discarding the whole report to get rid of the noise, he said, "seems a little bit of overkill."
+
+<strong>Six months is still short.</strong> If quarterly reporting pushes managers toward short-term decisions, moving to six months only changes the horizon from three months to six. Research programs and capital projects run for years. The professors argue that short-termism is a problem of incentives and communication, better addressed through compensation and board oversight than through reporting frequency.
+
+<strong>The option itself is the problem.</strong> A company that changes an accounting policy must explain the change in standardized disclosures. A company that switches its reporting frequency under the proposal would not have to explain why. That leaves the decision open to exactly the pattern Fischer describes: reporting less when the news is bad.
+
+<strong>The person deciding has a stake in the answer.</strong> The letter's sharpest point is about who makes the choice. The proposal lets management decide each year. "The evidence doesn't show that firm managers will make the right decision for their own investors," Schrand said. "It's an agency problem." The professors note the irony: short-termism is itself an agency problem, and the proposal asks the same managers to make a short-horizon decision about disclosure.
+
+The letter also argues that less frequent reporting would raise the cost of capital, thin analyst coverage, and hurt retail investors most, and that firms going public would face a credibility problem if investors knew the company could cut back its reporting at any annual filing. Of the SEC's five alternatives, the professors take only one seriously: keep quarterly reporting and cut the unnecessary narrative from the 10-Q. The real choice, they argue, is between fewer pages and fewer points of accountability.
+
+## Both sides have a case
+
+I find the Wharton argument persuasive, but I don't think the SEC's position is foolish. The European Union and the United Kingdom dropped mandatory quarterly reporting in the 2010s, and markets there still function. A KPMG survey reported by the Wall Street Journal found that most companies would keep reporting earnings quarterly even if they stopped filing the full 10-Q, which suggests the market may enforce a cadence the rule no longer requires. Studies of companies in those markets have found an "opacity penalty," lower prices and less analyst coverage, for firms that reported less often. How large that penalty would be for a U.S. company that chooses semiannual reporting is harder to say.
+
+What I find hardest to defend is the year-by-year option. A fixed semiannual rule and a fixed quarterly rule each have arguments in their favor. A rule that lets management choose each year, without explaining the choice, invites exactly the behavior it is supposed to prevent.
+
+## Why a private company should care
+
+A private company has no 10-Q, but it has the same decision, made informally and often by default. How often does the owner, the board, or the bank see real numbers? Who decides, and does the answer change when results disappoint?
+
+Three ideas from the Wharton letter carry over directly.
+
+<strong>The close is a fixed cost.</strong> The expensive part of financial reporting is the infrastructure: a chart of accounts that means something, reconciliations that are actually done, and accruals made the same way each period. A company that has built that can close monthly at modest additional cost. A company that closes reliably only at year-end, with the accountant's help, is not saving the cost of a monthly close. It is going eleven months at a time without accurate numbers.
+
+<strong>Set the cadence before the news arrives.</strong> Lenders notice when a borrower's monthly statements arrive late in a bad quarter and on time in a good one. So do minority owners and boards. The cure is the one the professors point toward: decide the reporting schedule in advance, write it down, and do not leave the person whose results are being reported free to change it when results turn. I made a similar argument in <a href="/blog/what-would-make-you-reverse-it" class="text-navy underline">a recent article about reversing decisions</a>. The threshold has to be set before anyone knows which side of it the results will fall on.
+
+<strong>Trim the package, not the frequency.</strong> If the monthly reporting package has grown into forty pages nobody reads, the fix is a shorter package, not a less frequent one. This is the alternative the SEC set aside and the professors favored: fewer pages, not fewer points of accountability.
+
+## The open question
+
+I don't know whether the SEC will adopt the rule, or in what form. Some of the Wharton argument applies only to public markets: one company's silence makes other companies' stock harder to price, and a private company does not have that effect. The agency problem does apply to private companies, and it is the part of the debate worth taking home.
+
+So here is the question for an owner or a board, whatever the SEC decides. Who decides how often your company reports its results, and would that person decide differently after a bad quarter?
+
+### Source and attribution
+
+Shankar Parameshwaran, "How Would Semi-Annual Reporting Affect Firms, Investors, and Capital Formation?", <em>Knowledge at Wharton</em>, November 24, 2026. The quotations from Paul Fischer and Catherine Schrand, the summary of the Wharton comment letter, the comment count, the KPMG survey reference, and the international comparisons are from that article. <a href="https://knowledge.wharton.upenn.edu/article/how-would-semi-annual-reporting-affect-firms-investors-and-capital-formation/" class="text-navy underline" target="_blank" rel="noopener noreferrer">Knowledge at Wharton article</a>
+
+Securities and Exchange Commission, "Semiannual Reporting," proposed rule, File No. S7-2026-15, May 5, 2026. <a href="https://www.sec.gov/rules-regulations/2026/05/s7-2026-15" class="text-navy underline" target="_blank" rel="noopener noreferrer">sec.gov</a>; <a href="https://www.federalregister.gov/documents/2026/05/07/2026-09095/semiannual-reporting" class="text-navy underline" target="_blank" rel="noopener noreferrer">Federal Register, May 7, 2026</a>
+
+<em>FACTS Consulting — Finance, Analytics, Consultative Transformational Services</em>
+
+<em>We Make You Smarter.</em>`,
+    author: 'Bob Katz',
+    date: '2026-11-28',
+    category: 'Finance',
+    image: '/images/blog/facts/who-decides-how-often-bad-news-gets-reported.webp',
+    readTime: '6 min',
+    slug: 'who-decides-how-often-bad-news-gets-reported',
+  },
+  {
     id: 'facts-cxo-advisory-letter-2026-11-25',
     title: "CxO Advisory Letter: Week of November 25, 2026",
     excerpt: "In the same poll, 67% of CFOs at companies under $50 million forecast higher 2027 revenue, against 95% at $1 billion or more. Also this week: finance's jump in AI agent use, mid-market software spend and AI renewal uplifts, how buyers and sellers price AI, and the Census Bureau's \"do not know\" answers.",
